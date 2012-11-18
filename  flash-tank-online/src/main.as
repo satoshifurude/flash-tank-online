@@ -21,6 +21,7 @@ package
             mStarling = new Starling(Game, stage);
             mStarling.simulateMultitouch = true;
             mStarling.enableErrorChecking = false;
+			mStarling.showStats = true;
             mStarling.start();
             
             // this event is dispatched when stage3D is set up

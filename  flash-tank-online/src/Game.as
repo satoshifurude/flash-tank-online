@@ -14,6 +14,7 @@ package
         
         public function Game()
         {
+			trace("create quad 400 x 300");
 			var mQuad:Quad = new Quad(400, 300);
 			mQuad.x = GameDefine.WIDTH >> 1;
 			mQuad.y = GameDefine.HEIGHT >> 1;
