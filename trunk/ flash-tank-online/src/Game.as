@@ -1,25 +1,30 @@
 package 
 {
-    import flash.ui.Keyboard;
-    import flash.utils.getDefinitionByName;
-    import flash.utils.getQualifiedClassName;
+    import flash.display.Bitmap;
     
     import starling.core.Starling;
     import starling.display.Button;
-    import starling.display.Quad;
+    import starling.display.Image;
     import starling.display.Sprite;
+	import starling.events.*;
 
     public class Game extends Sprite
     {
         
         public function Game()
         {
-			trace("create quad 400 x 300");
-			var mQuad:Quad = new Quad(400, 300);
-			mQuad.x = GameDefine.WIDTH >> 1;
-			mQuad.y = GameDefine.HEIGHT >> 1;
-			mQuad.color = 0xffffff;
-			addChild(mQuad);
+			trace("init game");
+			ResourceManager.getInstance().loadResource(1);
+			ResourceManager.getInstance().addEventListener(ResourceManager.ON_LOAD_COMPLETE, onLoadDone);
         }
+		
+		private function onLoadDone(e:Event):void
+		{
+			var image:Image = Image.fromBitmap(ResourceManager.getInstance().getBitmap("ga.png"));
+			
+			image.x = GameDefine.WIDTH - image.width >> 1;
+			image.y = GameDefine.HEIGHT - image.height >> 1;
+			addChild(image);
+		}
     }
 }
