@@ -30,6 +30,6 @@ if "%MAKE_DEBUG%"=="1" (
 	%FLASH_DEBUG% %OUTPUT_SWF%
 ) else if "%MAKE_BUILD%"=="1" (
 	echo ...make build
-	%FLEX_DIR%\bin\mxmlc.exe -compiler.include-libraries=%STARLING_LIB% -output=%OUTPUT_SWF% -debug=true -static-link-runtime-shared-libraries=true %MAIN_DIR%
+	%FLEX_DIR%\bin\mxmlc.exe -compiler.include-libraries=%STARLING_LIB% -output=%OUTPUT_SWF% -debug=true -use-network=false -static-link-runtime-shared-libraries=true %MAIN_DIR%
 )
 
