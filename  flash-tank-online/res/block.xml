@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fbe22b77d0c797fa3a863fe1780d85ea$ -->
+<TextureAtlas imagePath="block.png">
+    <SubTexture name="block_1" x="49" y="49" width="45" height="45" frameX="-2" frameY="-2" frameWidth="49" frameHeight="49"/>
+    <SubTexture name="block_2" x="49" y="2" width="45" height="45"/>
+    <SubTexture name="block_3" x="2" y="49" width="45" height="45"/>
+    <SubTexture name="block_4" x="2" y="2" width="45" height="45"/>
+</TextureAtlas>

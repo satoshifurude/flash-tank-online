@@ -22,10 +22,8 @@ package
 		private var mCurrentLoadDone:int;
 		private static var mInstance:ResourceManager = null;
 		
-		
 		public function ResourceManager() 
 		{
-			mArrResources = new Dictionary();
 		}
 		
 		public static function getInstance():ResourceManager
@@ -40,25 +38,28 @@ package
 		
 		public function loadResource(IDScene:int):void
 		{
+			clearResources();
 			loadSplashScene();
 		}
 		
 		private function clearResources():void
 		{
-			for (var i:int = 0, size:int = mArrBitmap.length; i < size; i++)
+		
+			for each (var obj:Object in mArrResources)
 			{
-				var bitmap:Bitmap = mArrBitmap.pop();
-				bitmap.bitmapData.dispose();
-				bitmap = null;
+				if (obj is Bitmap)
+					obj.bitmapData.dispose();
+				obj = null;
 			}
 			mCurrentLoadDone = 0;
+			mArrResources = new Dictionary();
 		}
 		
 		private function loadSplashScene():void
 		{
 			trace("loadSplashScene");
 			mNumImages = 1;
-			loadURL("ga.png");
+			loadURL("atlas.png");
 		}
 		
 		public function getBitmap(name:String):Bitmap
@@ -69,9 +70,14 @@ package
 				return null;
 		}
 		
+		public function getAtlasXML(name:String):XML
+		{
+			return new XML(new ResourceDefine[name]);
+		}
+		
 		private function loadURL(mAvatarUrl:String):void
 		{
-			var request:URLRequest = new URLRequest(GameDefine.RES_DIR + mAvatarUrl);
+			var request:URLRequest = new URLRequest(ResourceDefine.RES_DIR + mAvatarUrl);
 			var loaderCtx:LoaderContext = new LoaderContext(true);
 			var loader:Loader = new Loader();
 			loader.contentLoaderInfo.addEventListener(flash.events.Event.COMPLETE, onLoadAvatarComplete);
@@ -101,6 +107,8 @@ package
 			}
 			
 		}
+		
         
+		
     }
 }

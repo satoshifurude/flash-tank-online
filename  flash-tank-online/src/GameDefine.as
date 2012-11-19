@@ -8,5 +8,8 @@ package
 		public static var HEIGHT:int	= 600;
 		
 		public static var RES_DIR:String	= "../res/";
+		
+		[Embed(source="../res/atlas.xml", mimeType="application/octet-stream")]
+        public static const AtlasXml:Class;
     }
 }
