@@ -39,7 +39,15 @@ package
 		public function loadResource(IDScene:int):void
 		{
 			clearResources();
-			loadSplashScene();
+			switch (IDScene)
+			{
+				case GameDefine.ID_SPLASH_SCENE:
+					loadSplashScene();
+					break;
+				case GameDefine.ID_MAIN_SCENE:
+					loadMainScene();
+					break;
+			}
 		}
 		
 		private function clearResources():void
@@ -62,10 +70,25 @@ package
 			loadURL("atlas.png");
 		}
 		
+		private function loadMainScene():void
+		{
+			loadURL(ResourceDefine.TEX_LEVEL_DEMO);
+			loadURL(ResourceDefine.TEX_BLOCK);
+			mNumImages = 2;
+		}
+		
 		public function getBitmap(name:String):Bitmap
 		{
 			if (mArrResources[name] is Bitmap)
 				return mArrResources[name];
+			else
+				return null;
+		}
+		
+		public function getBitmapData(name:String):BitmapData
+		{
+			if (mArrResources[name] is Bitmap)
+				return mArrResources[name].bitmapData;
 			else
 				return null;
 		}
