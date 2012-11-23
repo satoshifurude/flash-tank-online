@@ -13,7 +13,8 @@ package
 			addChild(mMapTiled);
         }
 
-		private function onTouch(event:TouchEvent):void {
+		private function onTouch(event:TouchEvent):void 
+		{
 			
 		}
 	}
