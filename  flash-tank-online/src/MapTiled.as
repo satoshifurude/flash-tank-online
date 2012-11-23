@@ -49,19 +49,23 @@ package
 					switch (mArrTiled[y * mWidth + x])
 					{
 						case GameDefine.COLOR_BRICK:
-							texture = textureAtlas.getTexture("block_1");
+							// texture = textureAtlas.getTexture("block_1");
+							var brick:Brick = new Brick();
+							brick.x = x * GameDefine.CELL_SIZE;
+							brick.y = y * GameDefine.CELL_SIZE;
+							addChild(brick);
 							break;
 						case GameDefine.COLOR_STONE:
-							texture = textureAtlas.getTexture("block_2");
+							// texture = textureAtlas.getTexture("block_2");
 							break;
 						default:
 							continue;
 					}
 					
-					img = new Image(texture);
-					img.x = x * GameDefine.CELL_SIZE;
-					img.y = y * GameDefine.CELL_SIZE;
-					addChild(img);
+					// img = new Image(texture);
+					// img.x = x * GameDefine.CELL_SIZE;
+					// img.y = y * GameDefine.CELL_SIZE;
+					// addChild(img);
 				}
 			}
 		}
