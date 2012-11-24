@@ -13,5 +13,16 @@ package
 		
 		public static const COLOR_BRICK:int	= 0x0;
 		public static const COLOR_STONE:int = 0xed1c24;
+		public static const COLOR_TANK:int	= 0x4a52a5;
+		
+		//Define tank
+		public static const TANK_SPEED:int		= 100;
+		public static const BULLET_SPEED:int	= 300;
+		
+		public static const UP:int		= 1;
+		public static const DOWN:int	= 2;
+		public static const LEFT:int	= 3;
+		public static const RIGHT:int	= 4;
+		
     }
 }
