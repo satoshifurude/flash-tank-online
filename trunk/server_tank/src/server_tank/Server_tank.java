@@ -4,6 +4,8 @@
  */
 package server_tank;
 
+import game.GameTank;
+
 /**
  *
  * @author ThanhTri
@@ -15,5 +17,7 @@ public class Server_tank {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        GameTank game = new GameTank();
+        
     }
 }
