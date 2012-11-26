@@ -47,12 +47,17 @@ package
 				case GameDefine.ID_MAIN_SCENE:
 					loadMainScene();
 					break;
+				case GameDefine.ID_TEST_SCENE:
+					loadSplashScene();
+					break;
+				default:
+					dispatchEvent(new starling.events.Event(ON_LOAD_COMPLETE));
+					break;
 			}
 		}
 		
 		private function clearResources():void
 		{
-		
 			for each (var obj:Object in mArrResources)
 			{
 				if (obj is Bitmap)
@@ -65,7 +70,6 @@ package
 		
 		private function loadSplashScene():void
 		{
-			trace("loadSplashScene");
 			mNumImages = 1;
 			loadURL("atlas.png");
 		}
