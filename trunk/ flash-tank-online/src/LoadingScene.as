@@ -33,6 +33,9 @@ package
 				case GameDefine.ID_MAIN_SCENE:
 					Game.getInstance().addChild(new MainGameScene());
 					break;
+				case GameDefine.ID_TEST_SCENE:
+					Game.getInstance().addChild(new TestScene());
+					break;
 			}
 			
 			this.removeFromParent(true);
