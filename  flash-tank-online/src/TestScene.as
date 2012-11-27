@@ -69,8 +69,6 @@ package
 		
 		private function applyGaussianBlur(origin:BitmapData, outData:BitmapData, kernel:Vector.<Number>, kWidth:int, kHeight:int):void
 		{
-			
-			
 			var newPixel:uint;
 			var nr:uint;
 			var ng:uint;

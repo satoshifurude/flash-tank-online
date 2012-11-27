@@ -17,6 +17,7 @@ package
 		public static var m_KEY_DOWN:Boolean;
 		public static var m_KEY_LEFT:Boolean;
 		public static var m_KEY_RIGHT:Boolean;
+		public static var m_KEY_SPACE:Boolean;
 		
 		public static function clearKey():void
 		{
