@@ -101,31 +101,15 @@ package
 							
 							pixel = origin.getPixel32(x, y);
 							
-							// newPixel += (pixel * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
 							nr += (((pixel >> 16) & 0xff) * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
 							ng += (((pixel >> 8) & 0xff) * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
 							nb += ((pixel & 0xff) * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
-							// trace("pixel = " + (pixel & 0x000000ff));
-							// trace("y = " + y + ", x = " + x);
-							// trace((yK + kHeight) * numOfRow + (xK + kWidth));
-							// trace(kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
 						}
 					}
 					
-					trace("nr = " + nr);
-					trace("ng = " + ng);
-					trace("nb = " + nb);
 					newPixel = (0xff000000 | (nr << 16)) | (ng << 8) | nb;
-					
-					trace("new pixel = " + newPixel);
-					trace("nr = " + ((newPixel >> 16) & 0xff));
-					trace("ng = " + ((newPixel >> 8) & 0xff));
-					trace("nb = " + ((newPixel >> 0) & 0xff));
 					outData.setPixel32(xB, yB, newPixel);
-					// return;
-					
 				}
-				// trace(yB);
 			}
 			
 			trace("done!");
