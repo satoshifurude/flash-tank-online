@@ -7,14 +7,22 @@ package
 
     public class MainGameScene extends Sprite
     {
-        private var mMapTiled:MapTiled;
+		public static var mInstance:MainGameScene;
+        public var mMapTiled:MapTiled;
+		
         public function MainGameScene()
         {
+			mInstance = this;
 			mMapTiled = new MapTiled();
 			addChild(mMapTiled);
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp);
         }
+		
+		public static function getInstance():MainGameScene
+		{
+			return mInstance;
+		}
 
 		private function onKeyDown(event:KeyboardEvent):void 
 		{
@@ -32,8 +40,17 @@ package
 				case GameKey.KEY_RIGHT:
 					GameKey.m_KEY_RIGHT = true;
 					break;
+				case GameKey.KEY_SPACE:
+					GameKey.m_KEY_SPACE = true;
+					break;
 				default:
 					break;
+			}
+			
+			trace("event.keyCode = " + event.keyCode);
+			if (event.keyCode >= 49 && event.keyCode <=57)
+			{
+				mMapTiled.removeBlock(event.keyCode - 48, 0);
 			}
 		}
 		
@@ -52,6 +69,9 @@ package
 					break;
 				case GameKey.KEY_RIGHT:
 					GameKey.m_KEY_RIGHT = false;
+					break;
+				case GameKey.KEY_SPACE:
+					GameKey.m_KEY_SPACE = false;
 					break;
 				default:
 					break;

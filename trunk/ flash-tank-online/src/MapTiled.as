@@ -14,12 +14,15 @@ package
 	
 		private var mArrTiled:Vector.<uint>;
 		private var mPlayer:Tank;
+		private var mArrBullet:Vector.<Bullet>
+		
 		private var mWidth:int;
 		private var mHeight:int;
 		
 		public function MapTiled()
         {
 			mArrTiled = new Vector.<uint>();
+			mArrBullet = new Vector.<Bullet>();
 			mMapLayerUnder = new Sprite;
 			mMapLayerAbove = new Sprite;
 			mPlayerLayer = new Sprite;
@@ -38,8 +41,17 @@ package
 		
 		private function onFrame(event:EnterFrameEvent):void
 		{
-			mPlayer.move(event.passedTime);
-			checkCollisionPlayer();
+			mPlayer.update(event.passedTime);
+			checkCollisionPlayer(mPlayer);
+			
+			for (var i:int = 0; i < mArrBullet.length; i++)
+			{
+				if (mArrBullet[i].mActive)
+				{
+					mArrBullet[i].update(event.passedTime);
+					checkCollisionPlayer(mArrBullet[i]);
+				}
+			}
 		}
 		
 		private function loadMapFromImage(name:String):void
@@ -69,17 +81,11 @@ package
 			{
 				for (var x:int = 0; x < mWidth; x++)
 				{
-					// trace("x = " + x + ", y = " + y + ", value = " + mArrTiled[y * mWidth + x]);
 					texture = null;
 					switch (mArrTiled[y * mWidth + x])
 					{
 						case GameDefine.COLOR_BRICK:
 							texture = textureAtlas.getTexture("block_1");
-							// var brick:Brick = new Brick();
-							// brick.x = x * GameDefine.CELL_SIZE;
-							// brick.y = y * GameDefine.CELL_SIZE;
-							// brick.flatten();
-							// addChild(brick);
 							break;
 						case GameDefine.COLOR_STONE:
 							texture = textureAtlas.getTexture("block_2");
@@ -98,17 +104,27 @@ package
 					img = new Image(texture);
 					img.x = x * GameDefine.CELL_SIZE;
 					img.y = y * GameDefine.CELL_SIZE;
+					img.name = "" + (y * mWidth + x);
 					mMapLayerUnder.addChild(img);
 				}
 			}
 		}
 		
-		private function checkCollisionPlayer():void
-		{	
-			var top:int = (mPlayer.y) / GameDefine.CELL_SIZE;
-			var bottom:int = (mPlayer.y - 1 + mPlayer.getHeight()) / GameDefine.CELL_SIZE;
-			var left:int = (mPlayer.x) / GameDefine.CELL_SIZE;
-			var right:int = (mPlayer.x - 1 + mPlayer.getWidth()) / GameDefine.CELL_SIZE;
+		private function checkCollisionPlayer(obj:DisplayObject):void
+		{
+			var top:int = (obj.y) / GameDefine.CELL_SIZE;
+			var bottom:int = (obj.y - 1 + obj.height) / GameDefine.CELL_SIZE;
+			var left:int = (obj.x) / GameDefine.CELL_SIZE;
+			var right:int = (obj.x - 1 + obj.width) / GameDefine.CELL_SIZE;
+			
+			if (top < 0 || bottom >= mHeight || left < 0 || right >= mWidth)
+			{
+				if (obj is Bullet)
+				{
+					(Bullet)(obj).explode();
+				}
+				return;
+			}
 			
 			for (var y:int = top; y <= bottom; y++)
 			{
@@ -118,8 +134,17 @@ package
 					{
 						case GameDefine.COLOR_BRICK:
 						case GameDefine.COLOR_STONE:
-							mPlayer.setPositionCollideWithBlock(x, y);
+							if (obj is Tank)
+							{
+								(Tank)(obj).setPositionCollideWithBlock(x, y);
+							}
+							else if (obj is Bullet)
+							{
+								(Bullet)(obj).explode();
+								removeBlock(x, y);
+							}
 							return;
+							break;
 						case GameDefine.COLOR_TANK:
 							
 							break;
@@ -130,9 +155,32 @@ package
 			}
 		}
 		
+		public function removeBlock(x:int, y:int):void
+		{
+			var str:String = "" + (y * mWidth + x);
+			var dis:DisplayObject = mMapLayerUnder.getChildByName(str);
+			if (dis == null) return;
+			dis.removeFromParent(true);
+			mArrTiled[y * mWidth + x] = GameDefine.COLOR_NONE;
+			
+			mMapLayerUnder.flatten();
+		}
+		
+		public function removeBullet(bullet:Bullet):void
+		{
+			var index:int = mArrBullet.indexOf(bullet);
+			if (index != -1) mArrBullet[index]  = null;
+		}
+		
 		public function getPlayer():Tank
 		{
 			return mPlayer;
+		}
+		
+		public function addBullet(bullet:Bullet):void
+		{
+			mArrBullet.push(bullet);
+			mPlayerLayer.addChild(bullet);
 		}
     }
 }

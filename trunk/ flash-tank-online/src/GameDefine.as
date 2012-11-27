@@ -12,18 +12,24 @@ package
 		public static const ID_MAIN_SCENE:int	= 2;
 		public static const ID_TEST_SCENE:int	= 3;
 		
-		public static const COLOR_BRICK:int	= 0x0;
-		public static const COLOR_STONE:int = 0xed1c24;
-		public static const COLOR_TANK:int	= 0x4a52a5;
+		public static const COLOR_NONE:int		= -1;
+		public static const COLOR_BRICK:int		= 0x0;
+		public static const COLOR_STONE:int 	= 0xed1c24;
+		public static const COLOR_TANK:int		= 0x4a52a5;
+		public static const COLOR_METAL:int		= 1;
+		public static const COLOR_WATER:int		= 2;
+		public static const COLOR_ICE:int		= 3;
+		public static const COLOR_TREE:int		= 4;
+		public static const COLOR_HEADER:int	= 5;
 		
 		//Define tank
-		public static const TANK_SPEED:int		= 100;
+		public static const TANK_SPEED:int		= 200;
 		public static const BULLET_SPEED:int	= 300;
+		public static const MAX_BULLET:Number	= 0.5;
 		
 		public static const UP:int		= 1;
 		public static const DOWN:int	= 2;
 		public static const LEFT:int	= 3;
 		public static const RIGHT:int	= 4;
-		
     }
 }

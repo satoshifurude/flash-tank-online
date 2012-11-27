@@ -24,14 +24,11 @@ package
 			mStarling.showStats = true;
             mStarling.start();
             
-            // this event is dispatched when stage3D is set up
             mStarling.stage3D.addEventListener(Event.CONTEXT3D_CREATE, onContextCreated);
         }
         
         private function onContextCreated(event:Event):void
         {
-            // set framerate to 30 in software mode
-            
             if (Starling.context.driverInfo.toLowerCase().indexOf("software") != -1)
                 Starling.current.nativeStage.frameRate = 30;
         }
