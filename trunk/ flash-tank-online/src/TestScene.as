@@ -15,12 +15,19 @@ package
         public function TestScene()
         {
 			var bmdOrigin:BitmapData = ResourceManager.getInstance().getBitmapData("atlas.png");
-			
-			mKernel = createKernel(1.5, 1, 1);
+			var sizeW:int = 3;
+			var sizeH:int = 3;
+			mKernel = createKernel(2.5, sizeW, sizeH);
 			mBitmapData = new BitmapData(bmdOrigin.width, bmdOrigin.height, true, 0x0);
-			applyGaussianBlur(bmdOrigin, mBitmapData, mKernel, 1, 1);
+			applyGaussianBlur(bmdOrigin, mBitmapData, mKernel, sizeW, sizeH);
 			
 			var img:Image = Image.fromBitmap(new Bitmap(mBitmapData));
+			img.x = 30;
+			img.y = 30;
+			addChild(img);
+			img = Image.fromBitmap(new Bitmap(bmdOrigin));
+			img.x = 30 + img.width + 10;
+			img.y = 30;
 			addChild(img);
         }
 		
@@ -65,13 +72,21 @@ package
 			
 			
 			var newPixel:uint;
+			var nr:uint;
+			var ng:uint;
+			var nb:uint;
 			var pixel:uint = 0;
 			var x:int;
 			var y:int;
+			var numOfRow:int = kWidth * 2 + 1;
 			for (var yB:int = 0; yB < origin.height; yB++)
 			{
 				for (var xB:int = 0; xB < origin.width; xB++)
 				{
+					newPixel = 0;
+					nr = 0;
+					ng = 0;
+					nb = 0;
 					for (var yK:int = -kHeight; yK <= kHeight; yK++)
 					{
 						for (var xK:int = -kWidth; xK <= kWidth; xK++)
@@ -85,14 +100,35 @@ package
 							else if (y >= origin.height) y = origin.height - 1;
 							
 							pixel = origin.getPixel32(x, y);
-							newPixel += (pixel * kernel[(yK + kHeight) * kWidth + (xK + kWidth)]);
+							
+							// newPixel += (pixel * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
+							nr += (((pixel >> 16) & 0xff) * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
+							ng += (((pixel >> 8) & 0xff) * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
+							nb += ((pixel & 0xff) * kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
+							// trace("pixel = " + (pixel & 0x000000ff));
+							// trace("y = " + y + ", x = " + x);
+							// trace((yK + kHeight) * numOfRow + (xK + kWidth));
+							// trace(kernel[(yK + kHeight) * numOfRow + (xK + kWidth)]);
 						}
 					}
 					
+					trace("nr = " + nr);
+					trace("ng = " + ng);
+					trace("nb = " + nb);
+					newPixel = (0xff000000 | (nr << 16)) | (ng << 8) | nb;
+					
+					trace("new pixel = " + newPixel);
+					trace("nr = " + ((newPixel >> 16) & 0xff));
+					trace("ng = " + ((newPixel >> 8) & 0xff));
+					trace("nb = " + ((newPixel >> 0) & 0xff));
 					outData.setPixel32(xB, yB, newPixel);
-					newPixel = 1;
+					// return;
+					
 				}
+				// trace(yB);
 			}
+			
+			trace("done!");
 		}
 	}
 }
