@@ -14,15 +14,16 @@ package
 	
 		private var mArrTiled:Vector.<uint>;
 		private var mPlayer:Tank;
-		private var mArrBullet:Vector.<Bullet>
+		// private var mArrBullet:Vector.<Bullet>
 		
 		private var mWidth:int;
 		private var mHeight:int;
+		private var mWidthInPixel:int;
+		private var mHeightInPixel:int;
 		
 		public function MapTiled()
         {
 			mArrTiled = new Vector.<uint>();
-			mArrBullet = new Vector.<Bullet>();
 			mMapLayerUnder = new Sprite;
 			mMapLayerAbove = new Sprite;
 			mPlayerLayer = new Sprite;
@@ -44,14 +45,16 @@ package
 			mPlayer.update(event.passedTime);
 			checkCollisionPlayer(mPlayer);
 			
-			for (var i:int = 0; i < mArrBullet.length; i++)
+			for (var i:int = 0; i < BulletManager.getInstance().getArrBullet().length; i++)
 			{
-				if (mArrBullet[i].mActive)
+				if (BulletManager.getInstance().getArrBullet()[i].mActive)
 				{
-					mArrBullet[i].update(event.passedTime);
-					checkCollisionPlayer(mArrBullet[i]);
+					BulletManager.getInstance().getArrBullet()[i].update(event.passedTime);
+					checkCollisionPlayer(BulletManager.getInstance().getArrBullet()[i]);
 				}
 			}
+			
+			calcCamera();
 		}
 		
 		private function loadMapFromImage(name:String):void
@@ -60,6 +63,9 @@ package
 			var bmd:BitmapData = ResourceManager.getInstance().getBitmapData(name);
 			mWidth = bmd.width;
 			mHeight = bmd.height;
+			mWidthInPixel = mWidth * GameDefine.CELL_SIZE;
+			mHeightInPixel = mHeight * GameDefine.CELL_SIZE;
+			
 			for (var y:int = 0; y < mHeight; y++)
 			{
 				for (var x:int = 0; x < mWidth; x++)
@@ -155,6 +161,25 @@ package
 			}
 		}
 		
+		private function calcCamera():void
+		{
+			var cameraTop:Number = mPlayer.y + (mPlayer.height >> 1) - GameDefine.CAMERA_PLAYER_DEFAULT_Y;
+			var cameraLeft:Number = mPlayer.x + (mPlayer.width >> 1) - GameDefine.CAMERA_PLAYER_DEFAULT_X;
+			
+			if (cameraTop < 0) 
+				cameraTop = 0;
+			else if (cameraTop + GameDefine.HEIGHT > mHeightInPixel)
+				cameraTop = mHeightInPixel - GameDefine.HEIGHT;
+				
+			if (cameraLeft < 0) 
+				cameraLeft = 0;
+			else if (cameraLeft + GameDefine.WIDTH > mWidthInPixel)
+				cameraLeft = mWidthInPixel - GameDefine.WIDTH;
+				
+			this.x = - cameraLeft;
+			this.y = - cameraTop;
+		}
+		
 		public function removeBlock(x:int, y:int):void
 		{
 			var str:String = "" + (y * mWidth + x);
@@ -166,12 +191,6 @@ package
 			mMapLayerUnder.flatten();
 		}
 		
-		public function removeBullet(bullet:Bullet):void
-		{
-			var index:int = mArrBullet.indexOf(bullet);
-			if (index != -1) mArrBullet[index]  = null;
-		}
-		
 		public function getPlayer():Tank
 		{
 			return mPlayer;
@@ -179,7 +198,6 @@ package
 		
 		public function addBullet(bullet:Bullet):void
 		{
-			mArrBullet.push(bullet);
 			mPlayerLayer.addChild(bullet);
 		}
     }

@@ -42,7 +42,7 @@ package
 		{
 			mNumCurrentBullet = 0;
 			
-			var bullet:Bullet = new Bullet(this);
+			var bullet:Bullet = BulletManager.getInstance().createBullet(this);
 			bullet.x = x + (width - bullet.width >> 1);
 			bullet.y = y + (height - bullet.height >> 1);
 			MainGameScene.getInstance().mMapTiled.addBullet(bullet);
@@ -133,17 +133,11 @@ package
 					mLayerTank.rotation = Math.PI * 3 / 4;
 					break;
 			}
-			trace("mDirection = " + mDirection);
 		}
 		
 		public function getDirection():int
 		{
 			return mDirection;
-		}
-		
-		public function reduceBullet():void
-		{
-			mNumCurrentBullet--;
 		}
 	
 		override public function get width():Number { return mImage.width; }

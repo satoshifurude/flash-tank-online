@@ -9,24 +9,45 @@ package
 		private var mLayerBullet:Sprite;
 		private var mQuad:Quad;
 		private var mPlayer:Tank;
+		
+		private var mLastPosition:Number;
 		private var mSpeed:int;
 		private var mDirection:int;
 		public var mActive:Boolean;
 		
         public function Bullet(player:Tank)
         {
+			init(player);
+        }
+		
+		public function init(player:Tank):void
+		{
 			mSpeed = GameDefine.BULLET_SPEED;
 			mPlayer = player;
 			mDirection = mPlayer.getDirection();
-			trace("mDirection = " + mDirection);
+			
+			if (mDirection == GameDefine.UP || mDirection == GameDefine.DOWN)
+				mLastPosition = mPlayer.y;
+			else
+				mLastPosition = mPlayer.x;
 
 			mQuad = new Quad(10, 10, 0xffffffff);
 			addChild(mQuad);
 			mActive = true;
-        }
+		}
 		
 		public function update(time:Number):void
 		{
+			if (mDirection == GameDefine.UP || mDirection == GameDefine.DOWN)
+			{
+				if (Math.abs(this.y - mLastPosition) > GameDefine.MAX_RANGE_BULLET)
+					explode();
+			}
+			else
+			{
+				if (Math.abs(this.x - mLastPosition) > GameDefine.MAX_RANGE_BULLET)
+					explode();
+			}
 			
 			if (mDirection == GameDefine.UP)
 			{
@@ -48,9 +69,15 @@ package
 		
 		public function explode():void
 		{
+			trace("explode");
 			mActive = false;
-			// mPlayer.reduceBullet();
-			removeFromParent(true);
+			mPlayer = null;
+			removeFromParent();
+		}
+		
+		public function isActive():Boolean
+		{
+			return mActive;
 		}
 		
 		override public function get width():Number { return mQuad.width; }
