@@ -46,12 +46,6 @@ package
 				default:
 					break;
 			}
-			
-			trace("event.keyCode = " + event.keyCode);
-			if (event.keyCode >= 49 && event.keyCode <=57)
-			{
-				mMapTiled.removeBlock(event.keyCode - 48, 0);
-			}
 		}
 		
 		private function onKeyUp(event:KeyboardEvent):void 

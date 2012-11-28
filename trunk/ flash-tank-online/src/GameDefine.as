@@ -4,8 +4,8 @@ package
 	
     public class GameDefine
     {
-        public static const WIDTH:int 		= 800;
-		public static const HEIGHT:int		= 600;
+        public static const WIDTH:Number 		= 800;
+		public static const HEIGHT:Number		= 600;
 		public static const CELL_SIZE:int	= 45;
 	
 		public static const ID_SPLASH_SCENE:int = 1;
@@ -23,13 +23,17 @@ package
 		public static const COLOR_HEADER:int	= 5;
 		
 		//Define tank
-		public static const TANK_SPEED:int		= 200;
-		public static const BULLET_SPEED:int	= 300;
-		public static const MAX_BULLET:Number	= 0.5;
+		public static const TANK_SPEED:Number		= 200;
+		public static const BULLET_SPEED:Number		= 300;
+		public static const MAX_BULLET:Number		= 0.5;
+		public static const MAX_RANGE_BULLET:Number	= 700;
 		
 		public static const UP:int		= 1;
 		public static const DOWN:int	= 2;
 		public static const LEFT:int	= 3;
 		public static const RIGHT:int	= 4;
+		
+		public static const CAMERA_PLAYER_DEFAULT_X:Number	= 400;
+		public static const CAMERA_PLAYER_DEFAULT_Y:Number	= 400;
     }
 }
