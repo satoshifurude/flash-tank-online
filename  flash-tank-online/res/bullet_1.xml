@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:ef72e243e138abb49a093c1dea09730b$ -->
+<TextureAtlas imagePath="bullet_1.png">
+    <SubTexture name="bullet_0" x="30" y="24" width="32" height="22" frameX="0" frameY="0" frameWidth="32" frameHeight="24"/>
+    <SubTexture name="bullet_1" x="0" y="24" width="30" height="24" frameX="0" frameY="0" frameWidth="32" frameHeight="24"/>
+    <SubTexture name="bullet_2" x="32" y="0" width="32" height="24"/>
+    <SubTexture name="bullet_3" x="0" y="0" width="32" height="24"/>
+</TextureAtlas>

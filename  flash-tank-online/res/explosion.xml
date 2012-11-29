@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:c52b4e730c031ecfff9c374c6372d5ac$ -->
+<TextureAtlas imagePath="explosion.png">
+    <SubTexture name="explosion_0" x="0" y="0" width="73" height="96" frameX="-1" frameY="0" frameWidth="77" frameHeight="96"/>
+    <SubTexture name="explosion_1" x="73" y="0" width="75" height="94" frameX="0" frameY="-1" frameWidth="77" frameHeight="96"/>
+    <SubTexture name="explosion_2" x="148" y="0" width="75" height="70" frameX="-2" frameY="-14" frameWidth="77" frameHeight="96"/>
+    <SubTexture name="explosion_3" x="148" y="70" width="47" height="48" frameX="-14" frameY="-25" frameWidth="77" frameHeight="96"/>
+</TextureAtlas>

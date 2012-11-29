@@ -47,7 +47,7 @@ package
 			
 			for (var i:int = 0; i < BulletManager.getInstance().getArrBullet().length; i++)
 			{
-				if (BulletManager.getInstance().getArrBullet()[i].mActive)
+				if (BulletManager.getInstance().getArrBullet()[i].isActive())
 				{
 					BulletManager.getInstance().getArrBullet()[i].update(event.passedTime);
 					checkCollisionPlayer(BulletManager.getInstance().getArrBullet()[i]);
