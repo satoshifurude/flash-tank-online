@@ -78,7 +78,9 @@ package
 		{
 			loadURL(ResourceDefine.TEX_LEVEL_DEMO);
 			loadURL(ResourceDefine.TEX_BLOCK);
-			mNumImages = 2;
+			loadURL(ResourceDefine.TEX_EXPLOSION);
+			loadURL(ResourceDefine.TEX_BULLET_1);
+			mNumImages = 4;
 		}
 		
 		public function getBitmap(name:String):Bitmap
