@@ -33,7 +33,7 @@ package
 			{
 				removeEventListener(Event.ENTER_FRAME, onFrame);
 				removeFromParent(true);
-				Game.getInstance().addChild(new LoadingScene(GameDefine.ID_MAIN_SCENE));
+				Game.getInstance().addChild(new LoadingScene(GameDefine.ID_MENU_SCENE));
 			}
 		}
 	}

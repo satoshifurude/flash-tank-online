@@ -52,6 +52,9 @@ package
 				case GameDefine.ID_TEST_SCENE:
 					loadSplashScene();
 					break;
+				case GameDefine.ID_MENU_SCENE:
+					loadMenuScene();
+					break;
 				default:
 					dispatchEvent(new starling.events.Event(ON_LOAD_COMPLETE));
 					break;
@@ -85,6 +88,21 @@ package
 			loadURL(ResourceDefine.TEX_BULLET_1);
 		}
 		
+		private function loadMenuScene():void
+		{
+			mNumImages = 4;
+			loadURL(ResourceDefine.TEX_MENU_BACKGROUND);
+			loadURL(ResourceDefine.TEX_BTN_PLAY_UP);
+			loadURL(ResourceDefine.TEX_BTN_PLAY_DOWN);
+			loadURL(ResourceDefine.TEX_PARTICLE_MENU);
+		}
+		
+		public function getTexture(name:String):Texture
+		{
+			var texture:Texture = Texture.fromBitmap(getBitmap(name));
+			return texture;
+		}
+		
 		public function getImage(name:String):Image
 		{
 			var texture:Texture = Texture.fromBitmap(getBitmap(name));
@@ -108,7 +126,7 @@ package
 				return null;
 		}
 		
-		public function getAtlasXML(name:String):XML
+		public function getXML(name:String):XML
 		{
 			return new XML(new ResourceDefine[name]);
 		}

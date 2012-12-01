@@ -35,6 +35,9 @@ package
 				case GameDefine.ID_MAIN_SCENE:
 					Game.getInstance().addChild(new MainGameScene());
 					break;
+				case GameDefine.ID_MENU_SCENE:
+					Game.getInstance().addChild(new MenuScene());
+					break;
 				case GameDefine.ID_TEST_SCENE:
 					Game.getInstance().addChild(new TestScene());
 					break;
