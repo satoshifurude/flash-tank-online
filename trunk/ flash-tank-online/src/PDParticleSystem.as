@@ -8,7 +8,7 @@
 //
 // =================================================================================================
 
-package starling.extensions
+package
 {
     import flash.display3D.Context3DBlendFactor;
     

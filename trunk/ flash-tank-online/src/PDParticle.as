@@ -8,7 +8,7 @@
 //
 // =================================================================================================
 
-package starling.extensions
+package
 {
     public class PDParticle extends Particle
     {

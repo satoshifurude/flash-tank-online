@@ -8,7 +8,7 @@
 //
 // =================================================================================================
 
-package starling.extensions
+package
 {
     import com.adobe.utils.AGALMiniAssembler;
     

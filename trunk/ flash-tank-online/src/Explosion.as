@@ -13,7 +13,7 @@ package
         public function Explosion()
         {
 			var texture:Texture = Texture.fromBitmap(ResourceManager.getInstance().getBitmap(ResourceDefine.TEX_EXPLOSION));
-			var xml:XML = ResourceManager.getInstance().getAtlasXML(ResourceDefine.XML_EXPLOSION);
+			var xml:XML = ResourceManager.getInstance().getXML(ResourceDefine.XML_EXPLOSION);
 			var textureAtlas:TextureAtlas = new TextureAtlas(texture, xml);
 			var frames:Vector.<Texture> = textureAtlas.getTextures(ResourceDefine.SPR_EXPLOSION);
             mAnimation = new MovieClip(frames, 8);

@@ -19,7 +19,7 @@ package
         public function Bullet(player:Tank)
         {
 			var texture:Texture = Texture.fromBitmap(ResourceManager.getInstance().getBitmap(ResourceDefine.TEX_BULLET_1));
-			var xml:XML = ResourceManager.getInstance().getAtlasXML(ResourceDefine.XML_BULLET_1);
+			var xml:XML = ResourceManager.getInstance().getXML(ResourceDefine.XML_BULLET_1);
 			var textureAtlas:TextureAtlas = new TextureAtlas(texture, xml);
 			var frames:Vector.<Texture> = textureAtlas.getTextures(ResourceDefine.SPR_BULLET_1);
             mAnimation = new MovieClip(frames, 8);

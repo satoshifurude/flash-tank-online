@@ -8,7 +8,7 @@
 //
 // =================================================================================================
 
-package starling.extensions
+package
 {
     import starling.textures.Texture;
     
