@@ -12,7 +12,7 @@ package
         public function Game()
         {	
 			mInstance = this;
-			addChild(new LoadingScene(GameDefine.ID_MAIN_SCENE));
+			addChild(new LoadingScene(GameDefine.ID_SPLASH_SCENE, false));
         }
 		
 		public static function getInstance():Game
