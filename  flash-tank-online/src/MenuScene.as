@@ -7,7 +7,6 @@ package
     public class MenuScene extends Sprite
     {
 		
-		
         public function MenuScene()
         {
 			
