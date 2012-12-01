@@ -26,6 +26,8 @@ package
 		public static const XML_BULLET_1:String 	= "XMLBullet1";
 		public static const SPR_BULLET_1:String 	= "bullet";
 		
+		public static const TEX_LOGO_SPLASH:String 	= "logo_splash.png";
+		
 		public static const TEX_LEVEL_DEMO:String = "level_demo.png";
     }
 }

@@ -10,7 +10,8 @@ package
 	
 		public static const ID_SPLASH_SCENE:int = 1;
 		public static const ID_MAIN_SCENE:int	= 2;
-		public static const ID_TEST_SCENE:int	= 3;
+		public static const ID_MENU_SCENE:int	= 3;
+		public static const ID_TEST_SCENE:int	= 4;
 		
 		public static const COLOR_NONE:int		= -1;
 		public static const COLOR_BRICK:int		= 0x0;

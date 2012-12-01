@@ -12,6 +12,8 @@ package
 	import flash.utils.Dictionary;
 	
 	import starling.events.EventDispatcher;
+	import starling.display.Image;
+	import starling.textures.Texture;
 	
     public class ResourceManager extends EventDispatcher
     {
@@ -71,16 +73,23 @@ package
 		private function loadSplashScene():void
 		{
 			mNumImages = 1;
-			loadURL("atlas.png");
+			loadURL(ResourceDefine.TEX_LOGO_SPLASH);
 		}
 		
 		private function loadMainScene():void
 		{
+			mNumImages = 4;
 			loadURL(ResourceDefine.TEX_LEVEL_DEMO);
 			loadURL(ResourceDefine.TEX_BLOCK);
 			loadURL(ResourceDefine.TEX_EXPLOSION);
 			loadURL(ResourceDefine.TEX_BULLET_1);
-			mNumImages = 4;
+		}
+		
+		public function getImage(name:String):Image
+		{
+			var texture:Texture = Texture.fromBitmap(getBitmap(name));
+			var image:Image = new Image(texture);
+			return image;
 		}
 		
 		public function getBitmap(name:String):Bitmap
