@@ -10,7 +10,7 @@ package
     {
         public static var mInstance:Game;
         public function Game()
-        {	
+        {	 
 			mInstance = this;
 			addChild(new LoadingScene(GameDefine.ID_SPLASH_SCENE, false));
         }

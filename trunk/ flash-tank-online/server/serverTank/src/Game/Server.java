@@ -88,9 +88,10 @@ public class Server {
                 try {
                     SocketChannel chanel = ssc.accept();
                     ClientThread client = new ClientThread(chanel);
+                    client.setGame(game);
                     client.start();
                     Server.this.clients.add(client);
-                    
+                    Server.this.game.addClient(client);
                     System.out.println("Server accept new client success");
 
                 } catch (IOException ex) {

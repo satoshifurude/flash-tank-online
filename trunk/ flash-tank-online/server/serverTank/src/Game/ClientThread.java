@@ -8,9 +8,7 @@ import game.iGame;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+  
 /**
  *
  * @author ThanhTri
@@ -24,6 +22,7 @@ public class ClientThread extends Thread {
 //    public i
     public ClientThread(SocketChannel channel) {
         this.channel = channel;
+//        this.channel.configureBlocking(true);
         buffer = ByteBuffer.allocate(1024);
         running = true;
     }
@@ -55,23 +54,33 @@ public class ClientThread extends Thread {
         }
     }
 
-    public void ReceiverMessage(ByteBuffer buffer) {
+    public void ReceiverMessage(ByteBuffer buffer) {        
+        if(game!= null ){
+            game.receiverMessage(this, buffer);
+        }else{
+            System.out.println("Game null");
+        }
     }
 
     @Override
     public void run() {
-        while (running) {
-//            channel.
-//            try {
-//                buffer.clear();
-//                channel.read(buffer);
-//                if (game != null) {
-//                    game.receiverMessage(this, buffer);
-//                }
-//
-//            } catch (IOException ex) {
-//                ex.printStackTrace();
-//            }
+        while (running && channel.isConnected()) {          
+            try {
+                buffer.clear();
+                channel.read(buffer);
+                buffer.flip();
+//                channel.
+                if (game != null && buffer.hasRemaining()) {
+                    game.receiverMessage(this, buffer);
+                }
+            } catch (IOException ex) {                
+                ex.printStackTrace();
+            }
+            try {
+                this.sleep(10);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

@@ -52,8 +52,7 @@ package
 					BulletManager.getInstance().getArrBullet()[i].update(event.passedTime);
 					checkCollisionPlayer(BulletManager.getInstance().getArrBullet()[i]);
 				}
-			}
-			
+			}  			
 			calcCamera();
 		}
 		
@@ -186,8 +185,7 @@ package
 			var dis:DisplayObject = mMapLayerUnder.getChildByName(str);
 			if (dis == null) return;
 			dis.removeFromParent(true);
-			mArrTiled[y * mWidth + x] = GameDefine.COLOR_NONE;
-			
+			mArrTiled[y * mWidth + x] = GameDefine.COLOR_NONE;			
 			mMapLayerUnder.flatten();
 		}
 		
