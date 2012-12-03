@@ -33,8 +33,7 @@ package
 					mArrBullet[i].init(player);
 					return mArrBullet[i];
 				}
-			}
-			
+			}			
 			var bullet:Bullet = new Bullet(player);
 			mArrBullet.push(bullet);
 			return bullet;
