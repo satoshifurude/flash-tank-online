@@ -10,6 +10,7 @@ package
 		private var mParticle:PDParticleSystem;
 		private var mBackground:Image;
 		private var mBtnPlay:Button;
+		private var mBtnConnect:Button;
 		
         public function MenuScene()
         {
@@ -44,12 +45,24 @@ package
 			mBtnPlay.y = 200;
 			mBtnPlay.addEventListener(Event.TRIGGERED, onPlay);
 			addChild(mBtnPlay);
+			
+			mBtnConnect = new Button(ResourceManager.getInstance().getTexture(ResourceDefine.TEX_BTN_PLAY_UP), "", ResourceManager.getInstance().getTexture(ResourceDefine.TEX_BTN_PLAY_DOWN));
+			mBtnConnect.x = GameDefine.WIDTH - mBtnPlay.width >> 1;
+			mBtnConnect.y = 400;
+			mBtnConnect.addEventListener(Event.TRIGGERED, onConnect);
+			addChild(mBtnConnect);
 		}
 		
 		private function onPlay(event:Event):void
 		{
 			removeFromParent(true);
 			Game.getInstance().addChild(new LoadingScene(GameDefine.ID_MAIN_SCENE));
+		}
+		
+		private function onConnect(event:Event):void
+		{
+			removeFromParent(true);
+			Game.getInstance().addChild(new LoadingScene(GameDefine.ID_CONNECT_SCENE));
 		}
 	}
 }

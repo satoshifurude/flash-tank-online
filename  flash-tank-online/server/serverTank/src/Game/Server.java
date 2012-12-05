@@ -42,6 +42,7 @@ public class Server {
                 serverThread = new ServerThread(ssc);
                 serverThread.start();
                 System.out.println("Server start success ");
+                System.out.println(InetAddress.getLocalHost());
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
