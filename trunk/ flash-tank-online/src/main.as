@@ -5,6 +5,7 @@ package
     import flash.display.StageScaleMode;
     import flash.events.Event;
     import flash.geom.Rectangle;
+	import flash.system.Security;
     
     import starling.core.Starling;
     
@@ -15,6 +16,9 @@ package
         
         public function main()
         {
+			Security.allowDomain("*");
+			Security.allowInsecureDomain("*");
+			
             stage.scaleMode = StageScaleMode.NO_SCALE;
             stage.align = StageAlign.TOP_LEFT;
              

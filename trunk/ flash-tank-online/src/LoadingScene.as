@@ -20,8 +20,8 @@ package
 			
 			mNextScene = nextScene;
 			trace("mNextScene111 = " + mNextScene);
-			ResourceManager.getInstance().loadResource(mNextScene);
 			ResourceManager.getInstance().addEventListener(ResourceManager.ON_LOAD_COMPLETE, onLoadDone);
+			ResourceManager.getInstance().loadResource(mNextScene);
         }
 		
 		private function onLoadDone(e:Event):void
@@ -40,6 +40,9 @@ package
 					break;
 				case GameDefine.ID_TEST_SCENE:
 					Game.getInstance().addChild(new TestScene());
+					break;
+				case GameDefine.ID_CONNECT_SCENE:
+					Game.getInstance().addChild(new TestConnectScene());
 					break;
 			}
 			
