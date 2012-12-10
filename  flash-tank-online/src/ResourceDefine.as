@@ -17,7 +17,7 @@ package
 		[Embed(source="../res/particle_menu.pex", mimeType="application/octet-stream")]
         public static const ParticleMenu:Class;
 		
-		public static const RES_DIR:String	= "../res/";
+		public static const RES_DIR:String	= "http://127.0.0.1/res/";
 		
 		public static const TEX_BLOCK:String 		= "block.png";
 		public static const XML_BLOCK:String 		= "XMLBlock";

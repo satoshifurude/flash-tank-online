@@ -18,7 +18,7 @@ package
 			var frames:Vector.<Texture> = textureAtlas.getTextures(ResourceDefine.SPR_EXPLOSION);
             mAnimation = new MovieClip(frames, 8);
             
-            mAnimation.x = - mAnimation.width >> 1;
+            mAnimation.x = - mAnimation.width >> 2;
             mAnimation.y = - mAnimation.height >> 1;
             addChild(mAnimation);
 			
