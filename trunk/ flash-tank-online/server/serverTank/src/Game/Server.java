@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  */
 public class Server {
 
-    public static int PORT = 555;
+    public static int PORT = 5555;
     public ServerSocketChannel ssc;
     public boolean listening = false;
     public Vector clients;
@@ -42,7 +42,7 @@ public class Server {
                 serverThread = new ServerThread(ssc);
                 serverThread.start();
                 System.out.println("Server start success ");
-                System.out.println(InetAddress.getLocalHost());
+                System.out.println(InetAddress.getLocalHost() + " - " + PORT);
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
