@@ -40,8 +40,8 @@ public class Game extends iGame{
 
     @Override
     public void receiverMessage(ClientThread formUser, ByteBuffer msg) {
-        int num = msg.getInt();
-        System.out.println("receiver message : "+num);
+//        int num = msg.getInt();
+        System.out.println("receiver message : "+ ", msg = " + msg.getChar(0));
         
     }
 

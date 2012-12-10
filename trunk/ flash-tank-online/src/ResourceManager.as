@@ -155,7 +155,7 @@ package
 
 			mArrResources[url] = loader.content;
 			mCurrentLoadDone++;
-			trace("mCurrentLoadDone = " + mCurrentLoadDone);
+			trace("mCurrentLoadDone = " + mCurrentLoadDone + ", url = " + url);
 			
 			if (mCurrentLoadDone == mNumImages)
 			{
