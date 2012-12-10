@@ -4,7 +4,7 @@
  */
 package netty_server;
 
-import Game.Game;
+import FrameWork.Game;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
