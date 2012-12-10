@@ -4,6 +4,7 @@
  */
 package netty_server;
 
+import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ChannelPipelineCoverage;
@@ -20,12 +21,19 @@ import org.jboss.netty.channel.SimpleChannelHandler;
 public class ClientHandler extends SimpleChannelHandler {
     @Override
     public void channelConnected(ChannelHandlerContext ctx, ChannelStateEvent e){
-        System.out.println("New client connect");
+        System.out.println("New client connect ID "+e.getChannel().getId());
     }
 //    public  v
     @Override
     public void messageReceived(ChannelHandlerContext ctx, MessageEvent e) {
-        System.out.println("client sent message");
+        System.out.println("client sent message ID"+e.getChannel().getId());
+        ChannelBuffer buf = (ChannelBuffer)e.getMessage();
+        while(buf.readable()){
+            System.out.print((int)buf.readByte());
+        }
+        System.out.println("");
+//        this.c
+        
     }
 //    public void 
     @Override
