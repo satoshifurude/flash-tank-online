@@ -33,6 +33,7 @@ public class ClientHandler extends SimpleChannelHandler {
         }
         System.out.println("");
 //        this.c
+        e.getChannel().write(e);
         
     }
 //    public void 
