@@ -16,8 +16,9 @@ package
         
         public function main()
         {
-			Security.allowDomain("*");
-			Security.allowInsecureDomain("*");
+			// Security.allowDomain("*");
+			// Security.allowInsecureDomain("*");
+			// Security.loadPolicyFile("xmlsocket://0.0.0.0:843");
 			
             stage.scaleMode = StageScaleMode.NO_SCALE;
             stage.align = StageAlign.TOP_LEFT;
