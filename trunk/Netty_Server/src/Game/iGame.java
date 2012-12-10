@@ -4,14 +4,10 @@
  */
 package Game;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.DatagramChannel;
-import java.util.Hashtable;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.jboss.netty.buffer.ChannelBuffer;
+import org.jboss.netty.channel.Channel;
+import org.jboss.netty.channel.ChannelStateEvent;
+import org.jboss.netty.channel.MessageEvent;
 
 
 /**
@@ -26,10 +22,13 @@ public abstract class iGame {
     public abstract void setFPS (int fps);
     public abstract int getFPS ();
     
-    public abstract void Multicast(ByteBuffer b);
-    public abstract void Update ();  
-    public abstract void SendMessage(ByteBuffer b);
-    public abstract void ReceiveMessage(ChannelBuffer b,String user);
+    public abstract void messageReceived(MessageEvent e);
+    public abstract void channelConnected(ChannelStateEvent e);
+    
+    public abstract void Multicast(ChannelBuffer b);
+    public abstract void OnUpdate ();  
+    public abstract void SendMessage(ChannelBuffer b,String user);
+    
     public class GameLoop extends Thread {
         long lastTime;
         int CountFPS=0;
@@ -48,7 +47,7 @@ public abstract class iGame {
                countTime+=deltaTime;
                
                iGame.deltaTime = deltaTime;                
-               iGame.this.Update();               
+               iGame.this.OnUpdate();               
                
                if(countTime >=1000){
                    iGame.fps = CountFPS;
