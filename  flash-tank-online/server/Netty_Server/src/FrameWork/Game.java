@@ -58,8 +58,16 @@ public class Game extends iGame{
     @Override
     public void SendMessage(ChannelBuffer buf,Integer id) {
         Channel channel = (Channel) users.get(id);
-        System.out.println("Get channel: "+channel.getId());
-        channel.write(buf);
+        if(channel.isConnected()){
+            channel.write(buf);
+            System.out.println("Send message successful (ID:"+id+")");
+        }else{
+            System.out.println("Send message fail: client disconnect");
+            System.out.println("Remove user (ID:"+id+")");
+            users.remove(id);
+        }
+        
+        
     }
 
     @Override
@@ -74,7 +82,7 @@ public class Game extends iGame{
                     Integer id = (Integer) Ids.nextElement();
                     SendMessage(buf, id);
                 }
-                break;
+                break;            
         }
     }
 
