@@ -50,11 +50,9 @@ public class FlashPolicyServer {
         System.out.println("1 ");
         try {
             // Bind and start to accept incoming connections.
-            bootstrap.bind(new InetSocketAddress(InetAddress.getLocalHost(), 5554));
+            bootstrap.bind(new InetSocketAddress(InetAddress.getByName("127.0.0.1"), 5554));
         } catch (UnknownHostException ex) {
             Logger.getLogger(FlashPolicyServer.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        System.out.println("2 ");
     }
 }

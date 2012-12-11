@@ -9,5 +9,5 @@ package FrameWork;
  * @author ThanhTri
  */
 public class GameDefine {
-    
+    public static final short CMD_LOGIN = 0;
 }

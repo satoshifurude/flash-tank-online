@@ -4,8 +4,12 @@
  */
 package netty_server;
 
+import java.net.InetAddress;
 import java.net.InetSocketAddress;
+import java.net.UnknownHostException;
 import java.util.concurrent.Executors;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.ChannelFactory;
 import org.jboss.netty.channel.ChannelPipeline;
@@ -36,7 +40,10 @@ public class Netty_Server {
 
         bootstrap.setOption("child.tcpNoDelay", true);
         bootstrap.setOption("child.keepAlive", true);
-
-        bootstrap.bind(new InetSocketAddress(8080));
+        try {
+            bootstrap.bind(new InetSocketAddress(InetAddress.getByName("127.0.0.1"), 8080));
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }

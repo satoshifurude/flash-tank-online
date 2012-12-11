@@ -62,6 +62,7 @@
 			{
 				_socket.writeBytes(bytes);
 				_socket.flush();
+				trace("send message = " + bytes);
 			}
 			else
 			{
@@ -77,7 +78,7 @@
 		
 		private function ConnectHandler(event:Event):void
 		{       
-			trace("[CSockConnection] Socket_ConnectHandler: " + event);
+			Game.getInstance().connectSuccess();
 			trace("Connect Success !!!");
 		}
 		

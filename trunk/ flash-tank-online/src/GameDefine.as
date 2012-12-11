@@ -37,5 +37,7 @@ package
 		
 		public static const CAMERA_PLAYER_DEFAULT_X:Number	= 400;
 		public static const CAMERA_PLAYER_DEFAULT_Y:Number	= 400;
+		
+		public static const EVENT_CONNECT_SUCCESS:String	= "EVENT_CONNECT_SUCCESS";
     }
 }
