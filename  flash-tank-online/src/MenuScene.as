@@ -61,8 +61,7 @@ package
 		
 		private function onConnect(event:Event):void
 		{
-			removeFromParent(true);
-			Game.getInstance().addChild(new LoadingScene(GameDefine.ID_CONNECT_SCENE));
+			Game.getInstance().sendTestMessage();
 		}
 	}
 }

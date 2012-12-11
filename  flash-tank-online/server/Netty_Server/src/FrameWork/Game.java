@@ -49,7 +49,7 @@ public class Game extends iGame{
 
     @Override
     public void OnUpdate() {
-        System.out.println("Update:"+Game.deltaTime);
+//        System.out.println("Update:"+Game.deltaTime);
     }
 
     @Override
@@ -58,10 +58,16 @@ public class Game extends iGame{
     }
 
     @Override
+    @SuppressWarnings("empty-statement")
     public void messageReceived(MessageEvent e) {
-        e.getChannel().getId();
-        System.out.println("Game: Receimessage ");
-        
+        ChannelBuffer buf = (ChannelBuffer) e.getMessage();
+        switch (buf.readShort()) {
+            case GameDefine.CMD_LOGIN:
+                for (int i = 0; i < users.size(); i++) {
+                    SendMessage(buf, users[i]);
+                }
+                break;
+        }
     }
 
     @Override
