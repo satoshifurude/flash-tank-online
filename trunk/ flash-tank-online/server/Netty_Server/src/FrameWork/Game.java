@@ -4,7 +4,9 @@
  */
 package FrameWork;
 
+import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Iterator;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelStateEvent;
@@ -22,6 +24,7 @@ public class Game extends iGame{
         }
         return instance;
     }
+    // Chua channel (session) cua nguoi choi key la ID cua channel do
     public Hashtable users;
     Thread gameLoop;
     int mFPS;
@@ -53,8 +56,10 @@ public class Game extends iGame{
     }
 
     @Override
-    public void SendMessage(ChannelBuffer b,String user) {
-        
+    public void SendMessage(ChannelBuffer buf,Integer id) {
+        Channel channel = (Channel) users.get(id);
+        System.out.println("Get channel: "+channel.getId());
+        channel.write(buf);
     }
 
     @Override
@@ -63,8 +68,11 @@ public class Game extends iGame{
         ChannelBuffer buf = (ChannelBuffer) e.getMessage();
         switch (buf.readShort()) {
             case GameDefine.CMD_LOGIN:
-                for (int i = 0; i < users.size(); i++) {
-                    SendMessage(buf, users[i]);
+                // Lay IDs cua toan bo user
+                Enumeration Ids = users.keys();
+                while (Ids.hasMoreElements()) {
+                    Integer id = (Integer) Ids.nextElement();
+                    SendMessage(buf, id);
                 }
                 break;
         }
