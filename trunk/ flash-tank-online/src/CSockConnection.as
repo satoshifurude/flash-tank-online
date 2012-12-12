@@ -84,6 +84,7 @@
 		
 		private function DataHandler(event:ProgressEvent):void
 		{
+			trace("data handler");
 			_socket.readBytes(_response, _response.length);
 			while(_response.bytesAvailable > 2)
 			{                               

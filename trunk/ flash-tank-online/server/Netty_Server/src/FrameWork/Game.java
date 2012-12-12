@@ -60,6 +60,7 @@ public class Game extends iGame{
         Channel channel = (Channel) users.get(id);
         if(channel.isConnected()){
             channel.write(buf);
+            
             System.out.println("Send message successful (ID:"+id+")");
         }else{
             System.out.println("Send message fail: client disconnect");
@@ -73,17 +74,27 @@ public class Game extends iGame{
     @Override
     @SuppressWarnings("empty-statement")
     public void messageReceived(MessageEvent e) {
+        Channel ch = e.getChannel();
+        ch.write(e.getMessage());
+                
         ChannelBuffer buf = (ChannelBuffer) e.getMessage();
-        switch (buf.readShort()) {
-            case GameDefine.CMD_LOGIN:
-                // Lay IDs cua toan bo user
-                Enumeration Ids = users.keys();
-                while (Ids.hasMoreElements()) {
-                    Integer id = (Integer) Ids.nextElement();
-                    SendMessage(buf, id);
-                }
-                break;            
+        int testInt = buf.readInt();
+        System.out.println("receive message " + testInt);
+        Enumeration Ids = users.keys();
+        while (Ids.hasMoreElements()) {
+            Integer id = (Integer) Ids.nextElement();
+            SendMessage(buf, id);
         }
+//        switch (buf.readShort()) {
+//            case GameDefine.CMD_LOGIN:
+//                // Lay IDs cua toan bo user
+//                Enumeration Ids = users.keys();
+//                while (Ids.hasMoreElements()) {
+//                    Integer id = (Integer) Ids.nextElement();
+//                    SendMessage(buf, id);
+//                }
+//                break;            
+//        }
     }
 
     @Override

@@ -28,13 +28,6 @@ public class ClientHandler extends SimpleChannelHandler {
 //    public  v
     @Override
     public void messageReceived(ChannelHandlerContext ctx, MessageEvent e) {
-//        System.out.println("client sent message ID"+e.getChannel().getId());
-//        ChannelBuffer buf = (ChannelBuffer)e.getMessage();
-//        while(buf.readable()){
-//            System.out.print((int)buf.readByte());
-//        }
-//        System.out.println("");
-
         Game.shareGame ().messageReceived(e);
     }
 //    @Override
@@ -46,5 +39,5 @@ public class ClientHandler extends SimpleChannelHandler {
         Channel ch = e.getChannel();
         ch.close();
     }
- 
+
 }
