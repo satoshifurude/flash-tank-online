@@ -86,24 +86,8 @@
 		{
 			trace("data handler");
 			_socket.readBytes(_response, _response.length);
-			while(_response.bytesAvailable > 2)
-			{                               
-				var msglen:int = _response.readUnsignedShort();
-				if(_response.bytesAvailable >= msglen)
-				{
-					var message:ByteArray = new ByteArray();
-					_response.readBytes(message, 0, msglen);
-					var restData:ByteArray = new ByteArray();
-					if(_response.bytesAvailable > 0) //nodata to handle
-							_response.readBytes(restData);
-					_response = restData;
-				}
-				else
-				{
-					_response.position -= 2;
-					break;
-				}
-			}
+			Game.getInstance().handleMessage(_response);
+			_response.clear();
 		}
 		
 		
