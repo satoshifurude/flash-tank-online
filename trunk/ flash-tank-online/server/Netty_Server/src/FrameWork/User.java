@@ -23,6 +23,10 @@ public class User {
         mName = name;
     }
     
+    public String getName() {
+        return mName;                
+    }
+    
     public Integer getID() {
         return mChannel.getId();                
     }
