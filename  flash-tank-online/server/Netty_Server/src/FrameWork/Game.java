@@ -74,14 +74,32 @@ public class Game extends iGame{
     @SuppressWarnings("empty-statement")
     public void messageReceived(MessageEvent e) {
         
-//        ChannelBuffer buf = (ChannelBuffer) e.getMessage();
-//        int testInt = buf.readInt();
-//        System.out.println("receive message " + testInt);
-//        Enumeration Ids = mHashUsers.keys();
-//        while (Ids.hasMoreElements()) {
-//            Integer id = (Integer) Ids.nextElement();
-//            SendMessage(buf, id);
-//        } 
+        ChannelBuffer buf = (ChannelBuffer) e.getMessage();
+        short cmd = buf.readShort();
+        System.out.println("--- Message receive --- cmd = " + cmd);
+        switch(cmd) {
+            case GameDefine.CMD_LOGIN:
+                handleLogin(buf);
+                break;
+            case GameDefine.CMD_CREATE_ROOM:
+                handleCreateRoom(buf);
+                break;
+            case GameDefine.CMD_JOIN_ROOM:
+                handleJoinRoom(buf);
+                break;
+            case GameDefine.CMD_READY:
+                handleReady(buf);
+                break;
+            case GameDefine.CMD_START_GAME:
+                handleStartGame(buf);
+                break;
+            case GameDefine.CMD_INPUT:
+                handleInput(buf);
+                break;
+            case GameDefine.CMD_DISCONNECT:
+                handleDisconnect(buf);
+                break;
+        }
     }
     
     
@@ -98,4 +116,43 @@ public class Game extends iGame{
         mHashUsers.remove(e.getChannel().getId());
     }
     
+    private void handleLogin(ChannelBuffer buffer) {
+        short length = buffer.readShort();
+        System.out.println("length = " + length);
+        System.out.println("length = " + buffer.readableBytes());
+        
+        byte[] bbb = null;
+        buffer.readBytes(bbb);
+        String name = "";
+        for (int i = 0; i < length; i++) {
+            name += buffer.readChar();
+             System.out.println("length = " + name);
+        }
+        
+        System.out.println("Name = " + name);
+    }
+    
+    private void handleCreateRoom(ChannelBuffer buffer) {
+        
+    }
+    
+    private void handleJoinRoom(ChannelBuffer buffer) {
+        
+    }
+    
+    private void handleReady(ChannelBuffer buffer) {
+        
+    }
+    
+    private void handleStartGame(ChannelBuffer buffer) {
+        
+    }
+    
+    private void handleDisconnect(ChannelBuffer buffer) {
+        
+    }
+    
+    private void handleInput(ChannelBuffer buffer) {
+        
+    }
 }

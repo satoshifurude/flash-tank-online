@@ -27,20 +27,22 @@ package
 		{
 			this.removeChildren(0, -1, true);
 			addChild(new LoadingScene(GameDefine.ID_SPLASH_SCENE, false));
-		}
-		
-		var i:int = 0;
-		public function sendTestMessage():void
-		{
-			var buffer:ByteArray = new ByteArray();
-			buffer.writeInt(i);
-			mSocket.Write(buffer);
-			i++;
+			sendLogin("Nguyen Tan Loc");
 		}
 		
 		public function handleMessage(message:ByteArray):void
 		{
 			
+		}
+		
+		private function sendLogin(name:String):void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_LOGIN);
+			buffer.writeShort(name.length);
+			buffer.writeMultiByte(name, "utf-8");
+			
+			mSocket.Write(buffer);
 		}
 	}
 }
