@@ -61,7 +61,7 @@ package
 		
 		private function onConnect(event:Event):void
 		{
-			Game.getInstance().sendTestMessage();
+			
 		}
 	}
 }

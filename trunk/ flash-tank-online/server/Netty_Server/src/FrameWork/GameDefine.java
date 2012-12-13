@@ -16,6 +16,7 @@ public class GameDefine {
     public static final short CMD_START_GAME    = 5;
     public static final short CMD_INPUT         = 6;
     public static final short CMD_QUIT_GAME     = 7;
+    public static final short CMD_DISCONNECT    = 8;
     
     public static final short INPUT_LEFT        = 1;
     public static final short INPUT_RIGHT       = 2;
