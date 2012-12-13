@@ -123,14 +123,12 @@ public class Game extends iGame{
     
     private void handleLogin(User user, ChannelBuffer buffer) {
         short length = buffer.readShort();
-        System.out.println("length = " + length);
-        System.out.println("length = " + buffer.readableBytes());
-        
         byte[] byteName = new byte[length];
         buffer.readBytes(byteName, 0, length);
-        
         String name = new String(byteName);
+        
         user.setName(name);
+         System.out.println("username = " + user.getName());
     }
     
     private void handleCreateRoom(ChannelBuffer buffer) {
