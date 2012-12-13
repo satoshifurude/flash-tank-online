@@ -4,9 +4,13 @@
  */
 package FrameWork;
 
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelStateEvent;
@@ -73,13 +77,14 @@ public class Game extends iGame{
     @Override
     @SuppressWarnings("empty-statement")
     public void messageReceived(MessageEvent e) {
-        
+        User user = (User)mHashUsers.get(e.getChannel().getId());
         ChannelBuffer buf = (ChannelBuffer) e.getMessage();
+        
         short cmd = buf.readShort();
         System.out.println("--- Message receive --- cmd = " + cmd);
         switch(cmd) {
             case GameDefine.CMD_LOGIN:
-                handleLogin(buf);
+                handleLogin(user, buf);
                 break;
             case GameDefine.CMD_CREATE_ROOM:
                 handleCreateRoom(buf);
@@ -116,20 +121,16 @@ public class Game extends iGame{
         mHashUsers.remove(e.getChannel().getId());
     }
     
-    private void handleLogin(ChannelBuffer buffer) {
+    private void handleLogin(User user, ChannelBuffer buffer) {
         short length = buffer.readShort();
         System.out.println("length = " + length);
         System.out.println("length = " + buffer.readableBytes());
         
-        byte[] bbb = null;
-        buffer.readBytes(bbb);
-        String name = "";
-        for (int i = 0; i < length; i++) {
-            name += buffer.readChar();
-             System.out.println("length = " + name);
-        }
+        byte[] byteName = new byte[length];
+        buffer.readBytes(byteName, 0, length);
         
-        System.out.println("Name = " + name);
+        String name = new String(byteName);
+        user.setName(name);
     }
     
     private void handleCreateRoom(ChannelBuffer buffer) {
