@@ -10,6 +10,7 @@ import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ChannelPipelineCoverage;
 import org.jboss.netty.channel.ChannelStateEvent;
+import org.jboss.netty.channel.Channels;
 import org.jboss.netty.channel.ExceptionEvent;
 import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.channel.SimpleChannelHandler;
@@ -20,6 +21,12 @@ import org.jboss.netty.channel.SimpleChannelHandler;
  */
 @ChannelPipelineCoverage("all")
 public class ClientHandler extends SimpleChannelHandler {
+//    @Override
+//     public void writeRequested(ChannelHandlerContext ctx, MessageEvent e) {
+//        System.out.println("Channel call write ID:"+e.getChannel().getId());
+////        ChannelBuffer buf = buffer(4);
+//        Channels.write(ctx, e.getFuture(), e.getMessage());
+//     }
     @Override
     public void channelConnected(ChannelHandlerContext ctx, ChannelStateEvent e){
         System.out.println("New client connect ID "+e.getChannel().getId());
@@ -39,5 +46,17 @@ public class ClientHandler extends SimpleChannelHandler {
         Channel ch = e.getChannel();
         ch.close();
     }
-
+   
+    @Override
+     public void channelClosed(ChannelHandlerContext ctx, ChannelStateEvent e){
+         System.out.println("channelClosed ID:"+e.getChannel().getId());
+         Game.shareGame().channelClosed(e);
+         
+     }
+//    public void disconnectRequested(ChannelHandlerContext ctx,
+//                        ChannelStateEvent e){
+//
+//    }
+//    @Override
+    
 }

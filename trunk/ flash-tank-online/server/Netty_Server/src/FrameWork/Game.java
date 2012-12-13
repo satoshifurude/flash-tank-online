@@ -11,6 +11,7 @@ import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelStateEvent;
 import org.jboss.netty.channel.MessageEvent;
+import static org.jboss.netty.buffer.ChannelBuffers.*;
 
 
 /**
@@ -67,8 +68,6 @@ public class Game extends iGame{
 //            System.out.println("Remove user (ID:"+id+")");
 //            mHashUsers.remove(id);
 //        }
-        
-        
     }
 
     @Override
@@ -82,17 +81,7 @@ public class Game extends iGame{
 //        while (Ids.hasMoreElements()) {
 //            Integer id = (Integer) Ids.nextElement();
 //            SendMessage(buf, id);
-//        }
-//        switch (buf.readShort()) {
-//            case GameDefine.CMD_LOGIN:
-//                // Lay IDs cua toan bo user
-//                Enumeration Ids = users.keys();
-//                while (Ids.hasMoreElements()) {
-//                    Integer id = (Integer) Ids.nextElement();
-//                    SendMessage(buf, id);
-//                }
-//                break;            
-//        }
+//        } 
     }
     
     
@@ -102,6 +91,11 @@ public class Game extends iGame{
         User user = new User(e.getChannel());
         mHashUsers.put(user.getID(), user);
         System.out.println("Game: channel connect");
+    }
+    // xac dinh 
+    public void channelClosed(ChannelStateEvent e){
+        System.out.println("Game: channel close remove ID");
+        mHashUsers.remove(e.getChannel().getId());
     }
     
 }
