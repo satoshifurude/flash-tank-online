@@ -12,6 +12,7 @@ import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelStateEvent;
 import org.jboss.netty.channel.MessageEvent;
 
+
 /**
  *
  * @author ThanhTri
@@ -25,11 +26,11 @@ public class Game extends iGame{
         return instance;
     }
     // Chua channel (session) cua nguoi choi key la ID cua channel do
-    public Hashtable users;
+    public Hashtable mHashUsers;
     Thread gameLoop;
     int mFPS;
     private  Game (){
-        users = new Hashtable();
+        mHashUsers = new Hashtable();
         mFPS = 10;
         gameLoop = new GameLoop();
         gameLoop.start();
@@ -57,16 +58,15 @@ public class Game extends iGame{
 
     @Override
     public void SendMessage(ChannelBuffer buf,Integer id) {
-        Channel channel = (Channel) users.get(id);
-        if(channel.isConnected()){
-            channel.write(buf);
-            
-            System.out.println("Send message successful (ID:"+id+")");
-        }else{
-            System.out.println("Send message fail: client disconnect");
-            System.out.println("Remove user (ID:"+id+")");
-            users.remove(id);
-        }
+//        Channel channel = (Channel) mHashUsers.get(id);
+//        if(channel.isConnected()){
+//            channel.write(buf);
+//            System.out.println("Send message successful (ID:"+id+")");
+//        }else{
+//            System.out.println("Send message fail: client disconnect");
+//            System.out.println("Remove user (ID:"+id+")");
+//            mHashUsers.remove(id);
+//        }
         
         
     }
@@ -74,17 +74,15 @@ public class Game extends iGame{
     @Override
     @SuppressWarnings("empty-statement")
     public void messageReceived(MessageEvent e) {
-        Channel ch = e.getChannel();
-        ch.write(e.getMessage());
-                
-        ChannelBuffer buf = (ChannelBuffer) e.getMessage();
-        int testInt = buf.readInt();
-        System.out.println("receive message " + testInt);
-        Enumeration Ids = users.keys();
-        while (Ids.hasMoreElements()) {
-            Integer id = (Integer) Ids.nextElement();
-            SendMessage(buf, id);
-        }
+        
+//        ChannelBuffer buf = (ChannelBuffer) e.getMessage();
+//        int testInt = buf.readInt();
+//        System.out.println("receive message " + testInt);
+//        Enumeration Ids = mHashUsers.keys();
+//        while (Ids.hasMoreElements()) {
+//            Integer id = (Integer) Ids.nextElement();
+//            SendMessage(buf, id);
+//        }
 //        switch (buf.readShort()) {
 //            case GameDefine.CMD_LOGIN:
 //                // Lay IDs cua toan bo user
@@ -96,10 +94,13 @@ public class Game extends iGame{
 //                break;            
 //        }
     }
-
+    
+    
+    
     @Override
     public void channelConnected(ChannelStateEvent e) {
-        users.put(e.getChannel().getId(), e.getChannel());
+        User user = new User(e.getChannel());
+        mHashUsers.put(user.getID(), user);
         System.out.println("Game: channel connect");
     }
     

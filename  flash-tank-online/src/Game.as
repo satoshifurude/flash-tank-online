@@ -37,5 +37,10 @@ package
 			mSocket.Write(buffer);
 			i++;
 		}
+		
+		public function handleMessage(message:ByteArray):void
+		{
+			
+		}
 	}
 }
