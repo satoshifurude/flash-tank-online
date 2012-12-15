@@ -4,6 +4,7 @@
  */
 package netty_server;
 
+import Database.testDB;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
@@ -26,6 +27,17 @@ public class Netty_Server {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        testDB t = new testDB();
+        try {
+            t.connectBD();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
          ChannelFactory factory =
             new NioServerSocketChannelFactory(
