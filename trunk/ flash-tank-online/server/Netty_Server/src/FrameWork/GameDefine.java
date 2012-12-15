@@ -10,10 +10,13 @@ package FrameWork;
  */
 public class GameDefine {
     public static final short CMD_LOGIN         = 1;
+    public static final short CMD_LOGIN_FAIL    = 10;
+    public static final short CMD_LOGIN_SUCCESS = 11;
     public static final short CMD_CREATE_ROOM   = 2;
     public static final short CMD_JOIN_ROOM     = 3;
     public static final short CMD_READY         = 4;
     public static final short CMD_START_GAME    = 5;
+     public static final short CMD_START_GAME_SUCCESS    = 51;
     public static final short CMD_INPUT         = 6;
     public static final short CMD_QUIT_GAME     = 7;
     public static final short CMD_DISCONNECT    = 8;

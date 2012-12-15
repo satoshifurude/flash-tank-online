@@ -62,16 +62,16 @@ public class Game extends iGame{
     }
 
     @Override
-    public void SendMessage(ChannelBuffer buf,Integer id) {
-//        Channel channel = (Channel) mHashUsers.get(id);
-//        if(channel.isConnected()){
-//            channel.write(buf);
-//            System.out.println("Send message successful (ID:"+id+")");
-//        }else{
-//            System.out.println("Send message fail: client disconnect");
-//            System.out.println("Remove user (ID:"+id+")");
-//            mHashUsers.remove(id);
-//        }
+    public void SendMessage(ChannelBuffer buf, User user) {
+        Channel channel = user.getChannel();
+        if(channel.isConnected()){
+            channel.write(buf);
+            System.out.println("Send message successful (ID: " + user.getID() + ")");
+        }else{
+            System.out.println("Send message fail: client disconnect");
+            System.out.println("Remove user (ID: " + user.getID() + ")");
+            mHashUsers.remove(user.getID());
+        }
     }
 
     @Override
@@ -121,6 +121,43 @@ public class Game extends iGame{
         mHashUsers.remove(e.getChannel().getId());
     }
     
+    private void sendStartGame() {
+        // mapID
+        // num player
+        // ID player (stt)
+        // 
+        // loop
+        //
+        // player name
+        // player position
+        
+        System.out.println("Server : send start game");
+        
+        int numPlayer = mHashUsers.size();                
+        
+        ChannelBuffer buffer = dynamicBuffer();
+        buffer.writeShort(GameDefine.CMD_START_GAME_SUCCESS);
+        buffer.writeShort(1);
+        buffer.writeShort(numPlayer);
+        buffer.writeShort(10);
+        
+        Enumeration e = mHashUsers.elements();
+        while(e.hasMoreElements()) {
+            User user = (User)e.nextElement();
+            String name = user.getName();
+            buffer.writeShort(name.length());
+            buffer.writeBytes(name.getBytes());
+            buffer.writeShort(1);
+            buffer.writeShort(2);
+        }
+        
+        e = mHashUsers.elements();
+        while(e.hasMoreElements()) {
+            User user = (User)e.nextElement();
+            SendMessage(buffer, user);
+        }
+    }
+    
     private void handleLogin(User user, ChannelBuffer buffer) {
         short length = buffer.readShort();
         byte[] byteName = new byte[length];
@@ -128,7 +165,8 @@ public class Game extends iGame{
         String name = new String(byteName);
         
         user.setName(name);
-         System.out.println("username = " + user.getName());
+        System.out.println("username = " + user.getName());
+        sendStartGame();
     }
     
     private void handleCreateRoom(ChannelBuffer buffer) {
