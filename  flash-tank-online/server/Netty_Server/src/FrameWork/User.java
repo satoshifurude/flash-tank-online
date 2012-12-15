@@ -30,4 +30,8 @@ public class User {
     public Integer getID() {
         return mChannel.getId();                
     }
+    
+    public Channel getChannel() {
+        return mChannel;                
+    }
 }

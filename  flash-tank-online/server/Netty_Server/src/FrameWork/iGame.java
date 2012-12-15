@@ -27,7 +27,7 @@ public abstract class iGame {
     
     public abstract void Multicast(ChannelBuffer b);
     public abstract void OnUpdate ();  
-    public abstract void SendMessage(ChannelBuffer b,Integer id);
+    public abstract void SendMessage(ChannelBuffer buf, User user);
     
     public class GameLoop extends Thread {
         long lastTime;

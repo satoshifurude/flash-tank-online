@@ -14,6 +14,7 @@ package
 		private var mImage:Image;
 		private var mLayerTank:Sprite;
 		private var mNumCurrentBullet:Number;
+		private var mName:String;
 		
         public function Tank()
         {
