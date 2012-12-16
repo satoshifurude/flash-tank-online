@@ -24,8 +24,20 @@ public class testDB {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cakephp", "root","");
             
             Statement stmt = conn.createStatement();
-            String query = "insert into books (`isbn`,`title`,`des`) values ('JDBC','Server','To Java server')";
-            stmt.execute(query);
+//            String query = "insert into books (`isbn`,`title`,`des`) values ('JDBC','Server','To Java server')";
+            String query = "select * from books";
+            ResultSet result = stmt.executeQuery(query);
+            
+            while(result.next()){
+                int id = result.getInt("id");
+                String isbn = result.getString("isbn");
+                String title = result.getString("title");
+                String des = result.getString("des");
+                
+                System.out.println("Book  ID:"+id+"-- ISBN:"+isbn+" -- title:"+title+" --des:"+des);
+                
+            }
+//            stmt.execute(query);
             
             
         } catch (SQLException ex) {
