@@ -10,9 +10,13 @@ import Model.UserModel;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.concurrent.Executors;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.print.attribute.DateTimeSyntax;
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.ChannelFactory;
 import org.jboss.netty.channel.ChannelPipeline;
@@ -33,12 +37,9 @@ public class Netty_Server {
         Database.shareData().ConnectDatabase(
                 "jdbc:mysql://localhost:3306/game_db", // link host database
                 "root" , ""); // user nama, pass
-//        UserModel usertest = Database.shareData().Login("tanloc", "123456");
-//        if(usertest !=null) {
-//            System.out.println("Login thanh cong ID"+usertest.id);
-//        }else {
-//            System.out.println("login fail");
-//        }
+   
+//        Database.shareData().Logout(1);
+//        UserModel usertest = Database.shareData().Login("thanhtri", "12345");
         
          ChannelFactory factory =
             new NioServerSocketChannelFactory(
