@@ -39,7 +39,7 @@ public class Netty_Server {
                 "root" , ""); // user nama, pass
    
 //        Database.shareData().Logout(1);
-//        UserModel usertest = Database.shareData().Login("thanhtri", "12345");
+//        UserModel usertest = Database.shareData().Login("thanhtri", "123456");
         
          ChannelFactory factory =
             new NioServerSocketChannelFactory(

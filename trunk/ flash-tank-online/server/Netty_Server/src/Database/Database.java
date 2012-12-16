@@ -33,47 +33,24 @@ public class Database {
     public String username;
     public String pass;
     Statement statement;
-
     public void ConnectDatabase(String host, String username, String pass) {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
 //            conn = DriverManager.getConnection(
 //                    "jdbc:mysql://localhost:3306/cakephp", 
 //                    "root","");
-            this.host = host;
-            this.username = username;
-            this.pass = pass;
+            this.host       = host;
+            this.username   = username;
+            this.pass       = pass;
 
-            this.conn = DriverManager.getConnection(this.host, this.username, this.pass);
-            this.statement = conn.createStatement();
+            this.conn       = DriverManager.getConnection(this.host, this.username, this.pass);
+            this.statement  = conn.createStatement();
         } catch (Exception ex) {
             Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
-    private ResultSet executeQuery(String query) {
-        try {
-            statement = conn.createStatement();
-            return statement.executeQuery(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return null;
-    }
-    private void executeUpdate(String query) {
-        try {
-            statement = conn.createStatement();
-            statement.execute(query);
-        } catch (SQLException ex) {
-            Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    private String getDateTime() {
-        Date d = new Date(System.currentTimeMillis());
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return  df.format(d);
-    }
-
+    
+    
     public UserModel Login(String user, String pass) {
         // Ghi log login
         String queryLogin;
@@ -86,45 +63,66 @@ public class Database {
         String dateTime; // current time 
         ResultSet resultSet;
         UserModel userModel;
-
+//        Statement statement;
         try {
+            
             resultSet = executeQuery(query);
+
             if (resultSet.next()) {
-                userModel = new UserModel();                
+                userModel = new UserModel();
                 userModel.id = resultSet.getInt("id");
                 userModel.name = resultSet.getString("name");
                 userModel.policy = resultSet.getInt("policy");
                 userModel.win = resultSet.getInt("win");
                 userModel.lose = resultSet.getInt("lose");
-                userModel.iLogin = resultSet.getBoolean("ilogin");    
+                userModel.iLogin = resultSet.getBoolean("ilogin");
                 
-                dateTime = getDateTime();
-                queryLogin = "INSERT INTO `logins`(`id_user`, `login`)"
+                dateTime    = getDate();
+                queryLogin  = "INSERT INTO `logins`(`id_user`, `time`)"
                         + " VALUES (" + userModel.id + ",'" + dateTime + "')";
-                statement.execute(queryLogin);
+                
+                executeUpdate(queryLogin);
                 return userModel;
             } else {
                 return null;
             }
-
         } catch (Exception ex) {
             Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
         }
-
         return null;
     }
 
-    public boolean Logout(int id) {
+    public void Logout(int id) {
         String queryLogout;
-        String dateTime;
-
-        dateTime    = getDateTime();
-        queryLogout = "INSERT INTO `logouts`(`userID`, `time`) VALUES ("+id+
-                ",'"+ dateTime+"')";
-        executeUpdate(queryLogout);
-        return true;
+        String dateTime;       
+        dateTime = getDate();        
+        queryLogout = "INSERT INTO `logouts`(`userID`, `time`) VALUES ("+id
+                +",'"+dateTime+"')";
+        executeUpdate(queryLogout);        
     }
 
     public void addBattles(User[] winners, User[] losers) {
     }
+    
+    private String getDate (){
+        Date d = new Date(System.currentTimeMillis());
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return df.format(d);
+    }
+    private ResultSet executeQuery(String query){
+        try {
+             return statement.executeQuery(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
+        }        
+        return  null;
+    }
+    private void  executeUpdate(String query){
+        try {
+            statement.executeUpdate(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
 }
