@@ -4,7 +4,9 @@
  */
 package netty_server;
 
+import Database.Database;
 import Database.testDB;
+import Model.UserModel;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
@@ -28,16 +30,15 @@ public class Netty_Server {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        testDB t = new testDB();
-        try {
-            t.connectBD();
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Database.shareData().ConnectDatabase(
+                "jdbc:mysql://localhost:3306/game_db", // link host database
+                "root" , ""); // user nama, pass
+//        UserModel usertest = Database.shareData().Login("tanloc", "123456");
+//        if(usertest !=null) {
+//            System.out.println("Login thanh cong ID"+usertest.id);
+//        }else {
+//            System.out.println("login fail");
+//        }
         
          ChannelFactory factory =
             new NioServerSocketChannelFactory(
