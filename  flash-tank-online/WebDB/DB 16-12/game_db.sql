@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 16, 2012 at 01:59 PM
+-- Generation Time: Dec 16, 2012 at 02:36 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -49,10 +49,10 @@ CREATE TABLE IF NOT EXISTS `battles_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login`
+-- Table structure for table `logins`
 --
 
-CREATE TABLE IF NOT EXISTS `login` (
+CREATE TABLE IF NOT EXISTS `logins` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_user` int(11) NOT NULL,
   `login` date NOT NULL,
@@ -64,10 +64,10 @@ CREATE TABLE IF NOT EXISTS `login` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `policy`
+-- Table structure for table `policys`
 --
 
-CREATE TABLE IF NOT EXISTS `policy` (
+CREATE TABLE IF NOT EXISTS `policys` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `des` text NOT NULL,
@@ -75,10 +75,10 @@ CREATE TABLE IF NOT EXISTS `policy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `policy`
+-- Dumping data for table `policys`
 --
 
-INSERT INTO `policy` (`id`, `name`, `des`) VALUES
+INSERT INTO `policys` (`id`, `name`, `des`) VALUES
 (1, 'USER', 'USER choi game binh thuong'),
 (2, 'GM', 'GM theo doi va quan ly game'),
 (3, 'MANAGER', 'Xem report hang thang'),
@@ -87,10 +87,10 @@ INSERT INTO `policy` (`id`, `name`, `des`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(10) NOT NULL,
   `pass` varchar(10) NOT NULL,
@@ -103,10 +103,10 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `user`
+-- Dumping data for table `users`
 --
 
-INSERT INTO `user` (`id`, `name`, `pass`, `policy`, `win`, `lose`, `iLogin`) VALUES
+INSERT INTO `users` (`id`, `name`, `pass`, `policy`, `win`, `lose`, `iLogin`) VALUES
 (1, 'thanhtri', '123456', 4, 0, 0, 0),
 (2, 'tanloc', '123456', 4, 0, 0, 0),
 (3, 'trongnghia', '123456', 4, 0, 0, 0);
@@ -116,16 +116,16 @@ INSERT INTO `user` (`id`, `name`, `pass`, `policy`, `win`, `lose`, `iLogin`) VAL
 --
 
 --
--- Constraints for table `login`
+-- Constraints for table `logins`
 --
-ALTER TABLE `login`
-  ADD CONSTRAINT `fk_userid` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
+ALTER TABLE `logins`
+  ADD CONSTRAINT `fk_userid` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`);
 
 --
--- Constraints for table `user`
+-- Constraints for table `users`
 --
-ALTER TABLE `user`
-  ADD CONSTRAINT `fk_policy` FOREIGN KEY (`policy`) REFERENCES `policy` (`id`);
+ALTER TABLE `users`
+  ADD CONSTRAINT `fk_policy` FOREIGN KEY (`policy`) REFERENCES `policys` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
