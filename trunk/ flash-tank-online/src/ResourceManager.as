@@ -40,21 +40,22 @@ package
 		
 		public function loadResource(IDScene:int):void
 		{
-			clearResources();
+			
 			switch (IDScene)
 			{
 				case GameDefine.ID_SPLASH_SCENE:
+					clearResources();
 					loadSplashScene();
 					break;
-				case GameDefine.ID_MAIN_SCENE:
-					loadMainScene();
-					break;
-				case GameDefine.ID_TEST_SCENE:
-					loadSplashScene();
-					break;
-				case GameDefine.ID_MENU_SCENE:
-					loadMenuScene();
-					break;
+				// case GameDefine.ID_MAIN_SCENE:
+					// loadMainScene();
+					// break;
+				// case GameDefine.ID_TEST_SCENE:
+					// loadSplashScene();
+					// break;
+				// case GameDefine.ID_MENU_SCENE:
+					// loadMenuScene();
+					// break;
 				default:
 					dispatchEvent(new starling.events.Event(ON_LOAD_COMPLETE));
 					break;
@@ -75,8 +76,18 @@ package
 		
 		private function loadSplashScene():void
 		{
-			mNumImages = 1;
+			mNumImages = 9;
 			loadURL(ResourceDefine.TEX_LOGO_SPLASH);
+			
+			loadURL(ResourceDefine.TEX_MENU_BACKGROUND);
+			loadURL(ResourceDefine.TEX_BTN_PLAY_UP);
+			loadURL(ResourceDefine.TEX_BTN_PLAY_DOWN);
+			loadURL(ResourceDefine.TEX_PARTICLE_MENU);
+			
+			loadURL(ResourceDefine.TEX_LEVEL_DEMO);
+			loadURL(ResourceDefine.TEX_BLOCK);
+			loadURL(ResourceDefine.TEX_EXPLOSION);
+			loadURL(ResourceDefine.TEX_BULLET_1);
 		}
 		
 		private function loadMainScene():void
@@ -90,11 +101,16 @@ package
 		
 		private function loadMenuScene():void
 		{
-			mNumImages = 4;
+			mNumImages = 8;
 			loadURL(ResourceDefine.TEX_MENU_BACKGROUND);
 			loadURL(ResourceDefine.TEX_BTN_PLAY_UP);
 			loadURL(ResourceDefine.TEX_BTN_PLAY_DOWN);
 			loadURL(ResourceDefine.TEX_PARTICLE_MENU);
+			
+			loadURL(ResourceDefine.TEX_LEVEL_DEMO);
+			loadURL(ResourceDefine.TEX_BLOCK);
+			loadURL(ResourceDefine.TEX_EXPLOSION);
+			loadURL(ResourceDefine.TEX_BULLET_1);
 		}
 		
 		public function getTexture(name:String):Texture

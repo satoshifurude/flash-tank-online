@@ -14,9 +14,15 @@ import java.lang.Integer;
 public class User {
     private Channel mChannel;
     private String  mName;
+    public int mDirection;
+    public int m_iX;
+    public int m_iY;
+    public int m_isMoving;
     
     public User(Channel channel) {
         mChannel = channel;                
+        m_iX = 500;
+        m_iY = 500;
     }
     
     public void setName(String name) {

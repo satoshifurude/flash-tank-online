@@ -13,7 +13,6 @@ package
 		private var mPlayerLayer:Sprite;
 	
 		private var mArrTiled:Vector.<uint>;
-		private var mPlayer:Tank;
 		// private var mArrBullet:Vector.<Bullet>
 		
 		private var mWidth:int;
@@ -37,24 +36,24 @@ package
 			mMapLayerUnder.flatten();
 			mMapLayerAbove.flatten();
 			
-			addEventListener(Event.ENTER_FRAME, onFrame);
+			// addEventListener(Event.ENTER_FRAME, onFrame);
 		}
 		
-		private function onFrame(event:EnterFrameEvent):void
-		{
-			mPlayer.update(event.passedTime);
-			checkCollisionPlayer(mPlayer);
+		// private function onFrame(event:EnterFrameEvent):void
+		// {
+			// mPlayer.update(event.passedTime);
+			// checkCollisionPlayer(mPlayer);
 			
-			for (var i:int = 0; i < BulletManager.getInstance().getArrBullet().length; i++)
-			{
-				if (BulletManager.getInstance().getArrBullet()[i].isActive())
-				{
-					BulletManager.getInstance().getArrBullet()[i].update(event.passedTime);
-					checkCollisionPlayer(BulletManager.getInstance().getArrBullet()[i]);
-				}
-			}  			
-			calcCamera();
-		}
+			// for (var i:int = 0; i < BulletManager.getInstance().getArrBullet().length; i++)
+			// {
+				// if (BulletManager.getInstance().getArrBullet()[i].isActive())
+				// {
+					// BulletManager.getInstance().getArrBullet()[i].update(event.passedTime);
+					// checkCollisionPlayer(BulletManager.getInstance().getArrBullet()[i]);
+				// }
+			// }  			
+			// calcCamera();
+		// }
 		
 		private function loadMapFromImage(name:String):void
 		{
@@ -96,10 +95,10 @@ package
 							texture = textureAtlas.getTexture("block_2");
 							break;
 						case GameDefine.COLOR_TANK:
-							mPlayer = new Tank();
-							mPlayer.x = x * GameDefine.CELL_SIZE;
-							mPlayer.y = y * GameDefine.CELL_SIZE;
-							mPlayerLayer.addChild(mPlayer);
+							// mPlayer = new Tank();
+							// mPlayer.x = x * GameDefine.CELL_SIZE;
+							// mPlayer.y = y * GameDefine.CELL_SIZE;
+							// mPlayerLayer.addChild(mPlayer);
 							break;
 						default:
 							continue;
@@ -115,7 +114,7 @@ package
 			}
 		}
 		
-		private function checkCollisionPlayer(obj:DisplayObject):void
+		public function checkCollisionPlayer(obj:DisplayObject):void
 		{
 			var top:int = (obj.y) / GameDefine.CELL_SIZE;
 			var bottom:int = (obj.y - 1 + obj.height) / GameDefine.CELL_SIZE;
@@ -150,8 +149,15 @@ package
 							}
 							return;
 							break;
-						case GameDefine.COLOR_TANK:
-							
+						case GameDefine.COLOR_METAL:
+							if (obj is Tank)
+							{
+								(Tank)(obj).setPositionCollideWithBlock(x, y);
+							}
+							else if (obj is Bullet)
+							{
+								(Bullet)(obj).explode();
+							}
 							break;
 						default:
 							continue;
@@ -160,10 +166,10 @@ package
 			}
 		}
 		
-		private function calcCamera():void
+		public function calcCamera(x:Number, y:Number):void
 		{
-			var cameraTop:Number = mPlayer.y + (mPlayer.height >> 1) - GameDefine.CAMERA_PLAYER_DEFAULT_Y;
-			var cameraLeft:Number = mPlayer.x + (mPlayer.width >> 1) - GameDefine.CAMERA_PLAYER_DEFAULT_X;
+			var cameraTop:Number = x - GameDefine.CAMERA_PLAYER_DEFAULT_Y;
+			var cameraLeft:Number = y - GameDefine.CAMERA_PLAYER_DEFAULT_X;
 			
 			if (cameraTop < 0) 
 				cameraTop = 0;
@@ -189,14 +195,14 @@ package
 			mMapLayerUnder.flatten();
 		}
 		
-		public function getPlayer():Tank
-		{
-			return mPlayer;
-		}
-		
 		public function addBullet(bullet:Bullet):void
 		{
 			mPlayerLayer.addChild(bullet);
+		}
+		
+		public function addPlayer(player:Tank):void
+		{
+			mPlayerLayer.addChild(player);
 		}
     }
 }

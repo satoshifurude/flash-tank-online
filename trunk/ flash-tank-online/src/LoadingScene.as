@@ -12,10 +12,10 @@ package
         {
 			if (isText)
 			{
-				mTitle = new TextField(800, 300, "Loading", "Verdana", 60, 0xffffff, true);
-				mTitle.x = 0;
-				mTitle.y = GameDefine.HEIGHT - mTitle.height >> 1;
-				addChild(mTitle);
+				// mTitle = new TextField(800, 300, "Loading", "Verdana", 60, 0xffffff, true);
+				// mTitle.x = 0;
+				// mTitle.y = GameDefine.HEIGHT - mTitle.height >> 1;
+				// addChild(mTitle);
 			}
 			
 			mNextScene = nextScene;
@@ -33,7 +33,8 @@ package
 					Game.getInstance().addChild(new SplashScene());
 					break;
 				case GameDefine.ID_MAIN_SCENE:
-					Game.getInstance().addChild(new MainGameScene());
+					Game.getInstance().mMainGame = new MainGameScene();
+					Game.getInstance().addChild(Game.getInstance().mMainGame);
 					break;
 				case GameDefine.ID_MENU_SCENE:
 					Game.getInstance().addChild(new MenuScene());

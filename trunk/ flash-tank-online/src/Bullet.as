@@ -41,7 +41,13 @@ package
 			mSpeed = GameDefine.BULLET_SPEED;
 			mPlayer = player;
 			mDirection = mPlayer.getDirection();
+			updateDirection();
 			
+			Starling.juggler.add(mAnimation);
+		}
+		
+		private function updateDirection():void
+		{
 			switch (mDirection)
 			{
 				case GameDefine.UP:
@@ -61,8 +67,6 @@ package
 					mLayerBullet.rotation = Math.PI;
 					break;
 			}
-				
-			Starling.juggler.add(mAnimation);
 		}
 		
 		public function update(time:Number):void
@@ -112,6 +116,22 @@ package
 		public function isActive():Boolean
 		{
 			return mActive;
+		}
+		
+		public function getDirection():int
+		{
+			return mDirection;
+		}
+		
+		public function setDirection(d:int):void
+		{
+			mDirection = d;
+			updateDirection();
+		}
+		
+		public function getPlayer():Tank
+		{
+			return mPlayer;
 		}
 		
 		override public function get width():Number { return mAnimation.width; }

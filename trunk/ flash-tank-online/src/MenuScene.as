@@ -56,7 +56,7 @@ package
 		private function onPlay(event:Event):void
 		{
 			removeFromParent(true);
-			Game.getInstance().addChild(new LoadingScene(GameDefine.ID_MAIN_SCENE));
+			Game.getInstance().sendStartGame();
 		}
 		
 		private function onConnect(event:Event):void

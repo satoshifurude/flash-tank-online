@@ -29,6 +29,7 @@ package
 		public static const BULLET_SPEED:Number		= 300;
 		public static const MAX_BULLET:Number		= 0.5;
 		public static const MAX_RANGE_BULLET:Number	= 700;
+		public static const TIME_SEND_STATE:Number	= 0.1;
 		
 		public static const UP:int		= 1;
 		public static const DOWN:int	= 2;
