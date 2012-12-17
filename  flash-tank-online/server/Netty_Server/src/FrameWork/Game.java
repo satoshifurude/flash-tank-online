@@ -37,8 +37,8 @@ public class Game extends iGame{
     private  Game (){
         mHashUsers = new Hashtable();
         mFPS = 10;
-        gameLoop = new GameLoop();
-        gameLoop.start();
+//        gameLoop = new GameLoop();
+//        gameLoop.start();
         
     }
     @Override
@@ -59,6 +59,8 @@ public class Game extends iGame{
     @Override
     public void OnUpdate() {
 //        System.out.println("Update:"+Game.deltaTime);
+        sendPlayerState();
+                
     }
 
     @Override
@@ -66,7 +68,7 @@ public class Game extends iGame{
         Channel channel = user.getChannel();
         if(channel.isConnected()){
             channel.write(buf);
-            System.out.println("Send message successful (ID: " + user.getID() + ")");
+//            System.out.println("Send message successful (ID: " + user.getID() + ")");
         }else{
             System.out.println("Send message fail: client disconnect");
             System.out.println("Remove user (ID: " + user.getID() + ")");
@@ -81,7 +83,7 @@ public class Game extends iGame{
         ChannelBuffer buf = (ChannelBuffer) e.getMessage();
         
         short cmd = buf.readShort();
-        System.out.println("--- Message receive --- cmd = " + cmd);
+//        System.out.println("--- Message receive --- cmd = " + cmd);
         switch(cmd) {
             case GameDefine.CMD_LOGIN:
                 handleLogin(user, buf);
@@ -98,16 +100,17 @@ public class Game extends iGame{
             case GameDefine.CMD_START_GAME:
                 handleStartGame(buf);
                 break;
-            case GameDefine.CMD_INPUT:
-                handleInput(buf);
+            case GameDefine.CMD_UPDATE_GAME:
+                handlePlayerState(user, buf);
                 break;
             case GameDefine.CMD_DISCONNECT:
                 handleDisconnect(buf);
                 break;
+            case GameDefine.CMD_FIRE:
+                handleFire(buf);
+                break;
         }
     }
-    
-    
     
     @Override
     public void channelConnected(ChannelStateEvent e) {
@@ -119,18 +122,21 @@ public class Game extends iGame{
     public void channelClosed(ChannelStateEvent e){
         System.out.println("Game: channel close remove ID");
         mHashUsers.remove(e.getChannel().getId());
+//        if (mHashUsers.size() == 0) {
+//            gameLoop.stop();
+//            gameLoop = null;
+//        }
     }
     
+    // mapID
+    // num player
+    // ID player (stt)
+    // 
+    // loop
+    //
+    // player name
+    // player position
     private void sendStartGame() {
-        // mapID
-        // num player
-        // ID player (stt)
-        // 
-        // loop
-        //
-        // player name
-        // player position
-        
         System.out.println("Server : send start game");
         
         int numPlayer = mHashUsers.size();                
@@ -139,22 +145,24 @@ public class Game extends iGame{
         buffer.writeShort(GameDefine.CMD_START_GAME_SUCCESS);
         buffer.writeShort(1);
         buffer.writeShort(numPlayer);
-        buffer.writeShort(10);
         
         Enumeration e = mHashUsers.elements();
         while(e.hasMoreElements()) {
             User user = (User)e.nextElement();
             String name = user.getName();
+            buffer.writeInt(user.getID());
             buffer.writeShort(name.length());
             buffer.writeBytes(name.getBytes());
-            buffer.writeShort(1);
-            buffer.writeShort(2);
+            buffer.writeShort(user.m_iX);
+            buffer.writeShort(user.m_iY);
         }
         
         e = mHashUsers.elements();
         while(e.hasMoreElements()) {
             User user = (User)e.nextElement();
-            SendMessage(buffer, user);
+            ChannelBuffer buf = buffer.copy();
+            buf.writeInt(user.getID());
+            SendMessage(buf, user);
         }
     }
     
@@ -166,7 +174,6 @@ public class Game extends iGame{
         
         user.setName(name);
         System.out.println("username = " + user.getName());
-        sendStartGame();
     }
     
     private void handleCreateRoom(ChannelBuffer buffer) {
@@ -182,14 +189,57 @@ public class Game extends iGame{
     }
     
     private void handleStartGame(ChannelBuffer buffer) {
-        
+        sendStartGame();
     }
     
     private void handleDisconnect(ChannelBuffer buffer) {
         
     }
     
-    private void handleInput(ChannelBuffer buffer) {
+    private void handlePlayerState(User user, ChannelBuffer buffer) {
+//        if (gameLoop == null) {
+//            gameLoop = new GameLoop();
+//            gameLoop.start();
+//        }
+        buffer.readShort();
+        user.mDirection = buffer.readShort();
+        user.m_isMoving = buffer.readShort();
+        user.m_iX = buffer.readInt();
+        user.m_iY = buffer.readInt();
         
+        sendPlayerState();
+    }
+    
+    private void handleFire(ChannelBuffer buffer) {
+        System.out.println("fire");
+        Enumeration e = mHashUsers.elements();
+        while(e.hasMoreElements()) {
+            User user = (User)e.nextElement();
+            SendMessage(buffer, user);
+        }
+    }
+    
+    private void sendPlayerState() {
+        int numPlayer = mHashUsers.size();  
+        
+        ChannelBuffer buffer = dynamicBuffer();
+        buffer.writeShort(GameDefine.CMD_UPDATE_GAME);
+        buffer.writeShort(numPlayer);
+        
+        Enumeration e = mHashUsers.elements();
+        while(e.hasMoreElements()) {
+            User user = (User)e.nextElement();
+            buffer.writeInt(user.getID());
+            buffer.writeShort(user.mDirection);
+            buffer.writeShort(user.m_isMoving);
+            buffer.writeInt(user.m_iX);
+            buffer.writeInt(user.m_iY);
+        }
+        
+        e = mHashUsers.elements();
+        while(e.hasMoreElements()) {
+            User user = (User)e.nextElement();
+            SendMessage(buffer, user);
+        }
     }
 }

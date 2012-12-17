@@ -62,7 +62,7 @@
 			{
 				_socket.writeBytes(bytes);
 				_socket.flush();
-				trace("send message = " + bytes);
+				// trace("send message = " + bytes);
 			}
 			else
 			{
@@ -84,7 +84,7 @@
 		
 		private function DataHandler(event:ProgressEvent):void
 		{
-			trace("data handler");
+			// trace("data handler");
 			_socket.readBytes(_response, _response.length);
 			Game.getInstance().handleMessage(_response);
 			_response.clear();
