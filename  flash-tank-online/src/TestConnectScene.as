@@ -12,7 +12,7 @@ package
 		private var mTitle:TextField;
         public function TestConnectScene()
         {
-			mTitle = new TextField(800, 300, "Connecting to server...", "Verdana", 60, 0xffffff, true);
+			mTitle = new TextField(800, 300, "Connecting to server...", "Verdana", 40, 0xffffff, true);
 			mTitle.x = 0;
 			mTitle.y = GameDefine.HEIGHT - mTitle.height >> 1;
 			addChild(mTitle);

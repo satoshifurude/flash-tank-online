@@ -35,7 +35,7 @@ public class Netty_Server {
         // TODO code application logic here
         
         Database.shareData().ConnectDatabase(
-                "jdbc:mysql://localhost:3306/game_db", // link host database
+                "jdbc:mysql://localhost:3306/test", // link host database
                 "root" , ""); // user nama, pass
    
 //        Database.shareData().Logout(1);
