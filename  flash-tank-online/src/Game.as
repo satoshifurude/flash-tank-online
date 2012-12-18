@@ -13,6 +13,7 @@ package
 		public var mSocket:CSockConnection;
 		public var mMainGame:MainGameScene;
 		public var mLoginScene:LoginScene;
+		public var mConnectScene:TestConnectScene;
 		public var mID:int;
 		
         public function Game()

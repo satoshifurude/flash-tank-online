@@ -21,5 +21,10 @@ package
 			Game.getInstance().mSocket = new CSockConnection("127.0.0.1", 8080);
 			Game.getInstance().mSocket.Connect();
         }
+		
+		public function disconnect():void
+		{
+			mTitle.text = "Cannot connect to server!!!";
+		}
 	}
 }	

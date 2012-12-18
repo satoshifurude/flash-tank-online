@@ -106,6 +106,11 @@ package
 			return null;
 		}
 		
+		public function disconnect():void
+		{
+			
+		}
+		
 		public static function getInstance():MainGameScene
 		{
 			return mInstance;
