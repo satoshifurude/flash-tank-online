@@ -40,7 +40,6 @@
 				
 				_socket.addEventListener(IOErrorEvent.IO_ERROR, IoErrorHandler);
 				_socket.addEventListener(SecurityErrorEvent.SECURITY_ERROR, SecurityErrorHandler);
-				// _socket.addEventListener(Event.DISCONNECT, DisconnectHandler);
 				
 				_socket.connect(_ip, _port);
 				trace("[CSockConnection]_socket.sendconnect send and wait for return");
@@ -73,6 +72,8 @@
 		private function CloseHandler(event:Event):void
 		{
 			trace("CloseHandler");
+			if (Game.getInstance().contains(Game.getInstance().mMainGame))
+				Game.getInstance().mMainGame.disconnect();
 			_socket.close();
 		} 
 		
@@ -94,6 +95,8 @@
 		private function IoErrorHandler(event:IOErrorEvent):void
 		{
 			trace("[CSockConnection] Socket_IoErrorHandler: " + event);
+			if (Game.getInstance().contains(Game.getInstance().mConnectScene))
+				Game.getInstance().mConnectScene.disconnect();
 			_socket.close();
 		}
 		
@@ -101,11 +104,6 @@
 		{
 			_socket.close();
 			trace("[CSockConnection] Socket_SecurityErrorHandler: " + event);
-		}
-		
-		private function DisconnectHandler(event:Event):void
-		{
-			_socket.close();
 		}
 	}
 }

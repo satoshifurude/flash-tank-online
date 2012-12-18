@@ -43,7 +43,8 @@ package
 					Game.getInstance().addChild(new TestScene());
 					break;
 				case GameDefine.ID_CONNECT_SCENE:
-					Game.getInstance().addChild(new TestConnectScene());
+					Game.getInstance().mConnectScene = new TestConnectScene();
+					Game.getInstance().addChild(Game.getInstance().mConnectScene);
 					break;
 				case GameDefine.ID_LOGIN_SCENE:
 					Game.getInstance().mLoginScene = new LoginScene();
