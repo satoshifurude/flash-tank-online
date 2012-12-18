@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 18, 2012 at 07:58 PM
+-- Generation Time: Dec 18, 2012 at 08:24 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -27,11 +27,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `battles` (
-  `id` int(11) unsigned NOT NULL DEFAULT '0',
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `game` varchar(12) DEFAULT NULL,
   `time` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `battles`
+--
+
+INSERT INTO `battles` (`id`, `game`, `time`) VALUES
+(1, 'tank', '2012-12-19'),
+(2, 'tank', '2012-12-19'),
+(3, 'tank', '2012-12-19'),
+(4, 'tank', '2012-12-19');
 
 -- --------------------------------------------------------
 
