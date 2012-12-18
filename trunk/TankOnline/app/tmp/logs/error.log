@@ -1,0 +1,1500 @@
+2012-12-14 05:17:45 Error: [MissingControllerException] Controller class TankonlineController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-14 05:18:18 Error: [MissingControllerException] Controller class TankonlineController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-14 05:18:43 Error: [MissingControllerException] Controller class PhpStorm-3220fa26-92ff-46b1-978a-30b3b0fe192b.phpController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-14 05:18:56 Error: [MissingControllerException] Controller class TankonlineController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-14 16:44:29 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-14 16:44:55 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-14 17:06:05 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\register.ctp, line 2]
+2012-12-14 17:06:05 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:11:21 Error: Fatal Error (4): syntax error, unexpected 'In' (T_STRING) in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 5]
+2012-12-14 17:11:21 Error: [FatalErrorException] syntax error, unexpected 'In' (T_STRING)
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:12:04 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:12:04 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:12:08 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:12:08 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:13:38 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:13:38 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:13:39 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:13:39 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:14:28 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-14 17:14:31 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-14 17:15:26 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:15:26 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:15:28 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:15:28 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:15:29 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:15:29 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:21:05 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:21:05 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:21:07 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:21:07 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:22:12 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:22:12 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:22:14 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\login.ctp, line 2]
+2012-12-14 17:22:14 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-14 17:24:45 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\register.ctp, line 2]
+2012-12-14 17:24:45 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 09:45:58 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php, line 21]
+2012-12-15 09:45:58 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 09:46:45 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\demos\users\login.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('/demos/users/lo...')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/demos/users/lo...', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('/demos/users/lo...')
+#3 [internal function]: UsersController->login()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 09:48:04 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\demos\users\login.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('/demos/users/lo...')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/demos/users/lo...', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('/demos/users/lo...')
+#3 [internal function]: UsersController->login()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 09:48:29 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\Users\users\login.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('users/login')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('users/login', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('users/login')
+#3 [internal function]: UsersController->login()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 09:48:32 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\Users\users\login.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('users/login')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('users/login', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('users/login')
+#3 [internal function]: UsersController->login()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 09:49:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('haivl', 'vklas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:11:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:13:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('kenny', 'kenny')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:15:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:20:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:23:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:29:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:31:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:31:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:31:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:36:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:36:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:37:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('dsad', 'dasdas')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:38:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:41:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:44:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:45:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:52:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:54:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admins', '')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:55:26 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 10:59:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:02:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:03:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:05:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:06:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:08:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:09:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:19:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:20:35 Error: Fatal Error (1): Call to a member function checkLogin() on a non-object in [C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php, line 27]
+2012-12-15 11:20:35 Error: [FatalErrorException] Call to a member function checkLogin() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 27, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 27, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 11:20:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:23:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:29:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'checkLogin' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('checkLogin', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('checkLogin', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('checkLogin', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('checkLogin', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('checkLogin', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->checkLogin('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:36:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('check', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('check', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('check', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('check', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('check', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->check('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:36:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('check', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('check', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('check', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('check', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('check', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->check('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:36:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('check', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('check', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('check', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('check', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('check', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->check('admin', 'admin')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:37:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('check', Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('check', Array, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('check', Array, Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(784): DboSource->query('check', Array, Object(AppModel))
+#5 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): Model->__call('check', Array)
+#6 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(27): AppModel->check('admin', 'adminff')
+#7 [internal function]: UsersController->login()
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-12-15 11:40:45 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-15 12:23:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:23:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:23:19 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:23:21 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:23:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:23:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:23:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:24:01 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:24:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:24:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-15 12:27:42 Error: Fatal Error (1): Call to a member function password() on a non-object in [C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php, line 41]
+2012-12-15 12:27:42 Error: [FatalErrorException] Call to a member function password() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 13:02:10 Error: Fatal Error (1): Call to a member function password() on a non-object in [C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php, line 41]
+2012-12-15 13:02:10 Error: [FatalErrorException] Call to a member function password() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 13:04:00 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\Users\template.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('template')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('template', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('template')
+#3 [internal function]: UsersController->login('1')
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 13:04:42 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\layout\template.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('/layout/templat...')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/layout/templat...', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('/layout/templat...')
+#3 [internal function]: UsersController->login('1')
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 13:04:45 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\layout\template.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('/layout/templat...')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/layout/templat...', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('/layout/templat...')
+#3 [internal function]: UsersController->login()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 13:04:48 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\layout\template.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('/layout/templat...')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/layout/templat...', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(35): Controller->render('/layout/templat...')
+#3 [internal function]: UsersController->login()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-15 13:38:22 Error: Fatal Error (1): Call to a member function password() on a non-object in [C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php, line 53]
+2012-12-15 13:38:22 Error: [FatalErrorException] Call to a member function password() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 53, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 53, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 13:46:08 Error: [MissingActionException] Action AppController::View() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-15 13:46:17 Error: [MissingActionException] Action AppController::View() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-15 14:12:06 Error: Fatal Error (64): Cannot use [] for reading in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 21]
+2012-12-15 14:12:06 Error: [FatalErrorException] Cannot use [] for reading
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 14:14:09 Error: Fatal Error (64): Cannot use [] for reading in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 21]
+2012-12-15 14:14:09 Error: [FatalErrorException] Cannot use [] for reading
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-15 14:20:28 Error: Fatal Error (64): Cannot use [] for reading in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 21]
+2012-12-15 14:20:28 Error: [FatalErrorException] Cannot use [] for reading
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 16:08:17 Error: Fatal Error (4): syntax error, unexpected 'khoản' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 23]
+2012-12-16 16:08:17 Error: [FatalErrorException] syntax error, unexpected 'khoản' (T_STRING), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 16:08:27 Error: Fatal Error (4): syntax error, unexpected 'khoản' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 23]
+2012-12-16 16:08:27 Error: [FatalErrorException] syntax error, unexpected 'khoản' (T_STRING), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 16:08:33 Error: Fatal Error (4): syntax error, unexpected 'khoản' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 23]
+2012-12-16 16:08:33 Error: [FatalErrorException] syntax error, unexpected 'khoản' (T_STRING), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 17:01:53 Error: Fatal Error (4): syntax error, unexpected ',', expecting ']' in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 23]
+2012-12-16 17:01:53 Error: [FatalErrorException] syntax error, unexpected ',', expecting ']'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 17:02:00 Error: Fatal Error (4): syntax error, unexpected ',', expecting ']' in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 23]
+2012-12-16 17:02:00 Error: [FatalErrorException] syntax error, unexpected ',', expecting ']'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 17:30:13 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 17:33:55 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\TankOnline\app\View\users\game.ctp, line 23]
+2012-12-16 17:33:55 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 17:55:51 Error: Fatal Error (4): syntax error, unexpected 'ga' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 20]
+2012-12-16 17:55:51 Error: [FatalErrorException] syntax error, unexpected 'ga' (T_STRING), expecting ',' or ';'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-16 18:08:17 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\Users\users\game.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('users/game')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('users/game', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(24): Controller->render('users/game')
+#3 [internal function]: UsersController->view()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-16 18:17:08 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 18:58:28 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:02:09 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:02:09 Error: [MissingActionException] Action UsersController::link banner() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:02:35 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:04:57 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:08:32 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:09:19 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:12:16 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:12:18 Error: [MissingActionException] Action UsersController::LINK_FLASH_CHÈN_VÀO_ĐÂY() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:13:21 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:13:40 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:13:40 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:16:08 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:16:08 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:16:19 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:18:33 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:20:03 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:20:04 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:20:30 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:22:08 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:22:08 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:42:16 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:42:38 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:44:40 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:44:41 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:46:06 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:46:06 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:47:30 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:47:30 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:48:23 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:48:23 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:49:16 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:49:16 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:49:20 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:49:20 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:49:22 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:49:22 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:50:18 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:50:18 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:50:21 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:50:21 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:50:47 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:50:50 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:51:03 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:51:16 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:51:21 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:51:23 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:51:52 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:52:33 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 19:52:35 Error: [MissingActionException] Action UsersController::users() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:00:24 Error: [MissingActionException] Action UsersController::release() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:01:30 Error: [MissingActionException] Action UsersController::release() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:14:03 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:15:56 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\Users\tank.html.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('tank.html')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('tank.html', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(25): Controller->render('tank.html')
+#3 [internal function]: UsersController->view()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-16 20:20:40 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:21:33 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:24:45 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:24:45 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:26:29 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-16 20:26:29 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:31:28 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:31:29 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:35:31 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:35:32 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:35:34 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:35:34 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:36:21 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-17 08:36:21 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:32:00 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(81): Model->query('Select name, pa...')
+#3 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(39): UsersController->check('sdfsdf', 'sdfsdfsd')
+#4 [internal function]: UsersController->login()
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-18 04:33:29 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:33:29 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:39:15 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:39:15 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:39:56 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:39:57 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:40:46 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:40:47 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:41:02 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:41:02 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:41:35 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\users\tank.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('/users/tank')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/tank', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(25): Controller->render('/users/tank')
+#3 [internal function]: UsersController->view()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-18 04:41:54 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:41:54 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:42:06 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:42:07 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:42:10 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:42:10 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:43:13 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 04:43:21 Error: [MissingActionException] Action UsersController::swfobject.js() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 05:04:26 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(862): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/gametank', NULL)
+#3 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(25): Controller->render('/users/gametank')
+#4 [internal function]: UsersController->view()
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-18 05:05:06 Error: Fatal Error (1): Call to a member function renderSwf() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 2]
+2012-12-18 05:05:06 Error: [FatalErrorException] Call to a member function renderSwf() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-18 05:05:44 Error: Fatal Error (4): syntax error, unexpected '%' in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 4]
+2012-12-18 05:05:44 Error: [FatalErrorException] syntax error, unexpected '%'
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-18 05:05:58 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php, line 48]
+2012-12-18 05:05:58 Error: [FatalErrorException] Call to a member function link() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-18 05:06:56 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php, line 48]
+2012-12-18 05:06:56 Error: [FatalErrorException] Call to a member function link() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-18 05:08:20 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php, line 48]
+2012-12-18 05:08:20 Error: [FatalErrorException] Call to a member function link() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-18 05:08:25 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php, line 48]
+2012-12-18 05:08:25 Error: [FatalErrorException] Call to a member function link() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-18 05:09:30 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php, line 48]
+2012-12-18 05:09:30 Error: [FatalErrorException] Call to a member function link() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-18 05:10:42 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(936): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\View\Helper.php(191): View->loadHelper('Javascript', Array)
+#2 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(48): Helper->__get('Javascript')
+#3 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(83): FlashHelper->init(Array)
+#4 C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp(2): FlashHelper->renderSwf('tank.swf', 800, 600, 'flashy')
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(921): include('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(884): View->_evaluate('C:\xampp\htdocs...', Array)
+#7 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(476): View->_render('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/gametank', NULL)
+#9 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(26): Controller->render('/users/gametank')
+#10 [internal function]: UsersController->view()
+#11 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-18 05:14:52 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(936): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\View\Helper.php(191): View->loadHelper('Javascript', Array)
+#2 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(48): Helper->__get('Javascript')
+#3 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(83): FlashHelper->init(Array)
+#4 C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp(10): FlashHelper->renderSwf('tank.swf', 800, 600, 'flashy')
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(921): include('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(884): View->_evaluate('C:\xampp\htdocs...', Array)
+#7 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(476): View->_render('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/gametank', NULL)
+#9 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(26): Controller->render('/users/gametank')
+#10 [internal function]: UsersController->view()
+#11 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-18 05:16:30 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(936): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\View\Helper.php(191): View->loadHelper('Javascript', Array)
+#2 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(48): Helper->__get('Javascript')
+#3 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(83): FlashHelper->init(Array)
+#4 C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp(3): FlashHelper->renderSwf('tank.swf', 800, 600, 'flashy')
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(921): include('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(884): View->_evaluate('C:\xampp\htdocs...', Array)
+#7 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(476): View->_render('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/gametank', NULL)
+#9 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(26): Controller->render('/users/gametank')
+#10 [internal function]: UsersController->view()
+#11 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-12-18 05:17:05 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(936): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\View\Helper.php(191): View->loadHelper('Javascript', Array)
+#2 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(48): Helper->__get('Javascript')
+#3 C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp(5): FlashHelper->init(Array)
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(921): include('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(884): View->_evaluate('C:\xampp\htdocs...', Array)
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(476): View->_render('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/gametank', NULL)
+#8 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(26): Controller->render('/users/gametank')
+#9 [internal function]: UsersController->view()
+#10 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-12-18 05:17:42 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(862): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/gametank', NULL)
+#3 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(26): Controller->render('/users/gametank')
+#4 [internal function]: UsersController->view()
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
