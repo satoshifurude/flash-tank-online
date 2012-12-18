@@ -5,6 +5,7 @@ package
 	import starling.events.EnterFrameEvent;
 	import starling.events.Event;
 	import flash.display.BitmapData;
+	import flash.geom.Point;
 	
     public class MapTiled extends Sprite
     {
@@ -13,7 +14,7 @@ package
 		private var mPlayerLayer:Sprite;
 	
 		private var mArrTiled:Vector.<uint>;
-		// private var mArrBullet:Vector.<Bullet>
+		private var mArrPlayerPosition:Vector.<Point>
 		
 		private var mWidth:int;
 		private var mHeight:int;
@@ -23,9 +24,10 @@ package
 		public function MapTiled()
         {
 			mArrTiled = new Vector.<uint>();
-			mMapLayerUnder = new Sprite;
-			mMapLayerAbove = new Sprite;
-			mPlayerLayer = new Sprite;
+			mArrPlayerPosition = new Vector.<Point>();
+			mMapLayerUnder = new Sprite();
+			mMapLayerAbove = new Sprite();
+			mPlayerLayer = new Sprite();
 			
 			addChild(mMapLayerUnder);
 			addChild(mPlayerLayer);
@@ -79,39 +81,62 @@ package
 			var texture:Texture = Texture.fromBitmap(ResourceManager.getInstance().getBitmap(ResourceDefine.TEX_BLOCK));
 			var xml:XML = ResourceManager.getInstance().getXML(ResourceDefine.XML_BLOCK);
 			var textureAtlas:TextureAtlas = new TextureAtlas(texture, xml);
-			var img:Image;
+			var headerSide:int = 1;
 			
 			for (var y:int = 0; y < mHeight; y++)
 			{
 				for (var x:int = 0; x < mWidth; x++)
 				{
+					if (x % 9 == 0 && y % 9 == 0)
+					{
+						texture = textureAtlas.getTexture("block_background");
+						addTile(texture, x, y, mMapLayerUnder);
+					}
+					
 					texture = null;
 					switch (mArrTiled[y * mWidth + x])
 					{
 						case GameDefine.COLOR_BRICK:
-							texture = textureAtlas.getTexture("block_1");
+							texture = textureAtlas.getTexture("brick");
+							addTile(texture, x, y, mMapLayerUnder);
 							break;
-						case GameDefine.COLOR_STONE:
-							texture = textureAtlas.getTexture("block_2");
+						case GameDefine.COLOR_METAL:
+							texture = textureAtlas.getTexture("rock");
+							addTile(texture, x, y, mMapLayerUnder);
 							break;
-						case GameDefine.COLOR_TANK:
-							// mPlayer = new Tank();
-							// mPlayer.x = x * GameDefine.CELL_SIZE;
-							// mPlayer.y = y * GameDefine.CELL_SIZE;
-							// mPlayerLayer.addChild(mPlayer);
+						case GameDefine.COLOR_WATER:
+							texture = textureAtlas.getTexture("water");
+							addTile(texture, x, y, mMapLayerUnder);
+							break;
+						case GameDefine.COLOR_TREE:
+							texture = textureAtlas.getTexture("cloud");
+							addTile(texture, x, y, mMapLayerAbove);
+							break;
+						case GameDefine.COLOR_HEADER:
+							if (mArrTiled[(y - 1) * mWidth + x - 1] == GameDefine.COLOR_HEADER)
+							{
+								var header:Header = new Header(headerSide);
+								header.x = x * GameDefine.CELL_SIZE;
+								header.y = y * GameDefine.CELL_SIZE;
+								mPlayerLayer.addChild(header);
+								headerSide++;
+							}
 							break;
 						default:
 							continue;
 					}
-					
-					if (texture == null) continue;
-					img = new Image(texture);
-					img.x = x * GameDefine.CELL_SIZE;
-					img.y = y * GameDefine.CELL_SIZE;
-					img.name = "" + (y * mWidth + x);
-					mMapLayerUnder.addChild(img);
 				}
 			}
+		}
+		
+		private function addTile(texture:Texture, x:int, y:int, layer:Sprite):void
+		{
+			if (texture == null) return;
+			var img:Image = new Image(texture);
+			img.x = x * GameDefine.CELL_SIZE;
+			img.y = y * GameDefine.CELL_SIZE;
+			img.name = "" + (y * mWidth + x);
+			layer.addChild(img);
 		}
 		
 		public function checkCollisionPlayer(obj:DisplayObject):void
@@ -136,8 +161,13 @@ package
 				{
 					switch (mArrTiled[y * mWidth + x])
 					{
+						case GameDefine.COLOR_WATER:
+							if (obj is Tank)
+							{
+								(Tank)(obj).setPositionCollideWithBlock(x, y);
+							}
+							break;
 						case GameDefine.COLOR_BRICK:
-						case GameDefine.COLOR_STONE:
 							if (obj is Tank)
 							{
 								(Tank)(obj).setPositionCollideWithBlock(x, y);
@@ -158,6 +188,7 @@ package
 							{
 								(Bullet)(obj).explode();
 							}
+							return;
 							break;
 						default:
 							continue;

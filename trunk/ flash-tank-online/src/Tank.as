@@ -29,7 +29,7 @@ package
 			var xml:XML = ResourceManager.getInstance().getXML(ResourceDefine.XML_BLOCK);
 			var textureAtlas:TextureAtlas = new TextureAtlas(texture, xml);
 			
-			mImage = new Image(textureAtlas.getTexture("block_3"));
+			mImage = new Image(textureAtlas.getTexture("brick"));
 			mLayerTank.addChild(mImage);
 			
 			addChild(mLayerTank);

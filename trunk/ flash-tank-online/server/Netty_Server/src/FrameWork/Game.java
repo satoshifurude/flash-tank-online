@@ -4,6 +4,8 @@
  */
 package FrameWork;
 
+import Database.Database;
+import Model.UserModel;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.Enumeration;
@@ -167,13 +169,28 @@ public class Game extends iGame{
     }
     
     private void handleLogin(User user, ChannelBuffer buffer) {
-        short length = buffer.readShort();
-        byte[] byteName = new byte[length];
-        buffer.readBytes(byteName, 0, length);
-        String name = new String(byteName);
+        short lengthUserName = buffer.readShort();
+        byte[] byteUserName = new byte[lengthUserName];
+        buffer.readBytes(byteUserName, 0, lengthUserName);
         
-        user.setName(name);
-        System.out.println("username = " + user.getName());
+        short lengthPassword = buffer.readShort();
+        byte[] bytePassword = new byte[lengthPassword];
+        buffer.readBytes(bytePassword, 0, lengthPassword);
+        
+        String username = new String(byteUserName);
+        String password = new String(bytePassword);
+        
+        UserModel userDB = Database.shareData().Login(username, password);
+        if (userDB == null) {
+            ChannelBuffer buf = dynamicBuffer();
+            buf.writeShort(GameDefine.CMD_LOGIN_FAIL);
+            SendMessage(buf, user);                    
+        } else {
+            user.setName(userDB.name);
+            ChannelBuffer buf = dynamicBuffer();
+            buf.writeShort(GameDefine.CMD_LOGIN_SUCCESS);
+            SendMessage(buf, user); 
+        }
     }
     
     private void handleCreateRoom(ChannelBuffer buffer) {

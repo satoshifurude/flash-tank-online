@@ -45,6 +45,10 @@ package
 				case GameDefine.ID_CONNECT_SCENE:
 					Game.getInstance().addChild(new TestConnectScene());
 					break;
+				case GameDefine.ID_LOGIN_SCENE:
+					Game.getInstance().mLoginScene = new LoginScene();
+					Game.getInstance().addChild(Game.getInstance().mLoginScene);
+					break;
 			}
 			
 			ResourceManager.getInstance().removeEventListener(ResourceManager.ON_LOAD_COMPLETE, onLoadDone);

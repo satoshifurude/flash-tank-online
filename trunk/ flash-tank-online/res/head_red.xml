@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fbe22b77d0c797fa3a863fe1780d85ea$ -->
+<TextureAtlas imagePath="head_red.png">
+		<SubTexture name="head_01" x="0" y="0" width="84" height="84"/>
+		<SubTexture name="head_02" x="84" y="0" width="84" height="84"/>
+		<SubTexture name="head_03" x="168" y="0" width="84" height="84"/>
+		<SubTexture name="head_04" x="252" y="0" width="84" height="84"/>
+		<SubTexture name="head_05" x="336" y="0" width="84" height="84"/>
+		<SubTexture name="head_06" x="420" y="0" width="84" height="84"/>
+		<SubTexture name="head_07" x="0" y="84" width="84" height="84"/>
+		<SubTexture name="head_08" x="84" y="84" width="84" height="84"/>
+		<SubTexture name="head_09" x="168" y="84" width="84" height="84"/>
+		<SubTexture name="head_10" x="252" y="84" width="84" height="84"/>
+		<SubTexture name="head_11" x="336" y="84" width="84" height="84"/>
+		<SubTexture name="head_12" x="420" y="84" width="84" height="84"/>
+		<SubTexture name="head_13" x="0" y="168" width="84" height="84"/>
+		<SubTexture name="head_14" x="84" y="168" width="84" height="84"/>
+		<SubTexture name="head_15" x="168" y="168" width="84" height="84"/>
+		<SubTexture name="head_16" x="252" y="168" width="84" height="84"/>
+		<SubTexture name="head_17" x="336" y="168" width="84" height="84"/>
+		<SubTexture name="head_18" x="420" y="168" width="84" height="84"/>
+		<SubTexture name="head_19" x="0" y="252" width="84" height="84"/>
+		<SubTexture name="head_20" x="84" y="252" width="84" height="84"/>
+		<SubTexture name="head_21" x="168" y="252" width="84" height="84"/>
+		<SubTexture name="head_22" x="252" y="252" width="84" height="84"/>
+		<SubTexture name="head_23" x="336" y="252" width="84" height="84"/>
+		<SubTexture name="head_24" x="420" y="252" width="84" height="84"/>
+		<SubTexture name="head_25" x="0" y="336" width="84" height="84"/>
+		<SubTexture name="head_26" x="84" y="336" width="84" height="84"/>
+		<SubTexture name="head_27" x="168" y="336" width="84" height="84"/>
+		<SubTexture name="head_28" x="252" y="336" width="84" height="84"/>
+		<SubTexture name="head_29" x="336" y="336" width="84" height="84"/>
+		<SubTexture name="head_30" x="420" y="336" width="84" height="84"/>
+</TextureAtlas>

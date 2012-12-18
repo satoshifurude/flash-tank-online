@@ -76,8 +76,13 @@ package
 		
 		private function loadSplashScene():void
 		{
-			mNumImages = 9;
+			mNumImages = 15;
 			loadURL(ResourceDefine.TEX_LOGO_SPLASH);
+			
+			loadURL(ResourceDefine.TEX_LOGIN_BACKGROUND);
+			loadURL(ResourceDefine.TEX_LOGIN_INFO);
+			loadURL(ResourceDefine.TEX_LOGIN_BTN_1);
+			loadURL(ResourceDefine.TEX_LOGIN_BTN_2);
 			
 			loadURL(ResourceDefine.TEX_MENU_BACKGROUND);
 			loadURL(ResourceDefine.TEX_BTN_PLAY_UP);
@@ -88,6 +93,8 @@ package
 			loadURL(ResourceDefine.TEX_BLOCK);
 			loadURL(ResourceDefine.TEX_EXPLOSION);
 			loadURL(ResourceDefine.TEX_BULLET_1);
+			loadURL(ResourceDefine.TEX_HEADER_RED);
+			loadURL(ResourceDefine.TEX_HEADER_BLUE);
 		}
 		
 		private function loadMainScene():void

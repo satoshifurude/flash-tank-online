@@ -12,6 +12,7 @@ package
         public static var mInstance:Game;
 		public var mSocket:CSockConnection;
 		public var mMainGame:MainGameScene;
+		public var mLoginScene:LoginScene;
 		public var mID:int;
 		
         public function Game()
@@ -29,7 +30,6 @@ package
 		{
 			this.removeChildren(0, -1, true);
 			addChild(new LoadingScene(GameDefine.ID_SPLASH_SCENE, false));
-			sendLogin("Nguyen Tan Loc");
 		}
 		
 		public function handleMessage(buffer:ByteArray):void
@@ -38,8 +38,11 @@ package
 			
 			switch (cmd)
 			{
+				case CommandDefine.CMD_LOGIN_FAIL:
+					mLoginScene.loginFail();
+					break;
 				case CommandDefine.CMD_LOGIN_SUCCESS:
-					handleLoginSuccess(buffer);
+					mLoginScene.loginSuccess();
 					break;
 				case CommandDefine.CMD_START_GAME_SUCCESS:
 					handleStartGame(buffer);
@@ -51,11 +54,6 @@ package
 					handleFire(buffer);
 					break;
 			}
-		}
-		
-		private function handleLoginSuccess(buffer:ByteArray):void
-		{
-			mID = buffer.readInt();
 		}
 		
 		private function handleStartGame(buffer:ByteArray):void
@@ -120,12 +118,14 @@ package
 			}
 		}
 		
-		public function sendLogin(name:String):void
+		public function sendLogin(username:String, password:String):void
 		{
 			var buffer:ByteArray = new ByteArray();
 			buffer.writeShort(CommandDefine.CMD_LOGIN);
-			buffer.writeShort(name.length);
-			buffer.writeMultiByte(name, "utf-8");
+			buffer.writeShort(username.length);
+			buffer.writeMultiByte(username, "utf-8");
+			buffer.writeShort(password.length);
+			buffer.writeMultiByte(password, "utf-8");
 			
 			mSocket.Write(buffer);
 		}
