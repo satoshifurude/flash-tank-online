@@ -82,8 +82,10 @@ public class Database {
                         + " VALUES (" + userModel.id + ",'" + dateTime + "')";
                 
                 executeUpdate(queryLogin);
+                System.out.println("Database: Login success username : '"+user+"' Pass: '"+pass+"'");
                 return userModel;
             } else {
+                System.out.println("Database: Login fail username : '"+user+"' Pass: '"+pass+"'");
                 return null;
             }
         } catch (Exception ex) {
@@ -101,7 +103,25 @@ public class Database {
         executeUpdate(queryLogout);        
     }
 
-    public void addBattles(User[] winners, User[] losers) {
+    // Khi start game thi se dc luu vao DB
+    public int CreateBattle () {
+        
+          String gameName="tank";  
+          int id= 0;
+          String sqlCreate = "INSERT INTO `battles`(`game`, `time`) VALUES ('"+gameName+"','"+getDate()+"')";
+          String sqlIdBattle = "SELECT MAX(id) as maxID FROM `battles`";
+          
+          executeUpdate(sqlCreate);
+          ResultSet resultSet = executeQuery(sqlIdBattle);
+        try {
+            if(resultSet.next()){
+                id = resultSet.getInt("maxID");
+                System.out.println("Database: create game success ID "+id);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
+        }
+          return id;
     }
     
     private String getDate (){
