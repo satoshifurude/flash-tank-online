@@ -32,4 +32,6 @@ public class GameDefine {
     public static final short INPUT_SPECIAL_3   = 8;
     public static final short INPUT_SPECIAL_4   = 9;
     public static final short INPUT_SPECIAL_5   = 10;
+    
+    public static final short MAX_PLAYER_IN_ROOM   = 4;
 }
