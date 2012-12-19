@@ -19,10 +19,16 @@
         <br><center><h2>Đăng kí tài khoản</h2></center><br>
             <center>
             <form method="post" action="">
-                <label>Tài khoản </label><br><input type="text" name="username" size="20" /><br />
-                <label>Mật khẩu </label><br><input type="password" name="password" size="20" /><br />
-                <label>Xác nhận mật khẩu </label><br><input type="password" name="confirm" size="20" /><br />
-                <label>Email </label><br><input type="text" name="email" size="20" /><br />
+                <label>Họ và tên </label><br><input type="text" name="hoten" size="30" /><br />
+                <label>Số điện thoại </label><br><input type="text" name="sdt" size="30" /><br />
+                <label>Cmnd </label><br><input type="text" name="cmnd" size="30" /><br />
+                <label>Ngày sinh </label><br><input type="date" name="ngaysinh" size="30" /><br />
+                <label>Giới tính </label><br><input type="radio" name="nam" size="30" value="Nam" checked />Nam<input type="radio" name="nam" size="30" value="Nu" />Nữ<br />
+                <label>Địa chỉ </label><br><input type="text" name="diachi" size="30" /><br />
+                <label>Tài khoản </label><br><input type="text" name="username" size="30" /><br />
+                <label>Mật khẩu </label><br><input type="password" name="password" size="30" /><br />
+                <label>Xác nhận mật khẩu </label><br><input type="password" name="confirm" size="30" /><br />
+                <label>Email </label><br><input type="text" name="email" size="30" /><br />
                 <label>&nbsp;</label><input type="submit" name="ok" value="Đăng kí" />
                 <!—Hiển  thị thông báo lỗi nếu có-->
                 <br>

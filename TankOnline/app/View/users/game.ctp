@@ -28,6 +28,7 @@
             <br>
             <span>Win: <?php echo  $content['users']['win'] ;?></span>
             <br>
+            <br>
             <input type="submit" name="ok" value="Bắt đầu" />
             </center>
         </div>
