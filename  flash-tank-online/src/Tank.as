@@ -6,6 +6,9 @@ package
 
     public class Tank extends Sprite
     {
+		private static const SIDE_BLUE:int = 0;
+		private static const SIDE_RED:int = 1;
+		
 		public var mLastPositionX:Number;
 		public var mLastPositionY:Number;
 		public var mDirection:int;
@@ -18,18 +21,14 @@ package
 		public var mID:int;
 		public var mIsMoving:int;
 		
-        public function Tank(id:int = 0)
+        public function Tank(id:int = 0, side:int = SIDE_BLUE)
         {
 			mNumCurrentBullet = 0;
 			mSpeed = GameDefine.TANK_SPEED;
 			mID = id;
 			mLayerTank = new Sprite();
 			
-			var texture:Texture = Texture.fromBitmap(ResourceManager.getInstance().getBitmap(ResourceDefine.TEX_BLOCK));
-			var xml:XML = ResourceManager.getInstance().getXML(ResourceDefine.XML_BLOCK);
-			var textureAtlas:TextureAtlas = new TextureAtlas(texture, xml);
-			
-			mImage = new Image(textureAtlas.getTexture("brick"));
+			mImage = new Image(ResourceManager.getInstance().getTexture(side == SIDE_BLUE ? ResourceDefine.TEX_TANK_BLUE : ResourceDefine.TEX_TANK_RED));
 			mLayerTank.addChild(mImage);
 			
 			addChild(mLayerTank);
@@ -49,6 +48,21 @@ package
 			var bullet:Bullet = BulletManager.getInstance().createBullet(this);
 			bullet.x = x + (width - bullet.width >> 1);
 			bullet.y = y + (height - bullet.height >> 1);
+			switch (mDirection)
+			{
+				case GameDefine.UP:
+					bullet.y -= (height >> 1);
+					break;				
+				case GameDefine.DOWN:
+					bullet.y += (height >> 1);
+					break;
+				case GameDefine.LEFT:
+					bullet.x -= (width >> 1);
+					break;
+				case GameDefine.RIGHT:
+					bullet.x += (width >> 1);
+					break;
+			}
 			MainGameScene.getInstance().mMapTiled.addBullet(bullet);
 			Game.getInstance().sendFire(bullet);
 		}
@@ -164,17 +178,17 @@ package
 		{
 			switch (mDirection)
 			{
-				case GameDefine.UP:
-					mLayerTank.rotation = 0;
-					break;
 				case GameDefine.DOWN:
-					mLayerTank.rotation = Math.PI / 2;
+					mLayerTank.rotation = Math.PI / 2;;
 					break;
-				case GameDefine.LEFT:
-					mLayerTank.rotation = Math.PI / 4;
+				case GameDefine.UP:
+					mLayerTank.rotation = Math.PI * 3 / 2;
 					break;
 				case GameDefine.RIGHT:
-					mLayerTank.rotation = Math.PI * 3 / 4;
+					mLayerTank.rotation = 0;
+					break;
+				case GameDefine.LEFT:
+					mLayerTank.rotation = Math.PI;
 					break;
 			}
 		}

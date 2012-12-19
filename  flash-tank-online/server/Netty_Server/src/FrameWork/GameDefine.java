@@ -21,6 +21,12 @@ public class GameDefine {
     public static final short CMD_FIRE          = 22;
     public static final short CMD_QUIT_GAME     = 7;
     public static final short CMD_DISCONNECT    = 8;
+    public static final short CMD_CREATE_ROOM_SUCCESS   = 31;
+    public static final short CMD_GET_LIST_ROOM  = 32;
+    public static final short CMD_LEAVE_ROOM  = 33;
+    public static final short CMD_JOIN_ROOM_SUCCESS  = 34;
+    public static final short CMD_JOIN_ROOM_NEWBIE  = 35;
+    public static final short CMD_JOIN_ROOM_OLDBIE  = 36;
     
     public static final short INPUT_LEFT        = 1;
     public static final short INPUT_RIGHT       = 2;

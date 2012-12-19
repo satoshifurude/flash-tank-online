@@ -4,6 +4,7 @@
  */
 package FrameWork;
 
+import com.sun.jmx.remote.security.MBeanServerAccessController;
 import java.util.LinkedList;
 import java.util.List;
 import org.jboss.netty.buffer.ChannelBuffer;
@@ -15,11 +16,18 @@ import static org.jboss.netty.buffer.ChannelBuffers.*;
  */
 public class Room {
     private int mID;
+    private String mName;
+    private String mPassword;
+    private User mOwner;
     private List<User> mListUser;
     
-    public Room(int id) {
+    public Room(int id, User user, String name, String password) {
         mID = id;
-        mListUser = new LinkedList<User>();                
+        mName = name;
+        mOwner = user;
+        mPassword = password;
+        mListUser = new LinkedList<User>();
+        mListUser.add(user);
     }
     
     public void addUser(User user) {
@@ -38,8 +46,28 @@ public class Room {
         return null;
     }
     
+    public User getUserByIndex(int index) {
+        return mListUser.get(index);
+    }
+    
+    public User getOwner() {
+        return mOwner;
+    }
+    
     public int getNumPlayer() {
         return mListUser.size();
+    }
+    
+    public String getRoomName() {
+        return mName;                
+    }
+    
+    public String getPassword() {
+        return mPassword;                
+    }
+    
+    public int getID() {
+        return mID;
     }
     
     private void sendStartGame() {

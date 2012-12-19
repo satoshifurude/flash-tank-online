@@ -76,25 +76,48 @@ package
 		
 		private function loadSplashScene():void
 		{
-			mNumImages = 15;
+			mNumImages = 32;
+			//1
 			loadURL(ResourceDefine.TEX_LOGO_SPLASH);
 			
+			//4 
 			loadURL(ResourceDefine.TEX_LOGIN_BACKGROUND);
 			loadURL(ResourceDefine.TEX_LOGIN_INFO);
 			loadURL(ResourceDefine.TEX_LOGIN_BTN_1);
 			loadURL(ResourceDefine.TEX_LOGIN_BTN_2);
 			
+			// 4
 			loadURL(ResourceDefine.TEX_MENU_BACKGROUND);
 			loadURL(ResourceDefine.TEX_BTN_PLAY_UP);
 			loadURL(ResourceDefine.TEX_BTN_PLAY_DOWN);
 			loadURL(ResourceDefine.TEX_PARTICLE_MENU);
 			
+			// 14
+			loadURL(ResourceDefine.TEX_ROOM_BACKGROUND);
+			loadURL(ResourceDefine.TEX_BTN_CREATE_ROOM);
+			loadURL(ResourceDefine.TEX_BTN_ACCEPT_1);
+			loadURL(ResourceDefine.TEX_BTN_ACCEPT_2);
+			loadURL(ResourceDefine.TEX_BTN_CANCEL_1);
+			loadURL(ResourceDefine.TEX_BTN_CANCEL_2);
+			loadURL(ResourceDefine.TEX_CREATE_ROOM);
+			loadURL(ResourceDefine.TEX_ROOM_FRAME);
+			loadURL(ResourceDefine.TEX_ROOM_FRAME_BG);
+			loadURL(ResourceDefine.TEX_USER_FRAME);
+			loadURL(ResourceDefine.TEX_BTN_EXIT_1);
+			loadURL(ResourceDefine.TEX_BTN_START_1);
+			loadURL(ResourceDefine.TEX_BTN_REFRESH_1);
+			loadURL(ResourceDefine.TEX_ICON_READY);
+			loadURL(ResourceDefine.TEX_ICON_KEY);
+			
+			// 8
 			loadURL(ResourceDefine.TEX_LEVEL_DEMO);
 			loadURL(ResourceDefine.TEX_BLOCK);
 			loadURL(ResourceDefine.TEX_EXPLOSION);
 			loadURL(ResourceDefine.TEX_BULLET_1);
 			loadURL(ResourceDefine.TEX_HEADER_RED);
 			loadURL(ResourceDefine.TEX_HEADER_BLUE);
+			loadURL(ResourceDefine.TEX_TANK_BLUE);
+			loadURL(ResourceDefine.TEX_TANK_RED);
 		}
 		
 		private function loadMainScene():void

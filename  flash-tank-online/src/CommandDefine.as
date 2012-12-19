@@ -17,6 +17,12 @@ package
 		public static const CMD_INPUT:int         	= 6;
 		public static const CMD_QUIT_GAME:int     	= 7;
 		public static const CMD_DISCONNECT:int    	= 8;
+		public static const CMD_CREATE_ROOM_SUCCESS:int = 31;
+		public static const CMD_GET_LIST_ROOM:int = 32;
+		public static const CMD_LEAVE_ROOM:int = 33;
+		public static const CMD_JOIN_ROOM_SUCCESS:int     	= 34;
+		public static const CMD_JOIN_ROOM_NEWBIE:int     	= 35;
+		public static const CMD_JOIN_ROOM_OLDBIE:int     	= 36;
 		
 		public static const INPUT_LEFT:int        	= 1;
 		public static const INPUT_RIGHT:int       	= 2;
