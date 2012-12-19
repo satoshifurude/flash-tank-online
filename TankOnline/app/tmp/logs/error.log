@@ -1498,225 +1498,396 @@
 #7 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #8 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 {main}
-2012-12-18 19:25:50 Error: Fatal Error (1): Call to a member function renderSwf() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 2]
-2012-12-18 19:25:51 Error: [FatalErrorException] Call to a member function renderSwf() on a non-object
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+2012-12-18 19:00:19 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-18 19:01:20 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-18 19:01:32 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-18 19:03:48 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-18 19:03:59 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(862): HelperCollection->load('Javascript', Array)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/login', NULL)
+#3 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(48): Controller->render('/users/login')
+#4 [internal function]: UsersController->login()
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-18 19:16:13 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-18 19:17:47 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(862): HelperCollection->load('Javascript', Array)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/login', NULL)
+#3 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(48): Controller->render('/users/login')
+#4 [internal function]: UsersController->login()
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-18 19:19:30 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(862): HelperCollection->load('Javascript', Array)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/register', NULL)
+#3 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(77): Controller->render('/users/register')
+#4 [internal function]: UsersController->register()
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-12-18 19:27:25 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(40): UsersController->check('thanhtri', '123456')
+#8 [internal function]: UsersController->login()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-18 19:33:45 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(60): UsersController->check('thanhtri', '147852')
+#8 [internal function]: UsersController->register()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-18 19:34:51 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(60): UsersController->check('thanhtri', '147852')
+#8 [internal function]: UsersController->register()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-18 19:35:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(60): UsersController->check('thanhtri', '147852')
+#8 [internal function]: UsersController->register()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-18 19:35:46 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-18 19:36:00 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(40): UsersController->check('thanhtri', '123456')
+#8 [internal function]: UsersController->login()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-18 19:38:20 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-18 19:38:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(40): UsersController->check('thanhtri', '123456')
+#8 [internal function]: UsersController->login()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-18 19:43:47 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(40): UsersController->check('thanhtri', '123456')
+#8 [internal function]: UsersController->login()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-18 19:50:08 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Model\Model.php(2995): Model->getDataSource()
+#6 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(82): Model->query('Select name, pa...')
+#7 D:\WorkSpace\wamp\www\TankOnline\app\Controller\UsersController.php(40): UsersController->check('trongnghia', '123456')
+#8 [internal function]: UsersController->login()
+#9 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-19 14:32:23 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-19 14:32:36 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-19 15:32:32 Error: Fatal Error (1): Call to undefined method RatesController::query() in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\RatesController.php, line 19]
+2012-12-19 15:32:32 Error: [FatalErrorException] Call to undefined method RatesController::query()
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-12-18 19:26:18 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:27:48 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:30:01 Error: Fatal Error (1): Call to a member function init() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 2]
-2012-12-18 19:30:01 Error: [FatalErrorException] Call to a member function init() on a non-object
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+2012-12-19 16:13:47 Error: Fatal Error (4): syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 23]
+2012-12-19 16:13:47 Error: [FatalErrorException] syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 23, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 23, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-12-18 19:34:41 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:35:57 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:36:37 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:41:40 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:42:33 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(936): HelperCollection->load('Javascript', Array)
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\View\Helper.php(191): View->loadHelper('Javascript', Array)
-#2 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(79): Helper->__get('Javascript')
-#3 C:\xampp\htdocs\TankOnline\app\View\Helper\FlashHelper.php(114): FlashHelper->init(Array)
-#4 C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp(2): FlashHelper->renderSwf('tank.swf', 800, 200, 'flashy')
-#5 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(921): include('C:\xampp\htdocs...')
-#6 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(884): View->_evaluate('C:\xampp\htdocs...', Array)
-#7 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(476): View->_render('C:\xampp\htdocs...')
-#8 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('/users/gametank', NULL)
-#9 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(25): Controller->render('/users/gametank')
-#10 [internal function]: UsersController->view()
-#11 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
-#12 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#13 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#14 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#15 {main}
-2012-12-18 19:43:53 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:45:22 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:45:37 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 19:49:22 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 19:49:43 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 19:55:18 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 19:55:42 Error: Fatal Error (4): syntax error, unexpected '');?>' (T_ENCAPSED_AND_WHITESPACE) in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 2]
-2012-12-18 19:55:42 Error: [FatalErrorException] syntax error, unexpected '');?>' (T_ENCAPSED_AND_WHITESPACE)
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+2012-12-19 16:14:14 Error: Fatal Error (4): syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 21]
+2012-12-19 16:14:14 Error: [FatalErrorException] syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 21, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 21, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-12-18 19:55:55 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 19:57:36 Error: Fatal Error (1): Call to undefined function r() in [C:\xampp\htdocs\TankOnline\app\View\Helper\JavascriptHelper.php, line 173]
-2012-12-18 19:57:36 Error: [FatalErrorException] Call to undefined function r()
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 173)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 173, Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 173, Array)
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+2012-12-19 16:14:24 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 18]
+2012-12-19 16:14:24 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 18, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 18, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-12-18 19:58:25 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 19:59:58 Error: [MissingControllerException] Controller class WebrootController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 20:00:39 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2012-12-18 20:22:00 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:27:21 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:27:24 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:28:13 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:29:53 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:29:56 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:29:58 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:31:54 Error: [MissingActionException] Action UsersController::tank.swf() could not be found.
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2012-12-18 20:55:17 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 2]
-2012-12-18 20:55:17 Error: [FatalErrorException] Call to a member function link() on a non-object
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+2012-12-19 16:22:34 Error: Fatal Error (4): syntax error, unexpected ')' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 16]
+2012-12-19 16:22:34 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 16, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 16, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-12-18 20:55:42 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 2]
-2012-12-18 20:55:42 Error: [FatalErrorException] Call to a member function link() on a non-object
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+2012-12-19 16:22:43 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 19]
+2012-12-19 16:22:43 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-12-18 20:56:25 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gametank.ctp, line 2]
-2012-12-18 20:56:25 Error: [FatalErrorException] Call to a member function link() on a non-object
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 2, Array)
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+2012-12-19 16:23:39 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 19]
+2012-12-19 16:23:39 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-12-18 20:58:47 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2012-12-19 16:47:17 Error: Fatal Error (4): syntax error, unexpected 'Rank' (T_STRING), expecting ',' or ';' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 26]
+2012-12-19 16:47:17 Error: [FatalErrorException] syntax error, unexpected 'Rank' (T_STRING), expecting ',' or ';'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-19 16:47:55 Error: Fatal Error (4): syntax error, unexpected 'rank' (T_STRING), expecting ',' or ';' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 26]
+2012-12-19 16:47:55 Error: [FatalErrorException] syntax error, unexpected 'rank' (T_STRING), expecting ',' or ';'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-19 16:48:15 Error: Fatal Error (4): syntax error, unexpected 'rank' (T_STRING), expecting ',' or ';' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 26]
+2012-12-19 16:48:15 Error: [FatalErrorException] syntax error, unexpected 'rank' (T_STRING), expecting ',' or ';'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-19 16:48:47 Error: Fatal Error (4): syntax error, unexpected '<' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 26]
+2012-12-19 16:48:47 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 26, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-19 16:49:57 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 16:50:27 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 16:53:12 Error: [MissingActionException] Action AppController::libchart() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 16:55:27 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 16:55:37 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 16:56:28 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 16:58:20 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 16:58:34 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:00:00 Error: [MissingActionException] Action AppController::View() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:01:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2012-12-18 21:00:21 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2012-12-19 17:03:14 Error: Fatal Error (1): Call to a member function image() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 27]
+2012-12-19 17:03:14 Error: [FatalErrorException] Call to a member function image() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 27, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 27, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-19 17:04:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2012-12-18 21:00:28 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2012-12-19 17:04:44 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:17:00 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:17:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2012-12-18 21:01:57 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2012-12-19 17:18:58 Error: [MissingControllerException] Controller class Rank.pngController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2012-12-18 21:02:00 Error: [MissingControllerException] Controller class Tank.swfController could not be found.
-#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+2012-12-19 17:20:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2012-12-18 21:37:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`tank_db`.`users`, CONSTRAINT `fk_sex` FOREIGN KEY (`sex`) REFERENCES `sexs` (`id`))
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ta...', Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ta...')
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(1730): DboSource->create(Object(AppModel), Array, Array)
-#4 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(84): Model->save()
-#5 [internal function]: UsersController->register()
-#6 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
-#7 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#8 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#9 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2012-12-18 21:42:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`tank_db`.`users`, CONSTRAINT `fk_sex` FOREIGN KEY (`sex`) REFERENCES `sexs` (`id`))
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ta...', Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ta...')
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(1730): DboSource->create(Object(AppModel), Array, Array)
-#4 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(86): Model->save()
-#5 [internal function]: UsersController->register()
-#6 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
-#7 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#8 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#9 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2012-12-18 21:57:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`tank_db`.`users`, CONSTRAINT `fk_sex` FOREIGN KEY (`sex`) REFERENCES `sexs` (`id`))
-#0 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ta...', Array)
-#2 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ta...')
-#3 C:\xampp\htdocs\TankOnline\lib\Cake\Model\Model.php(1730): DboSource->create(Object(AppModel), Array, Array)
-#4 C:\xampp\htdocs\TankOnline\app\Controller\UsersController.php(86): Model->save()
-#5 [internal function]: UsersController->register()
-#6 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
-#7 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
-#8 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
-#9 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
+2012-12-19 17:20:07 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:20:25 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:20:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-19 17:21:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-19 17:21:20 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:21:24 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-19 17:21:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-19 17:28:14 Error: Fatal Error (1): Call to a member function image() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\rate.ctp, line 29]
+2012-12-19 17:28:14 Error: [FatalErrorException] Call to a member function image() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 29, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 29, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-19 17:28:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-19 17:28:41 Error: [MissingActionException] Action RatesController::rank.png() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
