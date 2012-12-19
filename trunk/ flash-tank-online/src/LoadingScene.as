@@ -19,14 +19,12 @@ package
 			}
 			
 			mNextScene = nextScene;
-			trace("mNextScene111 = " + mNextScene);
 			ResourceManager.getInstance().addEventListener(ResourceManager.ON_LOAD_COMPLETE, onLoadDone);
 			ResourceManager.getInstance().loadResource(mNextScene);
         }
 		
 		private function onLoadDone(e:Event):void
 		{
-			trace("mNextScene = " + mNextScene);
 			switch (mNextScene)
 			{
 				case GameDefine.ID_SPLASH_SCENE:
@@ -49,6 +47,13 @@ package
 				case GameDefine.ID_LOGIN_SCENE:
 					Game.getInstance().mLoginScene = new LoginScene();
 					Game.getInstance().addChild(Game.getInstance().mLoginScene);
+					break;
+				case GameDefine.ID_ROOM_LIST_SCENE:
+					Game.getInstance().mRoomListScene = new RoomListScene();
+					Game.getInstance().addChild(Game.getInstance().mRoomListScene);
+					break;
+				case GameDefine.ID_ROOM_SCENE:
+					Game.getInstance().addChild(Game.getInstance().mRoomScene);
 					break;
 			}
 			

@@ -66,6 +66,10 @@ package
 			mBtnLogin.y = 480;
 			mBtnLogin.addEventListener(Event.TRIGGERED, onLogin);
 			addChild(mBtnLogin);
+			
+			// test
+			mAccount.text = "tanloc";
+			mPassword.text = "123456";
         }
 		
 		private function onLogin(event:Event):void

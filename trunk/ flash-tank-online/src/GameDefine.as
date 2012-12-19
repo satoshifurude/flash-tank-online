@@ -14,6 +14,8 @@ package
 		public static const ID_TEST_SCENE:int		= 4;
 		public static const ID_CONNECT_SCENE:int	= 5;
 		public static const ID_LOGIN_SCENE:int		= 6;
+		public static const ID_ROOM_LIST_SCENE:int	= 7;
+		public static const ID_ROOM_SCENE:int		= 8;
 		
 		public static const COLOR_NONE:int		= 0xFFFFFF;
 		public static const COLOR_BRICK:int		= 0xED1C24;

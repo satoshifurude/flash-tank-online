@@ -14,7 +14,10 @@ package
 		public var mMainGame:MainGameScene;
 		public var mLoginScene:LoginScene;
 		public var mConnectScene:TestConnectScene;
+		public var mRoomListScene:RoomListScene;
+		public var mRoomScene:RoomScene;
 		public var mID:int;
+		public var mName:String;
 		
         public function Game()
         {
@@ -43,6 +46,7 @@ package
 					mLoginScene.loginFail();
 					break;
 				case CommandDefine.CMD_LOGIN_SUCCESS:
+					handleLoginSuccess(buffer);
 					mLoginScene.loginSuccess();
 					break;
 				case CommandDefine.CMD_START_GAME_SUCCESS:
@@ -54,7 +58,130 @@ package
 				case CommandDefine.CMD_FIRE:
 					handleFire(buffer);
 					break;
+				case CommandDefine.CMD_CREATE_ROOM_SUCCESS:
+					handleCreateRoomSuccess(buffer);
+					break;
+				case CommandDefine.CMD_GET_LIST_ROOM:
+					handleGetListRoom(buffer);
+					break;
+				case CommandDefine.CMD_JOIN_ROOM_SUCCESS:
+					handleJoinRoom(buffer);
+					break;
 			}
+		}
+		
+		private function handleJoinRoom(buffer:ByteArray):void
+		{	
+			mRoomListScene.close();
+			mRoomListScene = null;
+			mRoomScene = new RoomScene(roomID, roomName, "");
+			addChild(new LoadingScene(GameDefine.ID_ROOM_SCENE));
+			
+			var roomNameLength:int;
+			var roomName:String;
+			var numPlayer:int;
+			var roomID:int;
+			var ownerID:int;
+			var cmd:int = buffer.readShort();
+			
+			if (cmd == CommandDefine.CMD_JOIN_ROOM_NEWBIE)
+			{
+				roomID = buffer.readShort();
+				ownerID = buffer.readInt();
+				roomNameLength = buffer.readShort();
+				roomName = buffer.readMultiByte(roomNameLength, "utf-8");
+				numPlayer = buffer.readShort();
+				for (var i:int = 0; i < numPlayer; i++)
+				{
+					var userID:int = buffer.readInt();
+					var length:int = buffer.readShort();
+					var name:String = buffer.readMultiByte(length, "utf-8");
+					
+					var user:UserRoom = new UserRoom(userID, mName);
+					if (ownerID == userID) user.setKey(true);
+					else if (mID == userID) user.setMyUser(true);
+					mRoomScene.addUser(user);
+					
+				}
+			}
+			else
+			{
+				
+			}
+			
+			mRoomScene.updateUser();
+		}
+		
+		public function sendJoinRoom(roomID:int):void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_JOIN_ROOM);
+			buffer.writeShort(roomID);
+			
+			mSocket.Write(buffer);
+		}
+		
+		public function sendLeaveRoom(roomID:int):void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_LEAVE_ROOM);
+			buffer.writeShort(roomID);
+			
+			mSocket.Write(buffer);
+		}
+		
+		private function handleGetListRoom(buffer:ByteArray):void
+		{
+			if (mRoomListScene == null) return;
+			mRoomListScene.clearListRoom();
+			
+			var numRoom:int = buffer.readShort();
+			for (var i:int = 0; i < numRoom; i++)
+			{
+				var id:int = buffer.readInt();
+				var roomNameLength:int = buffer.readShort();
+				var roomName:String = buffer.readMultiByte(roomNameLength, "utf-8");
+				var ownerLength:int = buffer.readShort();
+				var ownerName:String = buffer.readMultiByte(ownerLength, "utf-8");
+				var room:Room = new Room(id, roomName, ownerName);
+				mRoomListScene.addRoom(room);
+			}
+			
+			mRoomListScene.updateRoom();
+		}
+		
+		public function sendGetListRoom():void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_GET_LIST_ROOM);
+			
+			mSocket.Write(buffer);
+		}
+		
+		public function handleLoginSuccess(buffer:ByteArray):void
+		{
+			mID = buffer.readInt();
+			var length:int = buffer.readShort();
+			mName = buffer.readMultiByte(length, "utf-8");
+		}
+		
+		private function handleCreateRoomSuccess(buffer:ByteArray):void
+		{
+			var roomID:int = buffer.readShort();
+			var roomNameLength:int = buffer.readShort();
+			var roomName:String = buffer.readMultiByte(roomNameLength, "utf-8");
+			var passwordLength:int = buffer.readShort();
+			var password:String = buffer.readMultiByte(passwordLength, "utf-8");
+			
+			mRoomListScene.close();
+			mRoomListScene = null;
+			mRoomScene = new RoomScene(roomID, roomName, password);
+			addChild(new LoadingScene(GameDefine.ID_ROOM_SCENE));
+			
+			var user:UserRoom = new UserRoom(mID, mName);
+			user.setKey(true);
+			mRoomScene.addUser(user);
+			mRoomScene.updateUser();
 		}
 		
 		private function handleStartGame(buffer:ByteArray):void
@@ -182,6 +309,18 @@ package
 				bullet.y = y;
 				MainGameScene.getInstance().mMapTiled.addBullet(bullet);
 			}
+		}
+		
+		public function sendCreateRoom(name:String, password:String):void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_CREATE_ROOM);
+			buffer.writeShort(name.length);
+			buffer.writeMultiByte(name, "utf-8");
+			buffer.writeShort(password.length);
+			buffer.writeMultiByte(password, "utf-8");
+			
+			mSocket.Write(buffer);
 		}
 	}
 }

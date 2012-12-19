@@ -11,6 +11,8 @@ import java.nio.charset.Charset;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.jboss.netty.buffer.ChannelBuffer;
@@ -34,10 +36,12 @@ public class Game extends iGame{
     }
     // Chua channel (session) cua nguoi choi key la ID cua channel do
     public Hashtable mHashUsers;
+    public List<Room> mListRoom;
     Thread gameLoop;
     int mFPS;
     private  Game (){
         mHashUsers = new Hashtable();
+        mListRoom = new LinkedList<Room>();
         mFPS = 10;
 //        gameLoop = new GameLoop();
 //        gameLoop.start();
@@ -91,10 +95,10 @@ public class Game extends iGame{
                 handleLogin(user, buf);
                 break;
             case GameDefine.CMD_CREATE_ROOM:
-                handleCreateRoom(buf);
+                handleCreateRoom(user, buf);
                 break;
             case GameDefine.CMD_JOIN_ROOM:
-                handleJoinRoom(buf);
+                handleJoinRoom(user, buf);
                 break;
             case GameDefine.CMD_READY:
                 handleReady(buf);
@@ -110,6 +114,12 @@ public class Game extends iGame{
                 break;
             case GameDefine.CMD_FIRE:
                 handleFire(buf);
+                break;
+            case GameDefine.CMD_GET_LIST_ROOM:
+                sendListRoom(user);
+                break;
+            case GameDefine.CMD_LEAVE_ROOM:
+                handleLeaveRoom(user, buf);
                 break;
         }
     }
@@ -168,6 +178,22 @@ public class Game extends iGame{
         }
     }
     
+    private void handleLeaveRoom(User user, ChannelBuffer buffer) {
+        int roomID = buffer.readShort();
+        int roomNumber = 0;
+        int numRoom = mListRoom.size();
+        for (int i = 0; i < numRoom; i++) {
+            if (roomID == mListRoom.get(i).getID()) {
+                roomNumber = i;
+                break;
+            }
+        }
+        
+        if (mListRoom.get(roomNumber).getNumPlayer() == 1) {
+            mListRoom.remove(roomNumber);
+        }
+    }
+    
     private void handleLogin(User user, ChannelBuffer buffer) {
         short lengthUserName = buffer.readShort();
         byte[] byteUserName = new byte[lengthUserName];
@@ -189,16 +215,95 @@ public class Game extends iGame{
             user.setName(userDB.name);
             ChannelBuffer buf = dynamicBuffer();
             buf.writeShort(GameDefine.CMD_LOGIN_SUCCESS);
+            buf.writeInt(user.getID());
+            buf.writeShort(user.getName().length());
+            buf.writeBytes(user.getName().getBytes());
             SendMessage(buf, user); 
         }
     }
     
-    private void handleCreateRoom(ChannelBuffer buffer) {
+    private void handleCreateRoom(User user, ChannelBuffer buffer) {
+        short lengthRoomName = buffer.readShort();
+        byte[] byteRoomName = new byte[lengthRoomName];
+        buffer.readBytes(byteRoomName, 0, lengthRoomName);
         
+        short lengthPassword = buffer.readShort();
+        byte[] bytePassword = new byte[lengthPassword];
+        buffer.readBytes(bytePassword, 0, lengthPassword);
+        
+        String roomName = new String(byteRoomName);
+        String password = new String(bytePassword);
+        
+        Room room = new Room(generateRoomID(), user, roomName, password);
+        mListRoom.add(room);
+        
+        sendCreateRoomSuccess(user, room);
     }
     
-    private void handleJoinRoom(ChannelBuffer buffer) {
+    private void sendCreateRoomSuccess(User user, Room room) {
+        ChannelBuffer buffer = dynamicBuffer();
+        buffer.writeShort(GameDefine.CMD_CREATE_ROOM_SUCCESS);
+        buffer.writeShort(room.getID());
+        buffer.writeShort(room.getRoomName().length());
+        buffer.writeBytes(room.getRoomName().getBytes());
+        buffer.writeShort(room.getPassword().length());
+        buffer.writeBytes(room.getPassword().getBytes());
         
+        SendMessage(buffer, user);    
+    }
+    
+    private void sendListRoom(User user) {
+        ChannelBuffer buffer = dynamicBuffer();
+        buffer.writeShort(GameDefine.CMD_GET_LIST_ROOM);
+        
+        int numRoom = mListRoom.size();
+        
+        buffer.writeShort(numRoom);
+        for (int i = 0; i < numRoom; i++) {
+            buffer.writeInt(mListRoom.get(i).getID());
+            buffer.writeShort(mListRoom.get(i).getRoomName().length());
+            buffer.writeBytes(mListRoom.get(i).getRoomName().getBytes());
+            buffer.writeShort(mListRoom.get(i).getOwner().getName().length());
+            buffer.writeBytes(mListRoom.get(i).getOwner().getName().getBytes());
+        }
+        
+        SendMessage(buffer, user);
+    }
+    
+    private void handleJoinRoom(User user, ChannelBuffer buffer) {
+        int roomID = buffer.readShort();
+        int roomNumber = 0;
+        int numRoom = mListRoom.size();
+        for (int i = 0; i < numRoom; i++) {
+            if (roomID == mListRoom.get(i).getID()) {
+                roomNumber = i;
+                break;
+            }
+        }
+        
+        if (mListRoom.get(roomNumber).getNumPlayer() < 4) {
+            mListRoom.get(roomNumber).addUser(user);
+            sendJoinRoomSuccess(user, mListRoom.get(roomNumber));
+        }
+    }
+    
+    private void sendJoinRoomSuccess(User user, Room room) {
+        ChannelBuffer buffer = dynamicBuffer();
+        buffer.writeShort(GameDefine.CMD_JOIN_ROOM_SUCCESS);
+        buffer.writeShort(GameDefine.CMD_JOIN_ROOM_NEWBIE);
+        buffer.writeShort(room.getID());
+        buffer.writeInt(room.getOwner().getID());
+        buffer.writeShort(room.getRoomName().length());
+        buffer.writeBytes(room.getRoomName().getBytes());
+        buffer.writeShort(room.getNumPlayer());
+        
+        for (int i = 0; i < room.getNumPlayer(); i++) {
+            buffer.writeInt(room.getUserByIndex(i).getID());
+            buffer.writeShort(room.getUserByIndex(i).getName().length());
+            buffer.writeBytes(room.getUserByIndex(i).getName().getBytes());
+        }
+ 
+        SendMessage(buffer, user);
     }
     
     private void handleReady(ChannelBuffer buffer) {
@@ -258,5 +363,9 @@ public class Game extends iGame{
             User user = (User)e.nextElement();
             SendMessage(buffer, user);
         }
+    }
+    
+    private int generateRoomID() {
+        return 0;
     }
 }
