@@ -1,4 +1,35 @@
 <?php
+/**
+ * A helper for embedding flash into your site using Javascript.
+ * This helper is simply a wrapper for the javascript SwfObject vendor found here:
+ *
+ *   http://code.google.com/p/swfobject/
+ *
+ * It has simply two functions, one is optional. If you wish to embed several
+ * flash files into your view, you can initialize the helper (include the javascript
+ * library) once and also set default options for all your subsequent calls.
+ *
+ * Example 1 :
+ *
+ * echo $flash->renderSwf('test.swf',400,200,'flashy');
+ * echo '<div id="flashy"></div>';
+ *
+ * Example 2 :
+ *
+ * $flash->init(array('width'=>200,'height'=>100));
+ * echo $flash->renderSwf('test1.swf');
+ * echo $flash->renderSwf('test2swf');
+ *
+ * Example 3 :
+ *
+ * echo $flash->renderSwf('flashfiles/fl_countdown_v3_3.swf?mo=1&da=24&snd=off&co=AA3333',800,250,false,
+ *         array('params' => array('movie'=>'?mo=1&da=24&snd=off&co=AA3333')));
+ *
+ * @author Alexander Morland
+ * @license MIT
+ * @version 1.2
+ * @modified 19. nov. 2008
+ */
 class FlashHelper extends AppHelper {
     var $helpers = array('Javascript');
     /**
@@ -16,7 +47,7 @@ class FlashHelper extends AppHelper {
      *
      * @var string
      */
-    var $defaultVersionRequirement = '11.1';
+    var $defaultVersionRequirement = '9.0.0';
 
     /**
      * Used by renderSwf to only call init if it hasnt been done, either
@@ -87,7 +118,7 @@ class FlashHelper extends AppHelper {
             $this->initialized = TRUE;
         }
         $flashvars = '{}';
-        $params =  '{wmode : "gpu"}';
+        $params =  '{wmode : "opaque"}';
         $attributes = '{}';
         if (isset($options['flashvars'])) {
             $flashvars = $this->Javascript->object($options['flashvars']);
