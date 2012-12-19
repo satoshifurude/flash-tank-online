@@ -1,7 +1,6 @@
 <html>
 <header>
 </header>
-
 <body>
      <?php
         if($data == null ) {
@@ -23,11 +22,7 @@
                           echo "</tr>";
                           $index++;
                 }
-
-
         }
-
      ?>
-
 </body>
 </html>
