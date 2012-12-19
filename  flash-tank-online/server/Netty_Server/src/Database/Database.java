@@ -126,11 +126,23 @@ public class Database {
     public void resultBattle (int id,int[] winner,int[] loser){
         String sqlWin;
         String sqlLose;
+        String sqlUser;
         for(int i=0;i < winner.length;i++){
             sqlWin = "INSERT INTO `battles_detail`"
                     + " (`idbattle`, `iduser`, `result`)"
                     + " VALUES ("+id+","+winner[i]+" , 1)";
             executeUpdate(sqlWin);
+            
+            sqlUser = "update users"
+                    + " set win = (select count(*) from battles_detail"
+                    + "     where battles_detail.iduser = "+winner[i]
+                    + "     and battles_detail.result = 1),"
+                    + "     lose = (select count(*) from battles_detail"
+                    + "     where battles_detail.iduser = "+winner[i]
+                    + "     and battles_detail.result = 0) "
+                    + "     where id = "+winner[i]; 
+            
+            executeUpdate(sqlUser);
         }
         
         for(int i=0;i < loser.length;i++){
@@ -138,6 +150,17 @@ public class Database {
                     + " (`idbattle`, `iduser`, `result`)"
                     + " VALUES ("+id+","+loser[i]+" , 0)";
             executeUpdate(sqlLose);
+            
+            sqlUser = "update users"
+                    + " set win = (select count(*) from battles_detail"
+                    + "     where battles_detail.iduser = "+loser[i]
+                    + "     and battles_detail.result = 1),"
+                    + "     lose = (select count(*) from battles_detail"
+                    + "     where battles_detail.iduser = "+loser[i]
+                    + "     and battles_detail.result = 0) "
+                    + "     where id = "+loser[i]; 
+            
+            executeUpdate(sqlUser);
         }
     }
     private String getDate (){
