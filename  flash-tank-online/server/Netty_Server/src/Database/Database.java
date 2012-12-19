@@ -123,7 +123,23 @@ public class Database {
         }
           return id;
     }
-    
+    public void resultBattle (int id,int[] winner,int[] loser){
+        String sqlWin;
+        String sqlLose;
+        for(int i=0;i < winner.length;i++){
+            sqlWin = "INSERT INTO `battles_detail`"
+                    + " (`idbattle`, `iduser`, `result`)"
+                    + " VALUES ("+id+","+winner[i]+" , 1)";
+            executeUpdate(sqlWin);
+        }
+        
+        for(int i=0;i < loser.length;i++){
+            sqlLose = "INSERT INTO `battles_detail`"
+                    + " (`idbattle`, `iduser`, `result`)"
+                    + " VALUES ("+id+","+loser[i]+" , 0)";
+            executeUpdate(sqlLose);
+        }
+    }
     private String getDate (){
         Date d = new Date(System.currentTimeMillis());
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

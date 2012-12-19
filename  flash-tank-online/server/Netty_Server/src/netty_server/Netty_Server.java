@@ -35,9 +35,10 @@ public class Netty_Server {
         // TODO code application logic here
         
         Database.shareData().ConnectDatabase(
-                "jdbc:mysql://localhost:3306/test", // link host database
+                "jdbc:mysql://localhost:3306/tank_db", // link host database
                 "root" , ""); // user nama, pass
-   
+//        Database.shareData().CreateBattle();
+//            Database.shareData().resultBattle(3, new int[]{1,3}, new int[]{2});
 //        Database.shareData().Logout(1);
 //        UserModel usertest = Database.shareData().Login("thanhtri", "123456");
         
