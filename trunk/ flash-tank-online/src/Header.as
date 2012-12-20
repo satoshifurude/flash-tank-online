@@ -17,6 +17,7 @@ package
 		private var mClipSprite:ClippedSprite;
 		private var mHpBar:Image;
 		private var mFinishImage:Image;
+		private var mResult:int;
 		
         public function Header(side:int)
         {
@@ -68,10 +69,12 @@ package
 			if (Game.getInstance().mMainGame.getPlayer().mSide == mSide)
 			{
 				mFinishImage = ResourceManager.getInstance().getImage(ResourceDefine.TEX_LOSE);
+				mResult = 0;
 			}
 			else
 			{
 				mFinishImage = ResourceManager.getInstance().getImage(ResourceDefine.TEX_WIN);
+				mResult = 1;
 			}
 			
 			mFinishImage.x = GameDefine.WIDTH - mFinishImage.width >> 1;
@@ -101,6 +104,8 @@ package
 				removeEventListener(Event.ENTER_FRAME, onFrame);
 				removeFromParent(true);
 				Game.getInstance().mMainGame.finishGame();
+				Game.getInstance().sendFinishGame(mResult);
+				mResult = -1;
 			}
 		}
 		
