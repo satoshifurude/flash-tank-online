@@ -33,7 +33,7 @@ class UsersController extends AppController {
                 $this->set("policy", "GM");
                 $this->render('/users/gmlogin');
             }
-            if($content['users']['policy'] == 3) {
+            if($content['users']['policy'] >= 3) {
                 $this->set("policy", "Manager");
                 $this->render('/users/managerlogin');
             }

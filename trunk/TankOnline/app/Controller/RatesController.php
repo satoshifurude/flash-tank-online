@@ -14,9 +14,6 @@ class RatesController extends AppController
     }
      function rate(){
 
-         $conn=mysql_connect("localhost","root","") or die("can't connect this database");
-         mysql_select_db("tank_db",$conn);
-
          $sql = "SELECT users.name, COUNT( * ) AS win
                     FROM users, battles_detail
                     WHERE users.id = battles_detail.iduser
@@ -24,8 +21,8 @@ class RatesController extends AppController
                     GROUP BY users.name
                     ORDER BY win DESC
                     LIMIT 0 , 30" ;
-         $data = mysql_query($sql);
-         $dataChart = mysql_query($sql);
+         $data = $this->query($sql);
+         $dataChart = $this->query($sql);
 
          $this->set("data",$data);
          $chart = new HorizontalBarChart(600, 170);
@@ -45,9 +42,6 @@ class RatesController extends AppController
         $month = date("m",strtotime($date));
         $year = date("Y",strtotime($date));
 
-        $conn=mysql_connect("localhost","root","") or die("can't connect this database");
-        mysql_select_db("tank_db",$conn);
-
         $sql = "SELECT users.name, COUNT( * ) AS win
                     FROM users, battles_detail,battles
                     WHERE users.id = battles_detail.iduser
@@ -57,8 +51,8 @@ class RatesController extends AppController
                     and  year (battles.time) = ".$year."
                     GROUP BY users.name
                     ORDER BY win DESC " ;
-        $data = mysql_query($sql);
-        $dataChart = mysql_query($sql);
+        $data =$this->query($sql);
+        $dataChart = $this->query($sql);
 
         $this->set("data",$data);
 //
@@ -78,9 +72,6 @@ class RatesController extends AppController
     function year(){
         $year= $_POST['date'];
 
-        $conn=mysql_connect("localhost","root","") or die("can't connect this database");
-        mysql_select_db("tank_db",$conn);
-
         $sql = "SELECT users.name, COUNT( * ) AS win
                     FROM users, battles_detail,battles
                     WHERE users.id = battles_detail.iduser
@@ -89,8 +80,8 @@ class RatesController extends AppController
                     and  year (battles.time) = ".$year."
                     GROUP BY users.name
                     ORDER BY win DESC " ;
-        $data = mysql_query($sql);
-        $dataChart = mysql_query($sql);
+        $data = $this->query($sql);
+        $dataChart =$this->query($sql);
 
         $this->set("data",$data);
 //
