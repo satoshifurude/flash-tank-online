@@ -123,6 +123,34 @@ public class Database {
         }
           return id;
     }
+    public void resultBattle (int idBattle,String name,int result){
+        String query = "select * from users where "
+            + "name ='" + name + "'";
+        ResultSet resultSet = executeQuery(query);
+        try {
+            if(resultSet.next()){
+                int id = resultSet.getInt("id");
+                String sql = "INSERT INTO `battles_detail`"
+                    + " (`idbattle`, `iduser`, `result`)"
+                    + " VALUES ("+idBattle+","+id+" , "+result+")";
+                executeUpdate(sql);
+                String sqlUser = "update users"
+                    + " set win = (select count(*) from battles_detail"
+                    + "     where battles_detail.iduser = "+id
+                    + "     and battles_detail.result = 1),"
+                    + "     lose = (select count(*) from battles_detail"
+                    + "     where battles_detail.iduser = "+id
+                    + "     and battles_detail.result = 0) "
+                    + "     where id = "+id;                 
+                   executeUpdate(sqlUser);
+                   System.out.println("resultBattle success ID :"+idBattle+"   userID:"+id+" KQ: "+result);
+            }else {
+                System.out.println("resultBattle Fail: ko tim thay user");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     public void resultBattle (int id,int[] winner,int[] loser){
         String sqlWin;
         String sqlLose;
