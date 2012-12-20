@@ -205,7 +205,10 @@ public class Game extends iGame{
     }
     
      private void handleFinishGame(User user, ChannelBuffer buffer) {
-         
+         Room room = getRoomWithID(user.mRoom);
+         if (room.isPlaying()) {
+             room.setPlaying(false);
+         }
      }
     
     private void handleChangeSide(User user, ChannelBuffer buffer) {

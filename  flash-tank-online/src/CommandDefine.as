@@ -24,6 +24,7 @@ package
 		public static const CMD_JOIN_ROOM_NEWBIE:int     	= 35;
 		public static const CMD_JOIN_ROOM_OLDBIE:int     	= 36;
 		public static const CMD_CHANGE_SIDE:int     	= 37;
+		public static const CMD_FINISH_GAME:int     	= 38;
 		
 		public static const INPUT_LEFT:int        	= 1;
 		public static const INPUT_RIGHT:int       	= 2;

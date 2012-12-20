@@ -318,6 +318,14 @@ package
 			mMainGame.startGame();
 		}
 		
+		public function sendFinishGame():void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_FINISH_GAME);
+			
+			mSocket.Write(buffer);
+		}
+		
 		public function handlePlayerState(buffer:ByteArray):void
 		{
 			var numPlayer:int = buffer.readShort();

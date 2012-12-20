@@ -191,6 +191,7 @@ package
 			removeEventListener(Event.ADDED_TO_STAGE, onStartScene);
 			removeFromParent(true);
 			Game.getInstance().mRoomScene.visible = true;
+			Game.getInstance().sendFinishGame();
 		}
 	}
 }
