@@ -14,6 +14,7 @@
     <div id="menu">
         <ul>
             <li><?php echo $this->Session->read("Username")?>-<?php echo $policy ?></li>
+            <?php echo $this->Common->link_game();?>
             <li><a href="/TankOnline/users/login">Xem thông tin</a></li>
             <li><a href="/TankOnline/rates/index">Xem xếp hạng</a></li>
             <li><a href="/TankOnline/users/logout">Thoát</a></li>

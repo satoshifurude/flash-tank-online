@@ -3,8 +3,11 @@ class CommonHelper extends HtmlHelper {
 // H�m t?o menu
     var $helpers = array("Session","Html","Common","Flash");
 //    var $helpers = array();
+    function  link_game() {
+        $menu = "<li><a href=\"localhost/release/tank.html\">Chơi game</a></li>";
+        return $menu;
+    }
     function create_menu(){
-
         $menu  = "<ul>";
         $menu .= "<li>".$this->link("Đăng nhập", array(
             "controller"=>"users",

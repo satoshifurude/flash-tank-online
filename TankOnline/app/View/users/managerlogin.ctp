@@ -14,6 +14,7 @@
     <div id="menu">
         <ul>
             <li><?php echo $this->Session->read("Username")?>-<?php echo $policy ?></li>
+            <?php echo $this->Common->link_game();?>
             <li><a href="/TankOnline/users/editlogin">Sửa thông tin</a></li>
             <li><a href="/TankOnline/users/manageusersandgm">Quản lí thành viên</a></li>
             <li><a href="/TankOnline/rates/index">Xem xếp hạng</a></li>
@@ -49,9 +50,6 @@
             <span>Email: <?php echo  $content['users']['email'] ;?></span>
             <br>
             <br>
-            <form method="post" action="">
-            <input type="submit" name="ok" value="Bắt đầu" />
-            </form>
             </center>
         </div>
     </div>
