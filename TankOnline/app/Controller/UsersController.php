@@ -22,6 +22,7 @@ class UsersController extends AppController {
             $sql = "Select * from users Where name='$username'";
             $content = $this->User->query($sql);
             $content = $content[0];
+            $this->Session->write($this->_sessionPolicy,$content['users']['policy']);
             $this->set("content", $content);
 
             if($content['users']['policy'] == 1) {
@@ -240,7 +241,6 @@ class UsersController extends AppController {
         $content = $this->User->query($sql);
         $content = $content[0];
         $this->set("content", $content);
-        $this->Session->write($this->_sessionPolicy,$content['users']['policy']);
         //data
         $sql = "Select * from users Where policy = 1";
         $data = $this->User->query($sql);
