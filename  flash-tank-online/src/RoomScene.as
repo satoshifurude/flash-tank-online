@@ -33,7 +33,7 @@ package
 			mBtnStart.addEventListener(Event.TRIGGERED, onStart);
 			addChild(mBtnStart);
 			
-			mBtnChangeSide= new Button(ResourceManager.getInstance().getTexture(ResourceDefine.TEX_BTN_CHANGE_1), "", ResourceManager.getInstance().getTexture(ResourceDefine.TEX_BTN_CHANGE_1));
+			mBtnChangeSide = new Button(ResourceManager.getInstance().getTexture(ResourceDefine.TEX_BTN_CHANGE_1), "", ResourceManager.getInstance().getTexture(ResourceDefine.TEX_BTN_CHANGE_1));
 			mBtnChangeSide.x = 380;
 			mBtnChangeSide.y = 500;
 			mBtnChangeSide.addEventListener(Event.TRIGGERED, onChangeSide);

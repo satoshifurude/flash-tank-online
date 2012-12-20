@@ -20,8 +20,10 @@ public class Room {
     private String mPassword;
     private User mOwner;
     private List<User> mListUser;
+    private boolean mIsPlaying;
     
     public Room(int id, User user, String name, String password) {
+        mIsPlaying = false;
         mID = id;
         mName = name;
         mOwner = user;
@@ -75,29 +77,11 @@ public class Room {
         return mID;
     }
     
-    private void sendStartGame() {
-        System.out.println("Server : send start game");
-        
-        int numPlayer = mListUser.size();                
-        
-        ChannelBuffer buffer = dynamicBuffer();
-        buffer.writeShort(GameDefine.CMD_START_GAME_SUCCESS);
-        buffer.writeShort(1); // map id
-        buffer.writeShort(numPlayer);
-        
-        for (int i = 0; i < numPlayer; i++) {
-            String name = mListUser.get(i).getName();
-            buffer.writeInt(mListUser.get(i).getID());
-            buffer.writeShort(name.length());
-            buffer.writeBytes(name.getBytes());
-            buffer.writeShort(mListUser.get(i).m_iX);
-            buffer.writeShort(mListUser.get(i).m_iY);
-        }
-        
-        for (int i = 0; i < numPlayer; i++) {
-            ChannelBuffer buf = buffer.copy();
-            buf.writeInt(mListUser.get(i).getID());
-//            SendMessage(mListUser.get(i), user);
-        }
+    public void setPlaying(boolean bool) {
+        mIsPlaying = bool;
+    }
+    
+    public boolean isPlaying() {
+        return mIsPlaying;
     }
 }

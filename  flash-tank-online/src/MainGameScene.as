@@ -57,6 +57,11 @@ package
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp);
 			addEventListener(Event.ENTER_FRAME, onFrame);
+			addEventListener(Event.ADDED_TO_STAGE, onStartScene);
+		}
+		
+		private function onStartScene(event:Event):void
+		{
 			Game.getInstance().sendPlayerState();
 		}
 		
@@ -183,6 +188,7 @@ package
 		public function finishGame():void
 		{
 			removeEventListener(Event.ENTER_FRAME, onFrame);
+			removeEventListener(Event.ADDED_TO_STAGE, onStartScene);
 			removeFromParent(true);
 			Game.getInstance().mRoomScene.visible = true;
 		}

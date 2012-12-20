@@ -12,9 +12,10 @@ package
 		private var mFrame:Image;
 		private var mOwner:TextField;
 		private var mRoomName:TextField;
+		private var mNumPlayer:TextField;
 		private var mRoomID:int;
 		
-        public function Room(id:int, roomName:String, owner:String)
+        public function Room(id:int, roomName:String, owner:String, numPlayer:int)
         {
 			mRoomID = id;
 			mBackground = ResourceManager.getInstance().getImage(ResourceDefine.TEX_ROOM_FRAME_BG);
@@ -40,6 +41,13 @@ package
 			mRoomName.touchable = false
 			addChild(mRoomName);
 			
+			mNumPlayer = new TextField(275, 25, numPlayer + "/4", "Verdana", 14, 0xffffff, true);
+			mNumPlayer.x = 46;
+			mNumPlayer.y = 45;
+			mNumPlayer.hAlign = "right";
+			mNumPlayer.touchable = false
+			addChild(mNumPlayer);
+			
 			addEventListener(TouchEvent.TOUCH, onTouch);
         }
 		
@@ -57,6 +65,20 @@ package
 				{
 					Game.getInstance().sendJoinRoom(mRoomID);
 				}
+			}
+		}
+		
+		public function setPlaying(bool:Boolean):void
+		{
+			if (bool)
+			{
+				this.alpha = 0.5;
+				this.touchable = false;
+			}
+			else
+			{
+				this.alpha = 1.0;
+				this.touchable = true;
 			}
 		}
 	}

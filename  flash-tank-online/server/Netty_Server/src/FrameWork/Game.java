@@ -65,7 +65,6 @@ public class Game extends iGame{
     @Override
     public void OnUpdate() {
 //        System.out.println("Update:"+Game.deltaTime);
-        sendPlayerState();
                 
     }
 
@@ -113,7 +112,7 @@ public class Game extends iGame{
                 handleDisconnect(buf);
                 break;
             case GameDefine.CMD_FIRE:
-                handleFire(buf);
+                handleFire(user, buf);
                 break;
             case GameDefine.CMD_GET_LIST_ROOM:
                 sendListRoom(user);
@@ -123,6 +122,8 @@ public class Game extends iGame{
                 break;
             case GameDefine.CMD_CHANGE_SIDE:
                 handleChangeSide(user, buf);
+            case GameDefine.CMD_FINISH_GAME:
+                handleFinishGame(user, buf);
                 break;
         }
     }
@@ -142,14 +143,18 @@ public class Game extends iGame{
         Room room = getRoomWithID(user.mRoom);
         if (room != null) {
             room.removeUser(user);
-            if (user == room.getOwner()) {
-                // chuyen key cho nguoi khac
-            }
-
-            if (room.getNumPlayer() == 0) {
-                mListRoom.remove(room);
+            if (room.isPlaying()) {
+                
             } else {
-                sendLeaveRoom(room, user);
+                if (user == room.getOwner()) {
+                    // chuyen key cho nguoi khac
+                }
+
+                if (room.getNumPlayer() == 0) {
+                    mListRoom.remove(room);
+                } else {
+                    sendLeaveRoom(room, user);
+                }
             }
         }
     }
@@ -165,6 +170,7 @@ public class Game extends iGame{
     private void sendStartGame(Room room) {
         System.out.println("Server : send start game");
         
+        room.setPlaying(true);
         ChannelBuffer buffer = dynamicBuffer();
         buffer.writeShort(GameDefine.CMD_START_GAME_SUCCESS);
         buffer.writeShort(1);
@@ -197,6 +203,10 @@ public class Game extends iGame{
 //            SendMessage(buf, user);
 //        }
     }
+    
+     private void handleFinishGame(User user, ChannelBuffer buffer) {
+         
+     }
     
     private void handleChangeSide(User user, ChannelBuffer buffer) {
         System.out.println("handleChangeSide");
@@ -320,6 +330,8 @@ public class Game extends iGame{
         buffer.writeShort(numRoom);
         for (int i = 0; i < numRoom; i++) {
             buffer.writeInt(mListRoom.get(i).getID());
+            buffer.writeShort(mListRoom.get(i).isPlaying() == true ? 1 : 0);
+            buffer.writeShort(mListRoom.get(i).getNumPlayer());
             buffer.writeShort(mListRoom.get(i).getRoomName().length());
             buffer.writeBytes(mListRoom.get(i).getRoomName().getBytes());
             buffer.writeShort(mListRoom.get(i).getOwner().getName().length());
@@ -416,49 +428,42 @@ public class Game extends iGame{
     }
     
     private void handlePlayerState(User user, ChannelBuffer buffer) {
-//        if (gameLoop == null) {
-//            gameLoop = new GameLoop();
-//            gameLoop.start();
-//        }
-        buffer.readShort();
+
+        Room room = getRoomWithID(user.mRoom);
         user.mDirection = buffer.readShort();
         user.m_isMoving = buffer.readShort();
         user.m_iX = buffer.readInt();
         user.m_iY = buffer.readInt();
         
-        sendPlayerState();
+        sendPlayerState(room);
     }
     
-    private void handleFire(ChannelBuffer buffer) {
+    private void handleFire(User user, ChannelBuffer buffer) {
         System.out.println("fire");
-        Enumeration e = mHashUsers.elements();
-        while(e.hasMoreElements()) {
-            User user = (User)e.nextElement();
-            SendMessage(buffer, user);
+        Room room = getRoomWithID(user.mRoom);
+        int numPlayer = room.getNumPlayer();
+        for (int i = 0; i < numPlayer; i++) {
+            SendMessage(buffer, room.getUserByIndex(i));
         }
     }
     
-    private void sendPlayerState() {
-        int numPlayer = mHashUsers.size();  
+    private void sendPlayerState(Room room) {
+        int numPlayer = room.getNumPlayer();  
         
         ChannelBuffer buffer = dynamicBuffer();
         buffer.writeShort(GameDefine.CMD_UPDATE_GAME);
         buffer.writeShort(numPlayer);
         
-        Enumeration e = mHashUsers.elements();
-        while(e.hasMoreElements()) {
-            User user = (User)e.nextElement();
-            buffer.writeInt(user.getID());
-            buffer.writeShort(user.mDirection);
-            buffer.writeShort(user.m_isMoving);
-            buffer.writeInt(user.m_iX);
-            buffer.writeInt(user.m_iY);
+        for (int i = 0; i < numPlayer; i++) {
+            buffer.writeInt(room.getUserByIndex(i).getID());
+            buffer.writeShort(room.getUserByIndex(i).mDirection);
+            buffer.writeShort(room.getUserByIndex(i).m_isMoving);
+            buffer.writeInt(room.getUserByIndex(i).m_iX);
+            buffer.writeInt(room.getUserByIndex(i).m_iY);
         }
         
-        e = mHashUsers.elements();
-        while(e.hasMoreElements()) {
-            User user = (User)e.nextElement();
-            SendMessage(buffer, user);
+        for (int i = 0; i < numPlayer; i++) {
+            SendMessage(buffer, room.getUserByIndex(i));
         }
     }
     
