@@ -2231,6 +2231,291 @@
 2012-12-20 08:45:54 Error: [MissingControllerException] Controller class ImgController could not be found.
 #0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+<<<<<<< .mine
+2012-12-20 15:31:06 Error: [MissingControllerException] Controller class TankonlineController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 15:58:01 Error: Fatal Error (1): Call to a member function url() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gmlogin.ctp, line 52]
+2012-12-20 15:58:02 Error: [FatalErrorException] Call to a member function url() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 52, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 52, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:02:59 Error: Fatal Error (1): Call to a member function url() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gmlogin.ctp, line 52]
+2012-12-20 16:02:59 Error: [FatalErrorException] Call to a member function url() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 52, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 52, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:03:02 Error: Fatal Error (1): Call to a member function url() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\users\gmlogin.ctp, line 52]
+2012-12-20 16:03:02 Error: [FatalErrorException] Call to a member function url() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 52, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 52, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:22:23 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\CommonHelper.php, line 21]
+2012-12-20 16:22:23 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:23:48 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\CommonHelper.php, line 18]
+2012-12-20 16:23:48 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:23:52 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\xampp\htdocs\TankOnline\app\View\Helper\CommonHelper.php, line 18]
+2012-12-20 16:23:52 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 17:07:25 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:28 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:31 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:43 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:48 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:07:48 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:08:21 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:09:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:09:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:09:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:09:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:09:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:09:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:10:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:10:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:12:16 Error: [MissingActionException] Action UsersController::img() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 17:12:49 Error: [MissingActionException] Action UsersController::tank.jpg() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 17:16:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:13 Error: [MissingControllerException] Controller class TaController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:14 Error: [MissingControllerException] Controller class TankController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:16:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:24:06 Error: [MissingActionException] Action UsersController::tank.jpg() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 17:26:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:26:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:26:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:26:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:26:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:26:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:27:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:27:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:27:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:30:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:30:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:30:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:30:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 17:53:05 Error: [MissingActionException] Action UsersController::tank.jpg() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 17:56:53 Error: [MissingActionException] Action UsersController::tank.jpg() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 18:14:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:14:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:17:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 18:20:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+=======
 2012-12-20 13:17:11 Error: [MissingActionException] Action TesthelperController::index() could not be found.
 #0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
 #1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
@@ -3109,3 +3394,4 @@
 #1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
 #2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+>>>>>>> .r83
