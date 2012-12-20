@@ -4,7 +4,7 @@ class CommonHelper extends HtmlHelper {
     var $helpers = array("Session","Html","Common","Flash");
 //    var $helpers = array();
     function  link_game() {
-        $menu = "<li><a href=\"localhost/release/tank.html\">Chơi game</a></li>";
+        $menu = "<li><a href=\"/release/tank.html\">Chơi game</a></li>";
         return $menu;
     }
     function create_menu(){
