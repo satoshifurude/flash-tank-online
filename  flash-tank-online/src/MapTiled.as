@@ -122,6 +122,10 @@ package
 								headerSide++;
 							}
 							break;
+						case GameDefine.COLOR_TANK:
+							trace("x = " + x + ", y = " + y);
+							mArrPlayerPosition.push(new Point(x * GameDefine.CELL_SIZE, y * GameDefine.CELL_SIZE));
+							break;
 						default:
 							continue;
 					}
@@ -234,6 +238,11 @@ package
 		public function addPlayer(player:Tank):void
 		{
 			mPlayerLayer.addChild(player);
+		}
+		
+		public function getListPosition():Vector.<Point>
+		{
+			return mArrPlayerPosition;
 		}
     }
 }

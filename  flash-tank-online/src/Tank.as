@@ -6,29 +6,31 @@ package
 
     public class Tank extends Sprite
     {
-		private static const SIDE_BLUE:int = 0;
-		private static const SIDE_RED:int = 1;
-		
 		public var mLastPositionX:Number;
 		public var mLastPositionY:Number;
 		public var mDirection:int;
 		public var mSpeed:int;
 		public var mHp:int;
+		public var mDamage:int;
 		public var mImage:Image;
 		public var mLayerTank:Sprite;
 		public var mNumCurrentBullet:Number;
 		public var mName:String;
 		public var mID:int;
 		public var mIsMoving:int;
+		public var mSide:int;
 		
-        public function Tank(id:int = 0, side:int = SIDE_BLUE)
+        public function Tank(id:int = 0, side:int = GameDefine.SIDE_BLUE)
         {
 			mNumCurrentBullet = 0;
 			mSpeed = GameDefine.TANK_SPEED;
 			mID = id;
+			mSide = side;
+			mHp = 100;
+			mDamage = 10;
 			mLayerTank = new Sprite();
 			
-			mImage = new Image(ResourceManager.getInstance().getTexture(side == SIDE_BLUE ? ResourceDefine.TEX_TANK_BLUE : ResourceDefine.TEX_TANK_RED));
+			mImage = new Image(ResourceManager.getInstance().getTexture(side == GameDefine.SIDE_BLUE ? ResourceDefine.TEX_TANK_BLUE : ResourceDefine.TEX_TANK_RED));
 			mLayerTank.addChild(mImage);
 			
 			addChild(mLayerTank);
@@ -209,6 +211,21 @@ package
 					|| this.x + this.width / 2 < bullet.x
 					|| this.y > bullet.y + bullet.height / 2
 					|| this.y + this.height / 2 < bullet.y);
+		}
+		
+		private function dead():void
+		{
+			
+		}
+		
+		public function damage(bullet:Bullet):void
+		{
+			mHp -= bullet.getPlayer().mDamage;
+			trace("Hp = " + mHp);
+			if (mHp <= 0)
+			{
+				dead();
+			}
 		}
 	
 		override public function get width():Number { return mImage.width; }

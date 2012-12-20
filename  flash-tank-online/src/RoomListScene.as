@@ -100,8 +100,13 @@ package
 				mListRoom[i].x = (i % 2 == 0) ? 70 : 430;
 				mListRoom[i].y = startY;
 				
-				startY += (i % 2 == 1) ? 50 : 0;
+				startY += (i % 2 == 1) ? 100 : 0;
 			}
+		}
+		
+		private function cmpIncrease(roomA:Room, roomB:Room):int
+		{
+			return 0;
 		}
 	}
 }

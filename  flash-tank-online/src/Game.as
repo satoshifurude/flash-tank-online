@@ -6,6 +6,7 @@ package
     import starling.textures.*;
 	import starling.events.*;
 	import flash.utils.*;
+	import flash.geom.Point;
 
     public class Game extends Sprite
     {
@@ -67,49 +68,121 @@ package
 				case CommandDefine.CMD_JOIN_ROOM_SUCCESS:
 					handleJoinRoom(buffer);
 					break;
+				case CommandDefine.CMD_LEAVE_ROOM:
+					handleLeaveRoom(buffer);
+					break;
+				case CommandDefine.CMD_READY:
+					handleReady(buffer);
+					break;
+				case CommandDefine.CMD_CHANGE_SIDE:
+					handleChangeSide(buffer);
+					break;
 			}
+		}
+		
+		public function sendChangeSide(side:int):void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_CHANGE_SIDE);
+			buffer.writeShort(side);
+			
+			mSocket.Write(buffer);
+		}
+		
+		private function handleChangeSide(buffer:ByteArray):void
+		{
+			var userID:int = buffer.readInt();
+			var side:int = buffer.readShort();
+			
+			mRoomScene.setUserSide(userID, side);
+			mRoomScene.updateUser();
+		}
+		
+		private function handleLeaveRoom(buffer:ByteArray):void
+		{
+			trace("handleLeaveRoom");
+			var key:int = buffer.readInt();
+			var userID:int = buffer.readInt();
+			
+			mRoomScene.removeUser(userID);
+			mRoomScene.updateUser();
 		}
 		
 		private function handleJoinRoom(buffer:ByteArray):void
 		{	
-			mRoomListScene.close();
-			mRoomListScene = null;
-			mRoomScene = new RoomScene(roomID, roomName, "");
-			addChild(new LoadingScene(GameDefine.ID_ROOM_SCENE));
-			
 			var roomNameLength:int;
 			var roomName:String;
 			var numPlayer:int;
 			var roomID:int;
 			var ownerID:int;
+			var userID:int;
+			var length:int;
+			var name:String;
+			var user:UserRoom;
+			var side:int;
 			var cmd:int = buffer.readShort();
 			
 			if (cmd == CommandDefine.CMD_JOIN_ROOM_NEWBIE)
 			{
+				mRoomListScene.close();
+				mRoomListScene = null;
+				mRoomScene = new RoomScene(roomID, roomName, "");
+				addChild(new LoadingScene(GameDefine.ID_ROOM_SCENE));
+			
 				roomID = buffer.readShort();
+				mRoomScene = new RoomScene(roomID, roomName, "");
+				addChild(new LoadingScene(GameDefine.ID_ROOM_SCENE));
+				
+				
 				ownerID = buffer.readInt();
 				roomNameLength = buffer.readShort();
 				roomName = buffer.readMultiByte(roomNameLength, "utf-8");
 				numPlayer = buffer.readShort();
 				for (var i:int = 0; i < numPlayer; i++)
 				{
-					var userID:int = buffer.readInt();
-					var length:int = buffer.readShort();
-					var name:String = buffer.readMultiByte(length, "utf-8");
+					userID = buffer.readInt();
+					side = buffer.readShort();
+					length = buffer.readShort();
+					name = buffer.readMultiByte(length, "utf-8");
 					
-					var user:UserRoom = new UserRoom(userID, mName);
+					user = new UserRoom(userID, name);
+					user.setSide(side);
 					if (ownerID == userID) user.setKey(true);
 					else if (mID == userID) user.setMyUser(true);
 					mRoomScene.addUser(user);
 					
 				}
 			}
-			else
+			else if (cmd == CommandDefine.CMD_JOIN_ROOM_OLDBIE)
 			{
+				userID = buffer.readInt();
+				side = buffer.readShort();
+				length = buffer.readShort();
+				name = buffer.readMultiByte(length, "utf-8");
 				
+				user = new UserRoom(userID, name);
+				user.setSide(side);
+				mRoomScene.addUser(user);
 			}
 			
 			mRoomScene.updateUser();
+		}
+		
+		public function sendReady(bool:Boolean):void
+		{
+			var buffer:ByteArray = new ByteArray();
+			buffer.writeShort(CommandDefine.CMD_READY);
+			buffer.writeShort(bool ? 1 : 0);
+			
+			mSocket.Write(buffer);
+		}
+		
+		private function handleReady(buffer:ByteArray):void
+		{
+			var userID:int = buffer.readInt();
+			var isReady:int = buffer.readShort();
+			
+			mRoomScene.setReady(userID, isReady == 1 ? true : false);
 		}
 		
 		public function sendJoinRoom(roomID:int):void
@@ -123,6 +196,7 @@ package
 		
 		public function sendLeaveRoom(roomID:int):void
 		{
+			trace("sendLeaveRoom : room ID = " + roomID);
 			var buffer:ByteArray = new ByteArray();
 			buffer.writeShort(CommandDefine.CMD_LEAVE_ROOM);
 			buffer.writeShort(roomID);
@@ -168,6 +242,7 @@ package
 		private function handleCreateRoomSuccess(buffer:ByteArray):void
 		{
 			var roomID:int = buffer.readShort();
+			var side:int = buffer.readShort();
 			var roomNameLength:int = buffer.readShort();
 			var roomName:String = buffer.readMultiByte(roomNameLength, "utf-8");
 			var passwordLength:int = buffer.readShort();
@@ -180,13 +255,18 @@ package
 			
 			var user:UserRoom = new UserRoom(mID, mName);
 			user.setKey(true);
+			user.setMyUser(true);
+			user.setSide(GameDefine.SIDE_BLUE);
 			mRoomScene.addUser(user);
 			mRoomScene.updateUser();
+			mRoomScene.setOwner(true);
 		}
 		
 		private function handleStartGame(buffer:ByteArray):void
 		{
-			Game.getInstance().addChild(new LoadingScene(GameDefine.ID_MAIN_SCENE));
+			mRoomScene.visible = false;
+			mRoomScene.clearReady();
+			addChild(new LoadingScene(GameDefine.ID_MAIN_SCENE));
 			
 			// mapID
 			// num player
@@ -196,6 +276,8 @@ package
 			// player name
 			// player position
 			var numPlayer:int;
+			var sideBlue:int = 2;
+			var sideRed:int = 0;
 			
 			trace("Map ID : " + buffer.readShort());
 			numPlayer = buffer.readShort();
@@ -204,21 +286,32 @@ package
 			for (var i:int = 0; i < numPlayer; i++)
 			{
 				var id:int = buffer.readInt();
-				var length:int = buffer.readShort();
-				var name:String = buffer.readMultiByte(length, "utf-8");
-				var x:int = buffer.readShort();
-				var y:int = buffer.readShort();
+				var userRoom:UserRoom = mRoomScene.getUserWithID(id);
+				var point:Point;
 				
-				var tank:Tank = new Tank(id);
-				tank.mName = name;
-				tank.x = x;
-				tank.y = y;
+				trace("id : " + id);
+				trace("side : " + userRoom.getSide());
+				
+				var tank:Tank = new Tank(userRoom.getID(), userRoom.getSide());
+				tank.mName = userRoom.getName();
+				if (userRoom.getSide() == GameDefine.SIDE_BLUE)
+				{
+					point = mMainGame.mMapTiled.getListPosition()[sideBlue];
+					sideBlue++;
+				}
+				else
+				{
+					point = mMainGame.mMapTiled.getListPosition()[sideRed];
+					sideRed++;
+				}
+				tank.x = point.x;
+				tank.y = point.y;
 				
 				mMainGame.addPlayer(tank);
 				
 				trace("id = " + id);
 			}
-			mID = buffer.readInt();
+			// mID = buffer.readInt();
 			mMainGame.startGame();
 		}
 		
@@ -262,7 +355,7 @@ package
 		{
 			var buffer:ByteArray = new ByteArray();
 			buffer.writeShort(CommandDefine.CMD_START_GAME);
-			buffer.writeShort(1); // num room
+			buffer.writeShort(mRoomScene.getRoomID()); // num room
 			
 			mSocket.Write(buffer);
 		}
@@ -285,7 +378,7 @@ package
 			var buffer:ByteArray = new ByteArray();
 			buffer.writeShort(CommandDefine.CMD_FIRE);
 			buffer.writeShort(CommandDefine.CMD_FIRE);
-			buffer.writeInt(mMainGame.getPlayer().getID());
+			buffer.writeInt(mID);
 			buffer.writeShort(bullet.getDirection());
 			buffer.writeInt(bullet.x);
 			buffer.writeInt(bullet.y);

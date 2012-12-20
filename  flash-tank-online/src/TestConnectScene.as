@@ -18,7 +18,7 @@ package
 			addChild(mTitle);
 				
 			Security.loadPolicyFile("xmlsocket://127.0.0.1:5554");
-			Game.getInstance().mSocket = new CSockConnection("127.0.0.1", 8080);
+			Game.getInstance().mSocket = new CSockConnection("127.0.0.1", 5555);
 			Game.getInstance().mSocket.Connect();
         }
 		

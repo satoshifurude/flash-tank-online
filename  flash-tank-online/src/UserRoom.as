@@ -14,9 +14,8 @@ package
 		private var mFrameReady:Image;
 		private var mUsername:TextField;
 		private var mWinRate:TextField;
-		private var mIsKey:Boolean = false;
-		private var mIsReady:Boolean = false;
 		private var mUserID:int;
+		private var mSide:int;
 		
         public function UserRoom(userID:int, name:String)
         {
@@ -31,13 +30,15 @@ package
 			addChild(mFrame);
 			
 			mFrameKey = ResourceManager.getInstance().getImage(ResourceDefine.TEX_ICON_KEY);
-			mFrameKey.x = 270;
+			mFrameKey.x = 304;
 			mFrameKey.y = 1;
+			mFrameKey.visible = false;
 			addChild(mFrameKey);
 			
 			mFrameReady = ResourceManager.getInstance().getImage(ResourceDefine.TEX_ICON_READY);
 			mFrameReady.x = 304;
 			mFrameReady.y = 1;
+			mFrameReady.visible = false;
 			addChild(mFrameReady);
 			
 			mUsername = new TextField(275, 25, name, "Verdana", 14, 0xffffff, true);
@@ -53,20 +54,26 @@ package
 			mWinRate.hAlign = "left";
 			mWinRate.touchable = false
 			addChild(mWinRate);
-			
-			updateState();
         }
 		
 		public function setKey(bool:Boolean):void
 		{
-			mIsKey = bool;
-			updateState();
+			mFrameKey.visible = bool;
+		}
+		
+		public function isKey():Boolean
+		{
+			return mFrameKey.visible;
 		}
 		
 		public function setReady(bool:Boolean):void
 		{
-			mIsReady = bool;
-			updateState();
+			mFrameReady.visible = bool;
+		}
+		
+		public function getReady():Boolean
+		{
+			return mFrameReady.visible;
 		}
 		
 		public function setMyUser(bool:Boolean):void
@@ -74,15 +81,24 @@ package
 			mBackground.visible = bool
 		}
 		
-		public function getUserID():int
+		public function getID():int
 		{
 			return mUserID;
 		}
 		
-		private function updateState():void
+		public function setSide(side:int):void
 		{
-			mFrameKey.visible = mIsKey;
-			mFrameReady.visible = mIsReady;
+			mSide = side;
+		}
+		
+		public function getSide():int
+		{
+			return mSide;
+		}
+		
+		public function getName():String
+		{
+			return mUsername.text;
 		}
 	}
 }

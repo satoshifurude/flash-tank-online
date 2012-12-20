@@ -18,6 +18,8 @@ public class User {
     public int m_iX;
     public int m_iY;
     public int m_isMoving;
+    public int mRoom;
+    public int mSide;
     
     public User(Channel channel) {
         mChannel = channel;                

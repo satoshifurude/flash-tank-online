@@ -10,7 +10,6 @@ package
 
 		public static var mInstance:MainGameScene;
         public var mMapTiled:MapTiled;
-		private var mPlayer:Tank;
 		public var mArrPlayer:Vector.<Tank>;
 		public var mNumberMainPlayer:int;
 		
@@ -46,6 +45,7 @@ package
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp);
 			addEventListener(Event.ENTER_FRAME, onFrame);
+			Game.getInstance().sendPlayerState();
 		}
 		
 		private function onFrame(event:EnterFrameEvent):void
@@ -78,6 +78,7 @@ package
 						if (mArrPlayer[i].checkCollisionWithBullet(BulletManager.getInstance().getArrBullet()[j]))
 						{
 							// mArrPlayer[i].explosion();
+							mArrPlayer[i].damage(BulletManager.getInstance().getArrBullet()[j]);
 							BulletManager.getInstance().getArrBullet()[j].explode();
 						}
 					}

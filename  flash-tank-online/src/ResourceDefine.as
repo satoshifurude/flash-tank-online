@@ -76,6 +76,6 @@ package
 		
 		public static const XML_PARTICLE_MENU:String 	= "ParticleMenu";
 		
-		public static const TEX_LEVEL_DEMO:String = "level_1.png";
+		public static const TEX_LEVEL_DEMO:String = "level_2.png";
     }
 }
