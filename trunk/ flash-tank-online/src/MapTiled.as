@@ -15,6 +15,7 @@ package
 	
 		private var mArrTiled:Vector.<uint>;
 		private var mArrPlayerPosition:Vector.<Point>
+		private var mArrHeaderPosition:Vector.<Point>
 		
 		private var mWidth:int;
 		private var mHeight:int;
@@ -25,6 +26,7 @@ package
         {
 			mArrTiled = new Vector.<uint>();
 			mArrPlayerPosition = new Vector.<Point>();
+			mArrHeaderPosition = new Vector.<Point>();
 			mMapLayerUnder = new Sprite();
 			mMapLayerAbove = new Sprite();
 			mPlayerLayer = new Sprite();
@@ -81,7 +83,6 @@ package
 			var texture:Texture = Texture.fromBitmap(ResourceManager.getInstance().getBitmap(ResourceDefine.TEX_BLOCK));
 			var xml:XML = ResourceManager.getInstance().getXML(ResourceDefine.XML_BLOCK);
 			var textureAtlas:TextureAtlas = new TextureAtlas(texture, xml);
-			var headerSide:int = 1;
 			
 			for (var y:int = 0; y < mHeight; y++)
 			{
@@ -115,15 +116,10 @@ package
 						case GameDefine.COLOR_HEADER:
 							if (mArrTiled[(y - 1) * mWidth + x - 1] == GameDefine.COLOR_HEADER)
 							{
-								var header:Header = new Header(headerSide);
-								header.x = x * GameDefine.CELL_SIZE;
-								header.y = y * GameDefine.CELL_SIZE;
-								mPlayerLayer.addChild(header);
-								headerSide++;
+								mArrHeaderPosition.push(new Point(x * GameDefine.CELL_SIZE, y * GameDefine.CELL_SIZE));
 							}
 							break;
 						case GameDefine.COLOR_TANK:
-							trace("x = " + x + ", y = " + y);
 							mArrPlayerPosition.push(new Point(x * GameDefine.CELL_SIZE, y * GameDefine.CELL_SIZE));
 							break;
 						default:
@@ -194,6 +190,25 @@ package
 							}
 							return;
 							break;
+						case GameDefine.COLOR_HEADER:
+							if (obj is Tank)
+							{
+								(Tank)(obj).setPositionCollideWithBlock(x, y);
+							}
+							else if (obj is Bullet)
+							{
+								for (var i:int = 0; i < 2; i++)
+								{
+									if (Game.getInstance().mMainGame.mArrHeader[i].checkCollisionWithBullet((Bullet)(obj)))
+									{
+										Game.getInstance().mMainGame.mArrHeader[i].damage((Bullet)(obj));
+										(Bullet)(obj).explode();
+										return;
+									}
+								}
+							}
+							return;
+							break;
 						default:
 							continue;
 					}
@@ -240,9 +255,19 @@ package
 			mPlayerLayer.addChild(player);
 		}
 		
+		public function addHeader(header:Header):void
+		{
+			mPlayerLayer.addChild(header);
+		}
+		
 		public function getListPosition():Vector.<Point>
 		{
 			return mArrPlayerPosition;
+		}
+		
+		public function getListPositionHeader():Vector.<Point>
+		{
+			return mArrHeaderPosition;
 		}
     }
 }

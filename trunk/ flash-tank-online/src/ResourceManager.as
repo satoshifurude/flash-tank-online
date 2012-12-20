@@ -76,7 +76,7 @@ package
 		
 		private function loadSplashScene():void
 		{
-			mNumImages = 32;
+			mNumImages = 38;
 			//1
 			loadURL(ResourceDefine.TEX_LOGO_SPLASH);
 			
@@ -106,10 +106,11 @@ package
 			loadURL(ResourceDefine.TEX_BTN_EXIT_1);
 			loadURL(ResourceDefine.TEX_BTN_START_1);
 			loadURL(ResourceDefine.TEX_BTN_REFRESH_1);
+			loadURL(ResourceDefine.TEX_BTN_CHANGE_1);
 			loadURL(ResourceDefine.TEX_ICON_READY);
 			loadURL(ResourceDefine.TEX_ICON_KEY);
 			
-			// 8
+			// 10
 			loadURL(ResourceDefine.TEX_LEVEL_DEMO);
 			loadURL(ResourceDefine.TEX_BLOCK);
 			loadURL(ResourceDefine.TEX_EXPLOSION);
@@ -118,6 +119,11 @@ package
 			loadURL(ResourceDefine.TEX_HEADER_BLUE);
 			loadURL(ResourceDefine.TEX_TANK_BLUE);
 			loadURL(ResourceDefine.TEX_TANK_RED);
+			loadURL(ResourceDefine.TEX_WIN);
+			loadURL(ResourceDefine.TEX_LOSE);
+			loadURL(ResourceDefine.TEX_HP_BAR);
+			loadURL(ResourceDefine.TEX_USER_INFO);
+			loadURL(ResourceDefine.TEX_DEAD_CLOUD);
 		}
 		
 		private function loadMainScene():void

@@ -48,11 +48,11 @@ public class FlashPolicyServer {
         bootstrap.setOption("child.keepAlive", true);
         
         System.out.println("1 ");
-        try {
+//        try {
             // Bind and start to accept incoming connections.
-            bootstrap.bind(new InetSocketAddress(InetAddress.getByName("127.0.0.1"), 5554));
-        } catch (UnknownHostException ex) {
-            Logger.getLogger(FlashPolicyServer.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            bootstrap.bind(new InetSocketAddress(5554));
+//        } catch (UnknownHostException ex) {
+//            Logger.getLogger(FlashPolicyServer.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }
 }

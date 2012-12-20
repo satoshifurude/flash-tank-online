@@ -262,15 +262,14 @@ public class Game extends iGame{
         String username = new String(byteUserName);
         String password = new String(bytePassword);
         
-//        UserModel userDB = Database.shareData().Login(username, password);
-//        if (userDB == null) {
-//            ChannelBuffer buf = dynamicBuffer();
-//            buf.writeShort(GameDefine.CMD_LOGIN_FAIL);
-//            SendMessage(buf, user);                    
-//        } else {
-        {
+        UserModel userDB = Database.shareData().Login(username, password);
+        if (userDB == null) {
+            ChannelBuffer buf = dynamicBuffer();
+            buf.writeShort(GameDefine.CMD_LOGIN_FAIL);
+            SendMessage(buf, user);                    
+        } else {
             user.setName(username);
-//            user.setName(userDB.name);
+            user.setName(userDB.name);
             ChannelBuffer buf = dynamicBuffer();
             buf.writeShort(GameDefine.CMD_LOGIN_SUCCESS);
             buf.writeInt(user.getID());

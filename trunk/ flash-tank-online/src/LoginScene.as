@@ -68,8 +68,8 @@ package
 			addChild(mBtnLogin);
 			
 			// test
-			mAccount.text = "tanloc";
-			mPassword.text = "123456";
+			// mAccount.text = "tanloc";
+			// mPassword.text = "123456";
         }
 		
 		private function onLogin(event:Event):void

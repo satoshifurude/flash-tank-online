@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fbe22b77d0c797fa3a863fe1780d85ea$ -->
+<TextureAtlas imagePath="dead_cloud.png">
+    <SubTexture name="dead_01" x="0" y="0" width="118" height="94"/>
+    <SubTexture name="dead_02" x="118" y="0" width="118" height="94"/>
+	<SubTexture name="dead_03" x="236" y="0" width="118" height="94"/>
+	<SubTexture name="dead_04" x="354" y="0" width="118" height="94"/>
+	<SubTexture name="dead_05" x="472" y="0" width="118" height="94"/>
+	<SubTexture name="dead_06" x="590" y="0" width="118" height="94"/>
+	<SubTexture name="dead_07" x="708" y="0" width="118" height="94"/>
+	<SubTexture name="dead_08" x="826" y="0" width="118" height="94"/>
+	<SubTexture name="dead_09" x="0" y="94" width="118" height="94"/>
+	<SubTexture name="dead_10" x="118" y="94" width="118" height="94"/>
+	<SubTexture name="dead_11" x="236" y="94" width="118" height="94"/>
+    <SubTexture name="dead_12" x="354" y="94" width="118" height="94"/>
+	<SubTexture name="dead_13" x="472" y="94" width="118" height="94"/>
+	<SubTexture name="dead_14" x="590" y="94" width="118" height="94"/>
+	<SubTexture name="dead_15" x="708" y="94" width="118" height="94"/>
+	<SubTexture name="dead_16" x="826" y="94" width="118" height="94"/>
+</TextureAtlas>

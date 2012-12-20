@@ -36,6 +36,9 @@ package
 		public static const MAX_RANGE_BULLET:Number	= 700;
 		public static const TIME_SEND_STATE:Number	= 0.1;
 		
+		public static const HEADER_HP:Number		= 100;
+		
+		
 		public static const UP:int		= 1;
 		public static const DOWN:int	= 2;
 		public static const LEFT:int	= 3;
