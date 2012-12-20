@@ -16,7 +16,7 @@
     <div id="content">
     <center>
         <div>
-            <h2>Xếp hạng</h2>
+            <h2>Report</h2>
             </br></br></br></br>
             <?php
                 echo $this->Html->image('battlesmonth.png');
