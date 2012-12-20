@@ -47,7 +47,7 @@
             <span>Email: <?php echo  $content['users']['email'] ;?></span>
             <br>
             <br>
-            <img src="tank.jpg" alt="login" id="imgpmalogo">
+            <input type="submit" name="ok" value="Bắt đầu" />
             </center>
         </div>
     </div>
