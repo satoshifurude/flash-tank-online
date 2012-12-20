@@ -2,6 +2,11 @@
 <header>
 </header>
 <body>
+    <div id="menu" ">
+        <b>Menu</b><br>
+        <?php echo $this->Common->create_menu_report(); ?>
+    </div>
+    <div id="content" ">
      <?php
         if($data == null ) {
              echo "<h2> Error data null </h2>";
@@ -24,5 +29,13 @@
                 }
         }
      ?>
+      </div>
+     <div id="content" ">
+     <form method="post" action="/TankOnline/rates/year">
+           <label>Xem xếp hạng theo năm</label>
+           <input type="num" name="date" size="30" />
+           <input type=submit value="rank"/>
+      </form>
+      </div>
 </body>
 </html>

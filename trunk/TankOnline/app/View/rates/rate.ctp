@@ -2,6 +2,10 @@
 <header>
 </header>
 <body>
+     <div id="menu" ">
+            <b>Menu</b><br>
+            <?php echo $this->Common->create_menu_report(); ?>
+    </div>
      <?php
         if($data == null ) {
              echo "<h2> Error data null </h2>";

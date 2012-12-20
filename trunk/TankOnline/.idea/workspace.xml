@@ -20,48 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
+      <file leaf-file-name="sex.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/reports/sex.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="40" selection-start="9453" selection-end="9453" vertical-scroll-proportion="8.035156">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RatesController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/RatesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="36" selection-start="2319" selection-end="2336" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rate.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/rates/rate.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="28" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/ReportsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="28" selection-start="3986" selection-end="3986" vertical-scroll-proportion="-2.4615386">
-              <folding>
-                <element signature="n#sex#0;n#ReportsController#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="battles.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/reports/battles.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="45" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+            <state line="18" column="56" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,25 +32,34 @@
       <file leaf-file-name="age.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/reports/age.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+            <state line="13" column="30" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PieChartTest.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/libchart/demo/PieChartTest.php">
+      <file leaf-file-name="ReportsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/ReportsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="42" selection-start="879" selection-end="1374" vertical-scroll-proportion="0.0">
+            <state line="72" column="55" selection-start="2775" selection-end="2775" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sex.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/reports/sex.ctp">
+      <file leaf-file-name="CommonHelper.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/View/Helper/CommonHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="44" selection-start="52" selection-end="88" vertical-scroll-proportion="0.0">
+            <state line="40" column="96" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.5282486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rate.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/rates/rate.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="4" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,7 +68,43 @@
       <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/rates/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="44" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+            <state line="32" column="52" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RatesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/RatesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="68" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-9.384615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="month.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/rates/month.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="82" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="year.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/rates/year.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="14" selection-start="36" selection-end="148" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="battles.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/reports/battles.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="92" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,29 +120,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/View/users/game.ctp" />
-        <option value="$PROJECT_DIR$/app/View/users/tank.html" />
-        <option value="$PROJECT_DIR$/app/View/users/gametank.ctp" />
-        <option value="$PROJECT_DIR$/app/View/users/register.ctp" />
-        <option value="$PROJECT_DIR$/app/libchart/demo/HorizontalBarChartTest.php" />
-        <option value="$PROJECT_DIR$/app/View/rates/rate.ctp" />
-        <option value="$PROJECT_DIR$/app/View/rates/month.ctp" />
-        <option value="$PROJECT_DIR$/app/View/rates/year.ctp" />
-        <option value="$PROJECT_DIR$/app/Controller/RatesController.php" />
+        <option value="$PROJECT_DIR$/app/View/Helper/testHelper.php" />
+        <option value="$PROJECT_DIR$/app/Controller/TesthelperController.php" />
+        <option value="$PROJECT_DIR$/app/View/Testhelper/test_helper.ctp" />
+        <option value="$PROJECT_DIR$/app/Config/database.php" />
+        <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/app/View/rates/index.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/RatesController.php" />
         <option value="$PROJECT_DIR$/app/View/reports/sex.ctp" />
         <option value="$PROJECT_DIR$/app/View/reports/age.ctp" />
-        <option value="$PROJECT_DIR$/app/View/rates/index.ctp" />
-        <option value="$PROJECT_DIR$/app/View/reports/battles.ctp" />
         <option value="$PROJECT_DIR$/app/Controller/ReportsController.php" />
-        <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
+        <option value="$PROJECT_DIR$/app/View/reports/battles.ctp" />
+        <option value="$PROJECT_DIR$/app/View/rates/month.ctp" />
+        <option value="$PROJECT_DIR$/app/View/rates/year.ctp" />
+        <option value="$PROJECT_DIR$/app/View/rates/rate.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Helper/CommonHelper.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1378" />
+    <option name="y" value="-8" />
+    <option name="width" value="1376" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -164,7 +172,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,46 +201,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TankOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TankOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TankOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TankOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,12 +258,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TankOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TankOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TankOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TankOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TankOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TankOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Component" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,22 +338,7 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../oscommerce" />
   </component>
-  <component name="PublishConfig" serverName="TankOnline" serverId="fee6a732-c684-4590-8b7e-7bd28894e4b1">
-    <servers>
-      <server id="31ae47f1-d7e6-419b-a218-5ba5ad880055">
-        <serverdata />
-      </server>
-      <server id="500d5898-b101-4a8a-9d76-b923af7cd767">
-        <serverdata />
-      </server>
-      <server id="f844bb5c-f001-4184-8f69-d02799887758">
-        <serverdata />
-      </server>
-      <server id="fee6a732-c684-4590-8b7e-7bd28894e4b1">
-        <serverdata />
-      </server>
-    </servers>
-  </component>
+  <component name="PublishConfig" serverName="TankOnline" serverId="fee6a732-c684-4590-8b7e-7bd28894e4b1" />
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\wamp\www\TankOnline\app\View\reports" />
@@ -394,14 +413,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.271012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2575988" sideWeight="0.8181818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18721461" sideWeight="0.728988" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -410,7 +430,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18181819" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -466,115 +485,119 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/libchart/libchart/classes/view/chart/HorizontalBarChart.php">
+    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="69" selection-start="9061" selection-end="9061" vertical-scroll-proportion="0.0">
+        <state line="34" column="38" selection-start="1114" selection-end="1114" vertical-scroll-proportion="-9.807693">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/rates/month.ctp">
+    <entry file="file://$PROJECT_DIR$/app/View/users/userlogin.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="79" selection-start="0" selection-end="798" vertical-scroll-proportion="0.0">
+        <state line="25" column="132" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/users/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="6" column="81" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/rates/year.ctp">
+    <entry file="file://$PROJECT_DIR$/app/View/users/managerlogin.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="68" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+        <state line="10" column="50" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
+    <entry file="file://$PROJECT_DIR$/app/View/users/login.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="1276" selection-end="1276" vertical-scroll-proportion="-13.076923">
+        <state line="37" column="28" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libchart/demo/PieChartColorTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.9230769" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/libchart/demo/PieChartTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="42" selection-start="879" selection-end="1374" vertical-scroll-proportion="0.0">
+        <state line="73" column="92" selection-start="2642" selection-end="2642" vertical-scroll-proportion="-2.3333333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/reports/age.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+        <state line="13" column="30" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/rates/rate.ctp">
+    <entry file="file://$PROJECT_DIR$/app/Controller/RatesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+        <state line="53" column="68" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-9.384615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/reports/sex.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="52" selection-end="88" vertical-scroll-proportion="0.0">
+        <state line="18" column="56" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/rates/index.ctp">
+    <entry file="file://$PROJECT_DIR$/app/View/rates/month.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/webroot/img/rankmonth.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/RatesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="36" selection-start="2319" selection-end="2336" vertical-scroll-proportion="0.0">
+        <state line="30" column="82" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/reports/battles.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+        <state line="14" column="92" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/ReportsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="28" selection-start="3986" selection-end="3986" vertical-scroll-proportion="-2.4615386">
-          <folding>
-            <element signature="n#sex#0;n#ReportsController#0;n#!!top" expanded="false" />
-          </folding>
+        <state line="72" column="55" selection-start="2775" selection-end="2775" vertical-scroll-proportion="-3.9230769">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
+    <entry file="file://$PROJECT_DIR$/app/View/rates/year.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="40" selection-start="9453" selection-end="9453" vertical-scroll-proportion="8.035156">
+        <state line="7" column="14" selection-start="36" selection-end="148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/rates/rate.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/rates/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="52" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Helper/CommonHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="96" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.5282486">
           <folding />
         </state>
       </provider>

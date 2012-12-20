@@ -10,8 +10,14 @@ include "../libchart/libchart/classes/libchart.php";
 class ReportsController  extends AppController
 {
 
-
+    var $helpers = array("Html","Common","Flash");
+    var $component = array("Session");
     function sex (){
+        if($this->Session->read('Policy')<=2){
+            $this->redirect(array('controller' => 'users', 'action' => 'login'));
+            return;
+        }
+
 
         $sqlCountUser = "select count(*) from users ";
         $sqlCountMale = "select count(*) from users	where users.sex = 1" ;
@@ -40,6 +46,10 @@ class ReportsController  extends AppController
         $chart->render("../webroot/img/sex.png");
     }
     function age () {
+        if($this->Session->read('Policy')<=2){
+            $this->redirect(array('controller' => 'users', 'action' => 'login'));
+            return;
+        }
         $sqlage =  "SELECT YEAR( CURRENT_DATE( ) ) - YEAR( users.birthday ) AS age, COUNT( * ) AS count
                         FROM users
                         GROUP BY (
@@ -56,7 +66,15 @@ class ReportsController  extends AppController
         $chart->render("../webroot/img/age.png");
     }
     function battles () {
-        $date = date_default_timezone_get();
+        if($this->Session->read('Policy')<=2){
+            $this->redirect(array('controller' => 'users', 'action' => 'login'));
+            return;
+        }
+        if(isset($_POST['date'])){
+            $date =$_POST['date'];
+        }else {
+            $date = date_default_timezone_get();
+        }
         $month = date("m",strtotime($date));
         $year = date("Y",strtotime($date));
 
@@ -114,12 +132,11 @@ class ReportsController  extends AppController
         }
        return $value;
     }
-    function  createMonth(){
+    function createMonth(){
         $result = array(0) ;
         for($i = 0;$i < 12 ; $i++){
             array_push($result,0);
         }
         return $result;
     }
-
 }
