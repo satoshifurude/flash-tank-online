@@ -9,7 +9,7 @@
 include "../libchart/libchart/classes/libchart.php";
 class ReportsController  extends AppController
 {
-
+    var $layout = false;
     var $helpers = array("Html","Common","Flash");
     var $component = array("Session");
     function sex (){

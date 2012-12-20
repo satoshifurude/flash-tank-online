@@ -16,6 +16,7 @@
             <li><?php echo $this->Session->read("Username")?>-<?php echo $policy ?></li>
             <li><a href="/TankOnline/users/editlogin">Sửa thông tin</a></li>
             <li><a href="/TankOnline/users/manageusers">Quản lí thành viên</a></li>
+            <li><a href="/TankOnline/rates/index">Xem xếp hạng</a></li>
             <li><a href="/TankOnline/users/logout">Thoát</a></li>
         </ul>
     </div>

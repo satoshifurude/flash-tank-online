@@ -41,6 +41,9 @@ class CommonHelper extends HtmlHelper {
                     "controller"=>"rates",
                     "action"=>"year"))."</li>";
             case 1:
+                $menu .= "<li>".$this->link("Xếp hạng", array(
+                    "controller"=>"rates",
+                    "action"=>"rate"))."</li>";
                 $menu .= "<li>".$this->link("Home", array(
                     "controller"=>"users",
                     "action"=>"login"))."</li>";
