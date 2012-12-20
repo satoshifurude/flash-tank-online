@@ -209,6 +209,12 @@ public class Game extends iGame{
          if (room.isPlaying()) {
              room.setPlaying(false);
          }
+         int result = buffer.readShort();
+         if (result == 0) { // lose
+             
+         } else if (result == 1) { // win
+             
+         }
      }
     
     private void handleChangeSide(User user, ChannelBuffer buffer) {
