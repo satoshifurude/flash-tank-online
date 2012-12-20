@@ -3419,3 +3419,18 @@
 2012-12-20 19:38:30 Error: [MissingControllerException] Controller class ImgController could not be found.
 #0 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-12-20 19:58:51 Error: [MissingActionException] Action ReportsController::index() could not be found.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 20:04:40 Error: [MissingViewException] View file "C:\xampp\htdocs\TankOnline\app\View\Rates\rates\index.ctp" is missing.
+#0 C:\xampp\htdocs\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('rates/index')
+#1 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('rates/index', NULL)
+#2 C:\xampp\htdocs\TankOnline\app\Controller\RatesController.php(15): Controller->render('rates/index')
+#3 [internal function]: RatesController->index()
+#4 C:\xampp\htdocs\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(RatesController), Array)
+#5 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

@@ -9,6 +9,7 @@
 include "../libchart/libchart/classes/libchart.php";
 class RatesController extends AppController
 {
+    var $layout = false;
     var $helpers = array("Html","Common","Flash");
     function index () {
 //        $this->redirect("rate");
@@ -39,7 +40,7 @@ class RatesController extends AppController
          $chart->render("../webroot/img/rank.png");
      }
     function month(){
-        if($this->Session->read('Policy')<=2){
+        if($this->Session->read('Policy')<2){
             $this->redirect(array('controller' => 'users', 'action' => 'login'));
             return;
         }
@@ -79,7 +80,7 @@ class RatesController extends AppController
     }
 
     function year(){
-        if($this->Session->read('Policy')<=2){
+        if($this->Session->read('Policy')<2){
             $this->redirect(array('controller' => 'users', 'action' => 'login'));
             return;
         }
