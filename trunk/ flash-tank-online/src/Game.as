@@ -213,11 +213,14 @@ package
 			for (var i:int = 0; i < numRoom; i++)
 			{
 				var id:int = buffer.readInt();
+				var isPlaying:Boolean = buffer.readShort() == 1 ? true : false;
+				var numPlayer:int = buffer.readShort();
 				var roomNameLength:int = buffer.readShort();
 				var roomName:String = buffer.readMultiByte(roomNameLength, "utf-8");
 				var ownerLength:int = buffer.readShort();
 				var ownerName:String = buffer.readMultiByte(ownerLength, "utf-8");
-				var room:Room = new Room(id, roomName, ownerName);
+				var room:Room = new Room(id, roomName, ownerName, numPlayer);
+				room.setPlaying(isPlaying);
 				mRoomListScene.addRoom(room);
 			}
 			
@@ -364,7 +367,6 @@ package
 		{
 			var buffer:ByteArray = new ByteArray();
 			buffer.writeShort(CommandDefine.CMD_UPDATE_GAME);
-			buffer.writeShort(mMainGame.getPlayer().getID());
 			buffer.writeShort(mMainGame.getPlayer().getDirection());
 			buffer.writeShort(mMainGame.getPlayer().mIsMoving);
 			buffer.writeInt(mMainGame.getPlayer().x);
