@@ -2231,3 +2231,881 @@
 2012-12-20 08:45:54 Error: [MissingControllerException] Controller class ImgController could not be found.
 #0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-12-20 13:17:11 Error: [MissingActionException] Action TesthelperController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 13:17:27 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 13:17:27 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 13:18:07 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\testHelper.php, line 10]
+2012-12-20 13:18:07 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 13:18:08 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\testHelper.php, line 10]
+2012-12-20 13:18:08 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 13:18:09 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\testHelper.php, line 10]
+2012-12-20 13:18:09 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 13:18:09 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\testHelper.php, line 10]
+2012-12-20 13:18:09 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 10, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 13:18:31 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:18:32 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:18:33 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:18:33 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:09 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:10 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:10 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:10 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:12 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:12 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:12 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:12 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:12 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:13 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:13 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:13 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:13 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:19 Error: [MissingActionException] Action TesthelperController::testhelper() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 13:19:25 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:55 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:56 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:19:57 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:21:10 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:21:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:21:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:21:12 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:21:12 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:21:24 Error: [MissingActionException] Action TesthelperController::test_helper() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 13:21:40 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Testhelper\test_helper.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName('test_helper')
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render('test_helper', NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\app\Controller\TesthelperController.php(13): Controller->render('test_helper')
+#3 [internal function]: TesthelperController->test_helper()
+#4 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(TesthelperController), Array)
+#5 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TesthelperController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-12-20 13:21:58 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 13:21:58 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 13:21:59 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 13:21:59 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 13:29:36 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 13:29:59 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 13:30:03 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 13:30:09 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 13:57:39 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 13:58:14 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:16:14 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:16:16 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:16:18 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:16:18 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:16:20 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:16:23 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:17:46 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:18:14 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:24:21 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:24:36 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 14:29:05 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:29:11 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:32:54 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:34:17 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\view.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 14:54:25 Error: Fatal Error (4): syntax error, unexpected 'switch' (T_SWITCH) in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 14:54:25 Error: [FatalErrorException] syntax error, unexpected 'switch' (T_SWITCH)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 14:54:30 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:54:35 Error: Fatal Error (4): syntax error, unexpected 'switch' (T_SWITCH) in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 14:54:35 Error: [FatalErrorException] syntax error, unexpected 'switch' (T_SWITCH)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 14:58:22 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 14:58:27 Error: Fatal Error (4): syntax error, unexpected 'switch' (T_SWITCH) in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 14:58:27 Error: [FatalErrorException] syntax error, unexpected 'switch' (T_SWITCH)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:00:17 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\editlogin.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 15:00:38 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Users\editlogin.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 15:03:13 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:13 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:21 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:21 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:38 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:38 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:40 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:40 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:41 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:41 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:41 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:41 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:42 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:42 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:42 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:42 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:43 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:43 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:43 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:43 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:03:44 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 7]
+2012-12-20 15:03:44 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 7, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:10 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:10 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:10 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:10 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:11 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:11 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:12 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:12 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:12 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:12 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:12 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:12 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:12 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:12 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:13 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:13 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:13 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:13 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:04:13 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 8]
+2012-12-20 15:04:13 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 8, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:10:20 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:10:20 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:12:39 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 18]
+2012-12-20 15:12:39 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 18, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 18, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:13:19 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 19]
+2012-12-20 15:13:19 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:17:09 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 15:17:12 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 15:17:12 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 15:17:14 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 15:17:19 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 19]
+2012-12-20 15:17:20 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:19:43 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 19]
+2012-12-20 15:19:43 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:19:46 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 19]
+2012-12-20 15:19:46 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:19:48 Error: Fatal Error (1): Call to a member function read() on a non-object in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 19]
+2012-12-20 15:19:48 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\WorkSpace\wa...', 19, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:20:25 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 15:30:12 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 15:41:57 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:41:57 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:42:00 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:42:00 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:42:00 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:42:00 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:42:01 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:42:01 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:42:01 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:42:01 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:42:02 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:42:02 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 15:42:03 Error: Fatal Error (1): Class 'HtmlHelper' not found in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 2]
+2012-12-20 15:42:03 Error: [FatalErrorException] Class 'HtmlHelper' not found
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'HtmlHelp...', 'D:\WorkSpace\wa...', 2, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:08:03 Error: Fatal Error (4): syntax error, unexpected '<' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\index.ctp, line 12]
+2012-12-20 16:08:03 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 12, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 12, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:08:04 Error: Fatal Error (4): syntax error, unexpected '<' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\index.ctp, line 12]
+2012-12-20 16:08:04 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 12, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 12, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:14:24 Error: Fatal Error (64): Cannot redeclare CommonHelper::$helpers in [D:\WorkSpace\wamp\www\TankOnline\app\View\Helper\CommonHelper.php, line 5]
+2012-12-20 16:14:24 Error: [FatalErrorException] Cannot redeclare CommonHelper::$helpers
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'D:\WorkSpace\wa...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'D:\WorkSpace\wa...', 5, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'D:\WorkSpace\wa...', 5, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:36:51 Error: Fatal Error (4): syntax error, unexpected '<' in [D:\WorkSpace\wamp\www\TankOnline\app\View\rates\year.ctp, line 6]
+2012-12-20 16:36:51 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 6, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 6, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 16:57:40 Error: [MissingActionException] Action ReportsController::index() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

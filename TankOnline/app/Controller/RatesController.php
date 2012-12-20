@@ -9,6 +9,7 @@
 include "../libchart/libchart/classes/libchart.php";
 class RatesController extends AppController
 {
+    var $helpers = array("Html","Common","Flash");
     function index () {
 //        $this->redirect("rate");
     }
@@ -38,7 +39,15 @@ class RatesController extends AppController
          $chart->render("../webroot/img/rank.png");
      }
     function month(){
-        $date = $_POST['date'];
+        if($this->Session->read('Policy')<=2){
+            $this->redirect(array('controller' => 'users', 'action' => 'login'));
+            return;
+        }
+        if(isset($_POST['date'])){
+            $date =$_POST['date'];
+        }else {
+            $date = date_default_timezone_get();
+        }
         $month = date("m",strtotime($date));
         $year = date("Y",strtotime($date));
 
@@ -70,8 +79,15 @@ class RatesController extends AppController
     }
 
     function year(){
-        $year= $_POST['date'];
-
+        if($this->Session->read('Policy')<=2){
+            $this->redirect(array('controller' => 'users', 'action' => 'login'));
+            return;
+        }
+        if(isset($_POST['date'])){
+            $year =$_POST['date'];
+        }else {
+            $year = date("Y",strtotime(date_default_timezone_get()));
+        }
         $sql = "SELECT users.name, COUNT( * ) AS win
                     FROM users, battles_detail,battles
                     WHERE users.id = battles_detail.iduser
