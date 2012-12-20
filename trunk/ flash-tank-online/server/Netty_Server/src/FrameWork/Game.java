@@ -101,7 +101,7 @@ public class Game extends iGame{
                 handleJoinRoom(user, buf);
                 break;
             case GameDefine.CMD_READY:
-                handleReady(buf);
+                handleReady(user, buf);
                 break;
             case GameDefine.CMD_START_GAME:
                 handleStartGame(buf);
@@ -121,6 +121,9 @@ public class Game extends iGame{
             case GameDefine.CMD_LEAVE_ROOM:
                 handleLeaveRoom(user, buf);
                 break;
+            case GameDefine.CMD_CHANGE_SIDE:
+                handleChangeSide(user, buf);
+                break;
         }
     }
     
@@ -133,11 +136,22 @@ public class Game extends iGame{
     // xac dinh 
     public void channelClosed(ChannelStateEvent e){
         System.out.println("Game: channel close remove ID");
+        User user = (User)mHashUsers.get(e.getChannel().getId());
         mHashUsers.remove(e.getChannel().getId());
-//        if (mHashUsers.size() == 0) {
-//            gameLoop.stop();
-//            gameLoop = null;
-//        }
+        
+        Room room = getRoomWithID(user.mRoom);
+        if (room != null) {
+            room.removeUser(user);
+            if (user == room.getOwner()) {
+                // chuyen key cho nguoi khac
+            }
+
+            if (room.getNumPlayer() == 0) {
+                mListRoom.remove(room);
+            } else {
+                sendLeaveRoom(room, user);
+            }
+        }
     }
     
     // mapID
@@ -148,38 +162,61 @@ public class Game extends iGame{
     //
     // player name
     // player position
-    private void sendStartGame() {
+    private void sendStartGame(Room room) {
         System.out.println("Server : send start game");
-        
-        int numPlayer = mHashUsers.size();                
         
         ChannelBuffer buffer = dynamicBuffer();
         buffer.writeShort(GameDefine.CMD_START_GAME_SUCCESS);
         buffer.writeShort(1);
-        buffer.writeShort(numPlayer);
+        buffer.writeShort(room.getNumPlayer());
         
-        Enumeration e = mHashUsers.elements();
-        while(e.hasMoreElements()) {
-            User user = (User)e.nextElement();
-            String name = user.getName();
-            buffer.writeInt(user.getID());
-            buffer.writeShort(name.length());
-            buffer.writeBytes(name.getBytes());
-            buffer.writeShort(user.m_iX);
-            buffer.writeShort(user.m_iY);
+        for (int i = 0; i < room.getNumPlayer(); i++) {
+            buffer.writeInt(room.getUserByIndex(i).getID());
         }
         
-        e = mHashUsers.elements();
-        while(e.hasMoreElements()) {
-            User user = (User)e.nextElement();
-            ChannelBuffer buf = buffer.copy();
-            buf.writeInt(user.getID());
-            SendMessage(buf, user);
+        for (int i = 0; i < room.getNumPlayer(); i++) {
+            SendMessage(buffer, room.getUserByIndex(i));
+        }
+        
+//        Enumeration e = mHashUsers.elements();
+//        while(e.hasMoreElements()) {
+//            User user = (User)e.nextElement();
+//            String name = user.getName();
+//            buffer.writeInt(user.getID());
+//            buffer.writeShort(name.length());
+//            buffer.writeBytes(name.getBytes());
+//            buffer.writeShort(user.m_iX);
+//            buffer.writeShort(user.m_iY);
+//        }
+//        
+//        e = mHashUsers.elements();
+//        while(e.hasMoreElements()) {
+//            User user = (User)e.nextElement();
+//            ChannelBuffer buf = buffer.copy();
+//            buf.writeInt(user.getID());
+//            SendMessage(buf, user);
+//        }
+    }
+    
+    private void handleChangeSide(User user, ChannelBuffer buffer) {
+        System.out.println("handleChangeSide");
+        int side = buffer.readShort();
+        user.mSide = side;
+        
+        ChannelBuffer buf = dynamicBuffer();
+        buf.writeShort(GameDefine.CMD_CHANGE_SIDE);
+        buf.writeInt(user.getID());
+        buf.writeShort(side);
+        
+        Room room = getRoomWithID(user.mRoom);
+        for (int i = 0; i < room.getNumPlayer(); i++) {
+            SendMessage(buf, room.getUserByIndex(i));
         }
     }
     
     private void handleLeaveRoom(User user, ChannelBuffer buffer) {
         int roomID = buffer.readShort();
+//        System.out.println("room ID = " + roomID);
         int roomNumber = 0;
         int numRoom = mListRoom.size();
         for (int i = 0; i < numRoom; i++) {
@@ -189,8 +226,27 @@ public class Game extends iGame{
             }
         }
         
-        if (mListRoom.get(roomNumber).getNumPlayer() == 1) {
+        mListRoom.get(roomNumber).removeUser(user);
+        if (user == mListRoom.get(roomNumber).getOwner()) {
+            // chuyen key cho nguoi khac
+        }
+        
+        if (mListRoom.get(roomNumber).getNumPlayer() == 0) {
             mListRoom.remove(roomNumber);
+        } else {
+            sendLeaveRoom(mListRoom.get(roomNumber), user);
+        }
+    }
+    
+    private void sendLeaveRoom(Room room, User user) {
+//        System.out.println("sendLeaveRoom : id = " + room.getID());
+        ChannelBuffer buffer = dynamicBuffer();
+        buffer.writeShort(GameDefine.CMD_LEAVE_ROOM);
+        buffer.writeInt(1);
+        buffer.writeInt(user.getID());
+        int numPlayer = room.getNumPlayer();
+        for (int i = 0; i < numPlayer; i++) {
+            SendMessage(buffer, room.getUserByIndex(i));
         }
     }
     
@@ -206,13 +262,15 @@ public class Game extends iGame{
         String username = new String(byteUserName);
         String password = new String(bytePassword);
         
-        UserModel userDB = Database.shareData().Login(username, password);
-        if (userDB == null) {
-            ChannelBuffer buf = dynamicBuffer();
-            buf.writeShort(GameDefine.CMD_LOGIN_FAIL);
-            SendMessage(buf, user);                    
-        } else {
-            user.setName(userDB.name);
+//        UserModel userDB = Database.shareData().Login(username, password);
+//        if (userDB == null) {
+//            ChannelBuffer buf = dynamicBuffer();
+//            buf.writeShort(GameDefine.CMD_LOGIN_FAIL);
+//            SendMessage(buf, user);                    
+//        } else {
+        {
+            user.setName(username);
+//            user.setName(userDB.name);
             ChannelBuffer buf = dynamicBuffer();
             buf.writeShort(GameDefine.CMD_LOGIN_SUCCESS);
             buf.writeInt(user.getID());
@@ -236,6 +294,7 @@ public class Game extends iGame{
         
         Room room = new Room(generateRoomID(), user, roomName, password);
         mListRoom.add(room);
+        user.mSide = GameDefine.SIDE_BLUE;
         
         sendCreateRoomSuccess(user, room);
     }
@@ -244,6 +303,7 @@ public class Game extends iGame{
         ChannelBuffer buffer = dynamicBuffer();
         buffer.writeShort(GameDefine.CMD_CREATE_ROOM_SUCCESS);
         buffer.writeShort(room.getID());
+        buffer.writeShort(user.mSide);
         buffer.writeShort(room.getRoomName().length());
         buffer.writeBytes(room.getRoomName().getBytes());
         buffer.writeShort(room.getPassword().length());
@@ -272,7 +332,7 @@ public class Game extends iGame{
     
     private void handleJoinRoom(User user, ChannelBuffer buffer) {
         int roomID = buffer.readShort();
-        int roomNumber = 0;
+        int roomNumber = -1;
         int numRoom = mListRoom.size();
         for (int i = 0; i < numRoom; i++) {
             if (roomID == mListRoom.get(i).getID()) {
@@ -281,9 +341,32 @@ public class Game extends iGame{
             }
         }
         
+        if (roomNumber == -1) {
+            sendListRoom(user);
+            return;
+        }
+        
+        user.mSide = getSideInRoom(mListRoom.get(roomNumber));
+        user.mRoom = roomID;
         if (mListRoom.get(roomNumber).getNumPlayer() < 4) {
+            sendJoinRoomNewbie(user, mListRoom.get(roomNumber));
             mListRoom.get(roomNumber).addUser(user);
             sendJoinRoomSuccess(user, mListRoom.get(roomNumber));
+        }
+       
+    }
+    
+    private void sendJoinRoomNewbie(User user, Room room) {
+        ChannelBuffer buffer = dynamicBuffer();
+        buffer.writeShort(GameDefine.CMD_JOIN_ROOM_SUCCESS);
+        buffer.writeShort(GameDefine.CMD_JOIN_ROOM_OLDBIE);
+        buffer.writeInt(user.getID());
+        buffer.writeShort(user.mSide);
+        buffer.writeShort(user.getName().length());
+        buffer.writeBytes(user.getName().getBytes());
+        
+        for (int i = 0; i < room.getNumPlayer(); i++) {
+            SendMessage(buffer, room.getUserByIndex(i));
         }
     }
     
@@ -299,6 +382,7 @@ public class Game extends iGame{
         
         for (int i = 0; i < room.getNumPlayer(); i++) {
             buffer.writeInt(room.getUserByIndex(i).getID());
+            buffer.writeShort(room.getUserByIndex(i).mSide);
             buffer.writeShort(room.getUserByIndex(i).getName().length());
             buffer.writeBytes(room.getUserByIndex(i).getName().getBytes());
         }
@@ -306,12 +390,26 @@ public class Game extends iGame{
         SendMessage(buffer, user);
     }
     
-    private void handleReady(ChannelBuffer buffer) {
+    private void handleReady(User user, ChannelBuffer buffer) {
+        int isReady = buffer.readShort();
         
+        ChannelBuffer buf = dynamicBuffer();
+        buf.writeShort(GameDefine.CMD_READY);
+        buf.writeInt(user.getID());
+        buf.writeShort(isReady);
+        
+        Room room = getRoomWithID(user.mRoom);
+        for (int i = 0; i < room.getNumPlayer(); i++) {
+            if (room.getUserByIndex(i) != user) {
+                SendMessage(buf, room.getUserByIndex(i));
+            }
+        }
     }
     
     private void handleStartGame(ChannelBuffer buffer) {
-        sendStartGame();
+        int roomID = buffer.readShort();
+        Room room = getRoomWithID(roomID);
+        sendStartGame(room);
     }
     
     private void handleDisconnect(ChannelBuffer buffer) {
@@ -366,6 +464,44 @@ public class Game extends iGame{
     }
     
     private int generateRoomID() {
-        return 0;
+        int roomID = 1;
+        int numRoom = mListRoom.size();
+        for (int i = 0; i < numRoom; i++) {
+            if (roomID < mListRoom.get(i).getID()) {
+                return roomID;
+            } else {
+                roomID = mListRoom.get(i).getID() + 1;
+            }
+        }
+        return roomID;
+    }
+    
+    private Room getRoomWithID(int roomID) {
+        int numRoom = mListRoom.size();
+        for (int i = 0; i < numRoom; i++) {
+            if (roomID == mListRoom.get(i).getID()) {
+                return mListRoom.get(i);
+            }
+        }
+        return null;
+    }
+    
+    private int getSideInRoom(Room room) {
+        int sideBlue = 0;
+        int sideRed = 0;
+        
+        for (int i = 0; i < room.getNumPlayer(); i++) {
+            if (room.getUserByIndex(i).mSide == GameDefine.SIDE_BLUE) {
+                sideBlue++;
+            } else {
+                sideRed++;
+            }
+        }
+        
+        if (sideBlue <= sideRed) {
+            return GameDefine.SIDE_BLUE;
+        } else {
+            return GameDefine.SIDE_RED;
+        }
     }
 }

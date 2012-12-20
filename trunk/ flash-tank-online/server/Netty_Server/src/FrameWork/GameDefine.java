@@ -27,6 +27,7 @@ public class GameDefine {
     public static final short CMD_JOIN_ROOM_SUCCESS  = 34;
     public static final short CMD_JOIN_ROOM_NEWBIE  = 35;
     public static final short CMD_JOIN_ROOM_OLDBIE  = 36;
+    public static final short CMD_CHANGE_SIDE  = 37;
     
     public static final short INPUT_LEFT        = 1;
     public static final short INPUT_RIGHT       = 2;
@@ -40,4 +41,7 @@ public class GameDefine {
     public static final short INPUT_SPECIAL_5   = 10;
     
     public static final short MAX_PLAYER_IN_ROOM   = 4;
+    
+    public static final short SIDE_BLUE = 2;
+    public static final short SIDE_RED = 1;
 }

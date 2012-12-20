@@ -25,6 +25,7 @@ public class Room {
         mID = id;
         mName = name;
         mOwner = user;
+        mOwner.mRoom = mID;
         mPassword = password;
         mListUser = new LinkedList<User>();
         mListUser.add(user);
@@ -34,6 +35,10 @@ public class Room {
         if (mListUser.size() < GameDefine.MAX_PLAYER_IN_ROOM) {
             mListUser.add(user);
         }
+    }
+    
+    public void removeUser(User user) {
+        mListUser.remove(user);
     }
     
     public User getUser(int id) {
