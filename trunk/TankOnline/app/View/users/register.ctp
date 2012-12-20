@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo $title_for_layout;?></title>
-<?php echo $this->Html->css("style"); // link oi file style.css (app/webroot/css/style.css)?>
+<?php echo $this->Html->css("web"); // link oi file style.css (app/webroot/css/style.css)?>
 <?php $general = $this->Common->general(); // L?y c�c gi� tr? c?a th�nh ph?n tinh : header,footer ?>
 </head>
 <body>

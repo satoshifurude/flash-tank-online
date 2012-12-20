@@ -20,12 +20,12 @@ body {
 }
 #menu {
     float: left;
-    width: 240px;
+    width: 250px;
     height: 500px;
     background: url(../img/conten.png) center;
 }
 #menu ul {
-    margin: 0px;
+    margin: 5px;
 }
 #menu a {
     color: #000000;
