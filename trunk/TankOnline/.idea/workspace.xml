@@ -23,7 +23,7 @@
       <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="43" selection-start="27" selection-end="49" vertical-scroll-proportion="-11.8828125">
+            <state line="242" column="40" selection-start="9453" selection-end="9453" vertical-scroll-proportion="8.035156">
               <folding />
             </state>
           </provider>
@@ -117,7 +117,6 @@
         <option value="$PROJECT_DIR$/app/View/users/tank.html" />
         <option value="$PROJECT_DIR$/app/View/users/gametank.ctp" />
         <option value="$PROJECT_DIR$/app/View/users/register.ctp" />
-        <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/app/libchart/demo/HorizontalBarChartTest.php" />
         <option value="$PROJECT_DIR$/app/View/rates/rate.ctp" />
         <option value="$PROJECT_DIR$/app/View/rates/month.ctp" />
@@ -129,6 +128,7 @@
         <option value="$PROJECT_DIR$/app/View/rates/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/reports/battles.ctp" />
         <option value="$PROJECT_DIR$/app/Controller/ReportsController.php" />
+        <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
       </list>
     </option>
   </component>
@@ -394,7 +394,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="0" width="1378" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -499,7 +499,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="1276" selection-end="1276" vertical-scroll-proportion="-13.076923" />
+        <state line="39" column="5" selection-start="1276" selection-end="1276" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/libchart/demo/PieChartColorTest.php">
@@ -572,7 +574,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="43" selection-start="27" selection-end="49" vertical-scroll-proportion="-11.8828125">
+        <state line="242" column="40" selection-start="9453" selection-end="9453" vertical-scroll-proportion="8.035156">
           <folding />
         </state>
       </provider>
