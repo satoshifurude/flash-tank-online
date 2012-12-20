@@ -366,7 +366,7 @@ class UsersController extends AppController {
     }
 
     function check($username,$password){
-        $sql = "Select name, pass from users Where name='$username' AND pass ='$password'";
+        $sql = "Select name, pass from users Where name='$username'";
         $this->User->query($sql);
         if($this->User->getNumRows()==0){
             return false;
