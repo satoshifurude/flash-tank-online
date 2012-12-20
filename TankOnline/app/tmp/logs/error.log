@@ -1963,3 +1963,271 @@
 2012-12-19 20:11:57 Error: [MissingControllerException] Controller class MonthController could not be found.
 #0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-12-20 04:57:47 Error: [MissingControllerException] Controller class ReportController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 04:57:56 Error: Fatal Error (4): syntax error, unexpected '"select count(*) from users	wh' (T_CONSTANT_ENCAPSED_STRING) in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\ReportsController.php, line 22]
+2012-12-20 04:57:56 Error: [FatalErrorException] syntax error, unexpected '"select count(*) from users	wh' (T_CONSTANT_ENCAPSED_STRING)
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 22, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 22, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 04:58:29 Error: Fatal Error (1): Call to undefined function query() in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\ReportsController.php, line 23]
+2012-12-20 04:58:29 Error: [FatalErrorException] Call to undefined function query()
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'D:\WorkSpace\wa...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'D:\WorkSpace\wa...', 23, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'D:\WorkSpace\wa...', 23, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 05:03:08 Error: [MissingControllerException] Controller class YearController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 05:03:20 Error: [MissingControllerException] Controller class YearController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 05:03:28 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 05:03:36 Error: [MissingControllerException] Controller class MonthController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 05:03:57 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 05:04:26 Error: Fatal Error (1): __clone method called on non-object in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\RatesController.php, line 28]
+2012-12-20 05:04:26 Error: [FatalErrorException] __clone method called on non-object
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, '__clone method ...', 'D:\WorkSpace\wa...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, '__clone method ...', 'D:\WorkSpace\wa...', 28, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, '__clone method ...', 'D:\WorkSpace\wa...', 28, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 05:12:39 Error: [MissingControllerException] Controller class ReportController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 05:34:45 Error: [MissingControllerException] Controller class TankonlineController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:39:43 Error: [MissingControllerException] Controller class MonthController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:39:47 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:39:59 Error: [MissingControllerException] Controller class YearController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:40:32 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:40:36 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:41:18 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:41:55 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:42:11 Error: [MissingControllerException] Controller class YearController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:47:12 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:47:22 Error: [MissingControllerException] Controller class MonthController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:47:39 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:47:50 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:48:36 Error: [MissingActionException] Action RatesController::rates() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 07:48:49 Error: [MissingActionException] Action RatesController::rates() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 07:49:04 Error: [MissingActionException] Action RatesController::rates() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 07:49:35 Error: [MissingControllerException] Controller class RateController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 07:50:39 Error: [MissingActionException] Action RatesController::rates() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RatesController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 07:58:02 Error: [MissingActionException] Action ReportsController::battles+() could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-20 07:58:05 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Reports\battles.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 07:58:26 Error: [MissingViewException] View file "D:\WorkSpace\wamp\www\TankOnline\app\View\Reports\battles.ctp" is missing.
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-20 08:14:13 Error: Fatal Error (4): syntax error, unexpected 'i' (T_STRING), expecting ';' in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\ReportsController.php, line 78]
+2012-12-20 08:14:13 Error: [FatalErrorException] syntax error, unexpected 'i' (T_STRING), expecting ';'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 78, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 78, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 08:14:38 Error: Fatal Error (1): Call to undefined function createDays() in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\ReportsController.php, line 70]
+2012-12-20 08:14:38 Error: [FatalErrorException] Call to undefined function createDays()
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'D:\WorkSpace\wa...', 70)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'D:\WorkSpace\wa...', 70, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'D:\WorkSpace\wa...', 70, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 08:41:43 Error: Fatal Error (4): syntax error, unexpected '++' (T_INC), expecting ')' in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\ReportsController.php, line 79]
+2012-12-20 08:41:43 Error: [FatalErrorException] syntax error, unexpected '++' (T_INC), expecting ')'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 79, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 79, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 08:41:58 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\ReportsController.php, line 83]
+2012-12-20 08:41:58 Error: [FatalErrorException] syntax error, unexpected '.', expecting ')'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 83, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 83, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 08:41:59 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [D:\WorkSpace\wamp\www\TankOnline\app\Controller\ReportsController.php, line 83]
+2012-12-20 08:41:59 Error: [FatalErrorException] syntax error, unexpected '.', expecting ')'
+#0 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\WorkSpace\wa...', 83, Array)
+#2 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\WorkSpace\wa...', 83, Array)
+#3 D:\WorkSpace\wamp\www\TankOnline\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-20 08:42:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:42:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:42:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:42:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:42:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:42:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:42:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:43:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:43:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:43:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:43:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:43:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:43:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:44:42 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-20 08:45:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\WorkSpace\wamp\www\TankOnline\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
