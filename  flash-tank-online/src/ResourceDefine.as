@@ -19,10 +19,13 @@ package
 		[Embed(source="../res/head_blue.xml", mimeType="application/octet-stream")]
         public static const XMLHeaderBlue:Class;
 		
+		[Embed(source="../res/dead_cloud.xml", mimeType="application/octet-stream")]
+        public static const XMLDeadCloud:Class;
+		
 		[Embed(source="../res/particle_menu.pex", mimeType="application/octet-stream")]
         public static const ParticleMenu:Class;
 		
-		public static const RES_DIR:String	= "http://127.0.0.1/res/";
+		public static const RES_DIR:String	= "http://192.168.1.3/res/";
 		
 		public static const TEX_BLOCK:String 		= "block.png";
 		public static const XML_BLOCK:String 		= "XMLBlock";
@@ -45,6 +48,10 @@ package
 		public static const TEX_HEADER_BLUE:String	= "head_blue.png";
 		public static const XML_HEADER_BLUE:String 	= "XMLHeaderBlue";
 		public static const SPR_HEADER_BLUE:String 	= "head";
+		
+		public static const TEX_DEAD_CLOUD:String	= "dead_cloud.png";
+		public static const XML_DEAD_CLOUD:String 	= "XMLDeadCloud";
+		public static const SPR_DEAD_CLOUD:String 	= "dead";
 		
 		public static const TEX_LOGO_SPLASH:String 	= "logo_splash.png";
 		
@@ -71,11 +78,16 @@ package
 		public static const TEX_BTN_EXIT_1:String 			= "btn_exit_1.png";
 		public static const TEX_BTN_START_1:String 			= "btn_start_1.png";
 		public static const TEX_BTN_REFRESH_1:String 		= "btn_refresh_1.png";
+		public static const TEX_BTN_CHANGE_1:String 		= "btn_change_1.png";
 		public static const TEX_ICON_READY:String 			= "icon_ready.png";
 		public static const TEX_ICON_KEY:String 			= "icon_key.png";
+		public static const TEX_WIN:String 					= "win.png";
+		public static const TEX_LOSE:String 				= "lose.png";
+		public static const TEX_HP_BAR:String 				= "hp_bar.png";
+		public static const TEX_USER_INFO:String 			= "info_frame.png";
 		
 		public static const XML_PARTICLE_MENU:String 	= "ParticleMenu";
 		
-		public static const TEX_LEVEL_DEMO:String = "level_2.png";
+		public static const TEX_LEVEL_DEMO:String = "level_1.png";
     }
 }

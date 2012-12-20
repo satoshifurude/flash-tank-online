@@ -7,22 +7,20 @@ package
 
     public class MainGameScene extends Sprite
     {
-
 		public static var mInstance:MainGameScene;
         public var mMapTiled:MapTiled;
+		public var mUserInfo:UserInfo;
 		public var mArrPlayer:Vector.<Tank>;
+		public var mArrHeader:Vector.<Header>;
 		public var mNumberMainPlayer:int;
-		
-		private var mTimeSendState:Number;
 		
         public function MainGameScene()
         {
 			mInstance = this;
 			mArrPlayer = new Vector.<Tank>();
+			mArrHeader = new Vector.<Header>();
 			mMapTiled = new MapTiled();
 			addChild(mMapTiled);
-			
-			mTimeSendState = GameDefine.TIME_SEND_STATE;
         }
 		
 		public function addPlayer(tank:Tank):void
@@ -42,6 +40,20 @@ package
 				}
 			}
 			
+			for (i = 0; i < 2; i++)
+			{
+				var header:Header = new Header(i + 1);
+				header.x = mMapTiled.getListPositionHeader()[i].x;
+				header.y = mMapTiled.getListPositionHeader()[i].y;
+				mMapTiled.addHeader(header);
+				mArrHeader.push(header);
+			}
+			
+			mUserInfo = new UserInfo(mArrPlayer[mNumberMainPlayer]);
+			mUserInfo.x = GameDefine.WIDTH - mUserInfo.width;
+			mUserInfo.y = 0;
+			addChild(mUserInfo);
+			
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
 			Starling.current.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp);
 			addEventListener(Event.ENTER_FRAME, onFrame);
@@ -51,6 +63,7 @@ package
 		private function onFrame(event:EnterFrameEvent):void
 		{
 			var i:int;
+			var j:int;
 
 			getPlayer().update(event.passedTime);
 			for (i = 0; i < mArrPlayer.length; i++)
@@ -70,16 +83,18 @@ package
 			
 			for (i = 0; i < mArrPlayer.length; i++)
 			{
-				for (var j:int = 0; j < BulletManager.getInstance().getArrBullet().length; j++)
+				if (mArrPlayer[i].visible == false) continue;
+				
+				for (j = 0; j < BulletManager.getInstance().getArrBullet().length; j++)
 				{
 					if (BulletManager.getInstance().getArrBullet()[j].isActive() 
 						&& BulletManager.getInstance().getArrBullet()[j].getPlayer() != mArrPlayer[i])
 					{
 						if (mArrPlayer[i].checkCollisionWithBullet(BulletManager.getInstance().getArrBullet()[j]))
 						{
-							// mArrPlayer[i].explosion();
 							mArrPlayer[i].damage(BulletManager.getInstance().getArrBullet()[j]);
 							BulletManager.getInstance().getArrBullet()[j].explode();
+							mUserInfo.updateInfo();
 						}
 					}
 				}
@@ -163,6 +178,13 @@ package
 				default:
 					break;
 			}
+		}
+		
+		public function finishGame():void
+		{
+			removeEventListener(Event.ENTER_FRAME, onFrame);
+			removeFromParent(true);
+			Game.getInstance().mRoomScene.visible = true;
 		}
 	}
 }

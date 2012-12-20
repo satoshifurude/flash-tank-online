@@ -35,10 +35,10 @@ public class Netty_Server {
         // TODO code application logic here
         
         Database.shareData().ConnectDatabase(
-                "jdbc:mysql://localhost:3306/tank_db", // link host database
+                "jdbc:mysql://localhost:3306/test", // link host database
                 "root" , ""); // user nama, pass
 //        Database.shareData().CreateBattle();
-            Database.shareData().resultBattle(15, new int[]{1,3}, new int[]{2,4});
+//            Database.shareData().resultBattle(15, new int[]{1,3}, new int[]{2,4});
 //            Database.shareData().resultBattle(5, new int[]{2,3}, new int[]{1});
 //            Database.shareData().resultBattle(6, new int[]{3}, new int[]{2,1});
 //            Database.shareData().resultBattle(7, new int[]{3}, new int[]{2});
@@ -64,10 +64,10 @@ public class Netty_Server {
 
         bootstrap.setOption("child.tcpNoDelay", true);
         bootstrap.setOption("child.keepAlive", true);
-        try {
-            bootstrap.bind(new InetSocketAddress(InetAddress.getByName("127.0.0.1"), 8080));
-        } catch (UnknownHostException ex) {
-            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+            bootstrap.bind(new InetSocketAddress(5555));
+//        } catch (UnknownHostException ex) {
+//            Logger.getLogger(Netty_Server.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }
 }

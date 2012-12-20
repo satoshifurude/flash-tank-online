@@ -19,14 +19,16 @@ package
 		public var mID:int;
 		public var mIsMoving:int;
 		public var mSide:int;
+		public var mIsDead:Boolean;
 		
         public function Tank(id:int = 0, side:int = GameDefine.SIDE_BLUE)
         {
+			mIsDead = false;
 			mNumCurrentBullet = 0;
 			mSpeed = GameDefine.TANK_SPEED;
 			mID = id;
 			mSide = side;
-			mHp = 100;
+			mHp = 50;
 			mDamage = 10;
 			mLayerTank = new Sprite();
 			
@@ -71,6 +73,8 @@ package
 		
 		public function update(time:Number):void
 		{
+			if (mIsDead) return;
+			
 			mNumCurrentBullet += time;
 			
 			var newDirection:int = mDirection;
@@ -129,6 +133,8 @@ package
 		
 		public function updateOther(time:Number):void
 		{
+			if (mIsDead) return;
+			
 			updateDirection();
 			
 			if (mIsMoving == 1)
@@ -207,19 +213,24 @@ package
 		
 		public function checkCollisionWithBullet(bullet:Bullet):Boolean
 		{
-			return !(this.x > (bullet.x + bullet.width / 2)
-					|| this.x + this.width / 2 < bullet.x
-					|| this.y > bullet.y + bullet.height / 2
-					|| this.y + this.height / 2 < bullet.y);
+			return !(this.x - this.width / 2 > (bullet.x + bullet.width / 2)
+					|| this.x + this.width / 2 < bullet.x - bullet.width / 2
+					|| this.y - this.height / 2 > bullet.y + bullet.height / 2
+					|| this.y + this.height / 2 < bullet.y - bullet.height / 2);
 		}
 		
 		private function dead():void
 		{
-			
+			var deadCloud:DeadCloud = new DeadCloud(0.5);
+			deadCloud.x = this.x;
+			deadCloud.y = this.y;
+			this.parent.addChild(deadCloud);
+			this.visible = false;
 		}
 		
 		public function damage(bullet:Bullet):void
 		{
+			Utility.addFlyingHp(this.parent, bullet.getPlayer().mDamage, this.x, this.y);
 			mHp -= bullet.getPlayer().mDamage;
 			trace("Hp = " + mHp);
 			if (mHp <= 0)

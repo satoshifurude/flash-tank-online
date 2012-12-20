@@ -78,7 +78,7 @@ package
 		
 		public function setMyUser(bool:Boolean):void
 		{
-			mBackground.visible = bool
+			mBackground.visible = bool;
 		}
 		
 		public function getID():int

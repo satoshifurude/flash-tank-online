@@ -50,13 +50,13 @@ package
 			mBtnConnect.x = GameDefine.WIDTH - mBtnPlay.width >> 1;
 			mBtnConnect.y = 400;
 			mBtnConnect.addEventListener(Event.TRIGGERED, onConnect);
-			addChild(mBtnConnect);
+			// addChild(mBtnConnect);
 		}
 		
 		private function onPlay(event:Event):void
 		{
 			removeFromParent(true);
-			Game.getInstance().sendStartGame();
+			Game.getInstance().addChild(new LoadingScene(GameDefine.ID_ROOM_LIST_SCENE));
 		}
 		
 		private function onConnect(event:Event):void
