@@ -211,9 +211,9 @@ public class Game extends iGame{
          }
          int result = buffer.readShort();
          if (result == 0) { // lose
-             
+             Database.shareData().resultBattle(room.idBattle, user.getName(), 0);
          } else if (result == 1) { // win
-             
+              Database.shareData().resultBattle(room.idBattle, user.getName(), 1);
          }
      }
     
@@ -428,7 +428,10 @@ public class Game extends iGame{
     
     private void handleStartGame(ChannelBuffer buffer) {
         int roomID = buffer.readShort();
+        int idbattles = Database.shareData().CreateBattle();
+        
         Room room = getRoomWithID(roomID);
+        room.idBattle = idbattles ;
         sendStartGame(room);
     }
     

@@ -16,6 +16,7 @@ import static org.jboss.netty.buffer.ChannelBuffers.*;
  */
 public class Room {
     private int mID;
+    public int idBattle;
     private String mName;
     private String mPassword;
     private User mOwner;
