@@ -32,5 +32,10 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    function query ($sql) {
+        $conn=mysql_connect("localhost","root","") or die("can't connect this database");
+        mysql_select_db("tank_db",$conn);
+        return mysql_query($sql);
 
+    }
 }
