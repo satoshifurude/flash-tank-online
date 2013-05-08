@@ -37,12 +37,6 @@ public class Netty_Server {
         Database.shareData().ConnectDatabase(
                 "jdbc:mysql://localhost:3306/tank_db", // link host database
                 "root" , ""); // user nama, pass
-//        Database.shareData().CreateBattle();
-//            Database.shareData().resultBattle(15, new int[]{1,3}, new int[]{2,4});
-//            Database.shareData().resultBattle(5, new int[]{2,3}, new int[]{1});
-
-//        Database.shareData().Logout(1);
-//        UserModel usertest = Database.shareData().Login("thanhtri", "123456");
         
          ChannelFactory factory =
             new NioServerSocketChannelFactory(
