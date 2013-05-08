@@ -1,9 +1,9 @@
 echo load config
 
 SET FLASH_VERSION=15
-SET J2SE_DIR="D:\Work\jdk1.7.0_03"
-SET FLEX_DIR="D:\Work\flex_sdk_4.6"
-SET FLASH_DEBUG="D:\Work\flashplayer_11_sa_debug.exe"
-SET STARLING_LIB="D:\Work\Starling Framework\PrimaryFeather-Starling-Framework-4ee83c1\starling\bin\starling.swc"
-SET MAIN_DIR="D:\Work\flash_tank_online\src\main.as"
-SET OUTPUT_SWF="D:\Work\flash_tank_online\release\tank.swf"
+SET J2SE_DIR="C:\Program Files\Java\jdk1.6.0_25"
+SET FLEX_DIR="C:\Program Files\Adobe\Adobe Flash Builder 4\sdks\4.6.0"
+SET FLASH_DEBUG="D:\Development\Flash\flashplayer_11_sa_debug.exe"
+SET STARLING_LIB="D:\Development\Flash\Starling-Framework\starling\bin\starling.swc"
+SET MAIN_DIR="D:\XuLyPhanBo\ flash-tank-online\src\main.as"
+SET OUTPUT_SWF="D:\XuLyPhanBo\ flash-tank-online\release\tank.swf"

@@ -4,66 +4,105 @@
  */
 package game;
 
+import Game.Session;
+import game.iGame;
+import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import network.Session;
+import java.net.InetSocketAddress;
+import java.nio.channels.DatagramChannel;
+import java.util.Hashtable;
 
 /**
  *
  * @author ThanhTri
  */
-public abstract class Game {
-//    Hashtable<String, Session> user;
-    static float deltaTime = 0;
-    static int fps = 0;
-    
-    public abstract void setFPS (int fps);
-    public abstract int getFPS ();
-    
-    public abstract void Multicast(ByteBuffer b);
-    public abstract void SendMsgTo (Session s,ByteBuffer b);
-    public abstract void Update ();    
-    
-    public class GameLoop extends Thread {
-        long lastTime;
-        int CountFPS=0;
-        float countTime=0;
-        public GameLoop (){
-            lastTime = System.currentTimeMillis();
+public class Game extends iGame {
+
+    int gameFps;
+    Thread gameLoop;
+    Thread handler;
+    DatagramChannel chanel;
+    Hashtable<String, Session> users;
+
+    public Game() {
+        gameFps = 10;
+        try {
+            chanel = DatagramChannel.open();
+            chanel.socket().bind(new InetSocketAddress(5000));
+            gameLoop = new GameLoop();
+            handler = new GameHandler(chanel);
+            gameLoop.start();
+            handler.start();
+
+        } catch (IOException ex) {
+            Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
         }
-        @Override
-        public void run() {
-           long FPSTime = (long)(1000.0f/(float)Game.this.getFPS());       
-           while(true){              
-               long curTime = System.currentTimeMillis();
-               long deltaTime = curTime - lastTime;     
-               lastTime = curTime;               
-               CountFPS++;
-               countTime+=deltaTime;
-               
-               Game.deltaTime = deltaTime;                
-               Game.this.Update();               
-               
-               if(countTime >=1000){
-                   Game.fps = CountFPS;
-                   countTime = 0;
-                   CountFPS = 0;
-               }
-               
-               long updateTime = System.currentTimeMillis()-curTime;
-               long sleepTime = (FPSTime - updateTime);
-               
-               if(sleepTime>0 ){
-                    try {
-                        this.sleep(sleepTime);
-                    } catch (InterruptedException ex) {
-                    }
-               }
-           }           
-        }        
+
+        if (users == null) {
+            users = new Hashtable<String, Session>();
+        }
+
     }
-    
+
+    @Override
+    public void setFPS(int fps) {
+        gameFps = fps;
+    }
+
+    @Override
+    public int getFPS() {
+        return gameFps;
+    }
+
+    @Override
+    public void Multicast(ByteBuffer b) {
+    }
+
+    @Override
+    public void SendMsgTo(ByteBuffer b, Session s) {
+        try {
+            chanel.send(b, s.getAddr());
+        } catch (IOException ex) {
+            Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @Override
+    public void Update() {
+    }
+
+    @Override
+    public void SendMessage(ByteBuffer b) {
+    }
+
+    @Override
+    public void ReceiveMessage(ByteBuffer b, InetSocketAddress addr) {
+        try {
+            String keySession = addr.getHostName() + ":" + addr.getPort();
+            int id = b.getInt();
+            switch (id) {
+                case 0:
+                    ByteBuffer btem = b.get(b.array(), 4, b.array().length);
+                    String s = new String(btem.array());
+                    System.out.println("Test:" + s);
+                    break;
+                case 1:
+                    break;
+            }
+            if (users == null) {
+                users = new Hashtable<String, Session>();
+            }
+            if (!users.containsKey(keySession)) {
+                Session from = users.get(keySession);
+
+            } else {
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }

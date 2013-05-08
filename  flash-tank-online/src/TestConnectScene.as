@@ -17,8 +17,8 @@ package
 			mTitle.y = GameDefine.HEIGHT - mTitle.height >> 1;
 			addChild(mTitle);
 				
-			Security.loadPolicyFile("xmlsocket://192.168.1.3:5554");
-			Game.getInstance().mSocket = new CSockConnection("192.168.1.3", 5555);
+			Security.loadPolicyFile("xmlsocket://192.168.0.9:5554");
+			Game.getInstance().mSocket = new CSockConnection("192.168.0.9", 5555);
 			Game.getInstance().mSocket.Connect();
         }
 		
